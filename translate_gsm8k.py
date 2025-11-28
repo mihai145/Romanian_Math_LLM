@@ -2,6 +2,12 @@ from datasets import load_dataset
 from transformers import AutoTokenizer, pipeline
 import torch
 
+print("CUDA available:", torch.cuda.is_available())
+print("Number of GPUs:", torch.cuda.device_count())
+print("Current device:", torch.cuda.current_device())
+print("Device name:", torch.cuda.get_device_name(0) if torch.cuda.is_available() else "CPU")
+
+
 # NLLB 600M
 nllb_translate = pipeline(
     "translation",
@@ -40,8 +46,8 @@ def llama(sample):
         "You are a translator from English to Romanian. You translate math problems with questions and answers. "
         "You will get such questions and answers to translate. "
         "Use natural, correct Romanian. Keep the tone simple and clear. "
-        "Preserve numbers and mathematical expressions, usually encoded in << >> markup. Keep these expressions the same as in the english version. "
-        "Output only the translation with no explanation, comments or extra sentences. "
+        "Preserve numbers and mathematical expressions. Keep these expressions the same as in the english version. "
+        "Output only the translation with no explanation, comments or extra sentences. Do not repeat tokens."
     )
 
     split_token = "Traducere în română:"
