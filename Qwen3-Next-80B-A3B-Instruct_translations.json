@@ -1,0 +1,22 @@
+[
+  {
+    "Question": "Ali și Ernie au așezat cutii pentru a forma cercuri. Ali a folosit 8 cutii pentru fiecare cerc, iar Ernie a folosit 10. Dacă au avut împreună 80 de cutii și Ali a făcut 5 cercuri, câte cercuri poate face Ernie?",
+    "Answer": "Ali a făcut 5 cercuri, câte 8 cutii fiecare, deci a folosit 5*8 = <<5*8=40>>40 cutii. În total au avut 80 de cutii, deci au rămas 80-40 = <<80-40=40>>40 cutii. Ernie folosește 10 cutii pentru un cerc, deci cu 40 de cutii poate face 40/10 = <<40/10=4>>4 cercuri. #### 4"
+  },
+  {
+    "Question": "Alexa a stat în vacanță timp de 3/4 din timpul în care Ethan a învățat 12 trucuri de scrimă. Joey a cheltuit jumătate din acest timp (cel pe care Ethan l-a folosit pentru a învăța trucurile) să învețe să înoate. Dacă Alexa a stat în vacanță o săptămână și 2 zile, câte zile i-a luat lui Joey să învețe înotul?",
+    "Answer": "O săptămână are 7 zile, deci o săptămână și 2 zile = 7 + 2 = <<7+2=9>>9 zile. Fie e timpul pe care Ethan l-a cheltuit să învețe trucurile. Alexa a stat 9 zile în vacanță, ceea ce reprezintă 3/4 din timpul lui Ethan, deci (3/4)e = 9 zile. Dacă înmulțim ambele părți ale ecuației cu 4/3, obținem e = (4/3)*9 zile = <<(4/3)*9=12>>12 zile. Joey a cheltuit jumătate din 12 zile, adică 12/2 = <<12/2=6>>6 zile, să învețe înotul. #### 6"
+  },
+  {
+    "Question": "O boutique de bomboane folosește coloranți alimentari în diverse bomboane. Fiecare lollipop necesită 5 ml de colorant alimentar, iar fiecare bomboană dură necesită, de asemenea, colorant alimentar. Într-o zi, boutique-ul produce 100 de lollipops și 5 bomboane dure. Nu folosește colorant alimentar în nimic altceva. Până la sfârșitul zilei, boutique-ul a folosit 600 ml de colorant alimentar. Câți mililitri de colorant alimentar necesită fiecare bomboană dură?",
+    "Answer": "În total, lollipops-urile au necesitat 5 ml de colorant alimentar * 100 lollipops = <<5*100=500>>500 ml de colorant alimentar. Asta înseamnă că bomboanele dure au necesitat 600 ml de colorant alimentar în total – 500 ml folosiți pentru lollipops = 100 ml de colorant alimentar. Deci, fiecare bomboană dură a necesitat 100 ml de colorant alimentar / 5 bomboane dure = <<100/5=20>>20 ml de colorant alimentar. #### 20"
+  },
+  {
+    "Question": "Jenny are durere de stomac. Fratele ei, Mike, spune că e din cauză că Jenny a mâncat cu 5 pătrățele de ciocolată mai mult decât de trei ori numărul pătrățelelor pe care le-a mâncat el. Dacă Mike a mâncat 20 de pătrățele de ciocolată, câte a mâncat Jenny?",
+    "Answer": "De trei ori numărul pătrățelelor de ciocolată pe care le-a mâncat Mike este 20 pătrățele * 3 = <<20*3=60>>60 pătrățele. Jenny a mâncat deci 60 pătrățele + 5 pătrățele = <<60+5=65>>65 pătrățele de ciocolată #### 65"
+  },
+  {
+    "Question": "Un podea dreptunghiulară, cu lungimea de 10 m și lățimea de 8 m, trebuie acoperită cu o pătă pătrată cu latura de 4 m. Câți metri pătrați din podea rămân neacoperiți?",
+    "Answer": "Suprafața podelei este 10 m x 8 m = <<10*8=80>>80 metri pătrați. Suprafața covoarei este 4 m x 4 m = <<4*4=16>>16 metri pătrați. Deci, suprafața podelei neacoperită de covor este 80 metri pătrați - 16 metri pătrați = <<80-16=64>>64 metri pătrați. #### 64"
+  }
+]
