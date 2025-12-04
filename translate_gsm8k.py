@@ -8,89 +8,68 @@ print("Current device:", torch.cuda.current_device())
 print("Device name:", torch.cuda.get_device_name(0) if torch.cuda.is_available() else "CPU")
 
 
-# NLLB 600M
-nllb_translate = pipeline(
-    "translation",
-    model="facebook/nllb-200-distilled-600M",
-    src_lang="eng_Latn",
-    tgt_lang="ron_Latn",
-    max_length=256,
-    device=0,
-    do_sample=False
-)
-
-# LLama-3 8B
-llama3_id = "meta-llama/Meta-Llama-3-8B-Instruct"
-llama3_tokenizer = AutoTokenizer.from_pretrained(llama3_id)
-llama3_pipe = pipeline(
-    "text-generation",
-    model=llama3_id,
-    model_kwargs={"torch_dtype": torch.bfloat16},
-    max_new_tokens=256,
-    device=1,
-    do_sample=False,
-    temperature=1.0,
-    top_p=1.0
-)
-
-
-def nllb(sample):
-    return {
-        'question': nllb_translate(sample['question'])[0]['translation_text'],
-        'answer': nllb_translate(sample['answer'])[0]['translation_text']
-    }
-
-
-def llama(sample):
-    base_prompt = (
-        "You are a translator from English to Romanian. You translate math problems with questions and answers. "
-        "You will get such questions and answers to translate. "
-        "Use natural, correct Romanian. Keep the tone simple and clear. "
-        "Preserve numbers and mathematical expressions. Keep these expressions the same as in the english version. "
-        "Output only the translation with no explanation, comments or extra sentences. Do not repeat tokens."
+# ==============================
+# LLM PIPELINE SETUP
+# ==============================
+def init_llm_pipeline(model_id, device, max_tokens=512):
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+    return pipeline(
+        "text-generation",
+        model=model_id,
+        tokenizer=tokenizer,
+        model_kwargs={"torch_dtype": torch.bfloat16},
+        max_new_tokens=max_tokens,
+        device=device,
+        do_sample=False,
+        temperature=1.0,
+        top_p=1.0
     )
 
-    split_token = "Traducere în română:"
 
-    question_prompt = base_prompt + (
-        f"Question to translate: {sample['question']}\n"
-        f"{split_token}"
-    )
-
-    answer_prompt = base_prompt + (
-        f"Answer to translate: {sample['answer']}\n"
-        f"{split_token}"
-    )
-
-    question_out = llama3_pipe(question_prompt, eos_token_id=llama3_pipe.tokenizer.eos_token_id, pad_token_id=llama3_pipe.tokenizer.pad_token_id)[0]["generated_text"]
-    question_translated = question_out.split(split_token)[-1].strip()
-
-    answer_out = llama3_pipe(answer_prompt, eos_token_id=llama3_pipe.tokenizer.eos_token_id, pad_token_id=llama3_pipe.tokenizer.pad_token_id)[0]["generated_text"]
-    answer_translated = answer_out.split(split_token)[-1].strip()
-
-    return {
-        'question': question_translated,
-        'answer': answer_translated
-    }
+# Initialize models on separate GPUs
+eurollm_pipe = init_llm_pipeline("utter-project/EuroLLM-9B-Instruct", device=0)
+gemma_pipe = init_llm_pipeline("google/gemma-3-27b-it", device=1)
+# llama70_pipe = init_llm_pipeline("meta-llama/Llama-4-Scout-17B-16E", device=2)
 
 
-def print_translations(idx, sample, nllb_out, llama_out):
+# ==============================
+# PROMPT FUNCTION (raw output, old style)
+# ==============================
+def make_translation_prompt(sample, target_language="Romanian"):
+    return f""" ## Instructions Imagine you're part of a team at an international education center that's revamping its maths exams for a global audience. Your job is to translate an English question and its answer options into {target_language} so that students from {target_language} schools can be evaluated too. Just provide the final translation—leave out any extra comments or explanations. Use language which is authentic for {target_language} natives. Remember to keep the answer options connected to the question, using the same format as the original (a list for multiple choices or plain text for a single answer). This is important - please make sure that the original format of question and answers is preserved - some formulas/expressions are highlighted by <<expression>> and the final answer is highlighted by ####. Please double check that your final answer is included in the final translation (highlighted by ####). ## Original text Here's what you need to work on: {{ "Original_question": \"\"\"{sample['question']}\"\"\", "Original_answer": \"\"\"{sample['answer']}\"\"\" }} ## Output instructions Fill the fields below with the correct translation into {target_language}. Do not leave them empty. Do not repeat the English text. Do not rewrite the JSON keys. Fill in ONLY the {target_language} text between the quotation marks. Return ONLY this completed JSON object and nothing else: {{ "Question": \"\"\"\n\"\"\", "Answer": \"\"\"\n\"\"\" }} """
+
+# ==============================
+# TRANSLATION FUNCTION
+# ==============================
+def translate_with_llm(sample, llm_pipe, target_language="Romanian"):
+    prompt = make_translation_prompt(sample, target_language)
+    output = llm_pipe(prompt)[0]["generated_text"]
+    return output.strip()
+
+
+# ==============================
+# PRINTING FUNCTION
+# ==============================
+def print_translations(idx, sample, translations):
     print(f"\n===== SAMPLE {idx} =====")
     print("EN QUESTION:", sample["question"])
     print("EN ANSWER:  ", sample["answer"])
-
-    print("\nNLLB QUESTION:", nllb_out["question"])
-    print("NLLB ANSWER:  ", nllb_out["answer"])
-
-    print("\nLLAMA QUESTION:", llama_out["question"])
-    print("LLAMA ANSWER:  ", llama_out["answer"])
+    for name, out in translations.items():
+        print(f"\n{name} TRANSLATION:\n{out}")
     print("=" * 100)
 
 
+# ==============================
+# MAIN LOOP
+# ==============================
 if __name__ == "__main__":
     dataset = load_dataset("openai/gsm8k", name="main", split="train")
-    print(nllb_translate.model.device)
-    print(llama3_pipe.model.device)
 
-    for i in range(50):
-        print_translations(i, dataset[i], nllb(dataset[i]), llama(dataset[i]))
+    for i in range(5):  # testing with first 5 examples
+        sample = dataset[i]
+        translations = {
+            "EuroLLM": translate_with_llm(sample, eurollm_pipe),
+            "Gemma-IT": translate_with_llm(sample, gemma_pipe),
+            #"Llama-70B": translate_with_llm(sample, llama70_pipe)
+        }
+        print_translations(i, sample, translations)
