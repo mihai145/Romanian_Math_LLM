@@ -1,0 +1,22 @@
+[
+  {
+    "Question": "Ali și Ernie au așezat cutii în linie pentru a face cercuri. Ali a folosit 8 cutii pentru fiecare dintre cercurile sale, iar Ernie a folosit 10 pentru ale sale. Dacă la început aveau 80 de cutii și Ali face 5 cercuri, câte cercuri poate face Ernie?",
+    "Answer": "Ali a făcut 5 cercuri cu câte 8 cutii fiecare, deci a folosit 5*8 = <<5*8=40>>40 cutii. La început erau 80 de cutii, deci acum mai sunt 80-40 = <<80-40=40>>40 cutii. Ernie folosește 10 cutii pentru a face un cerc, deci cu 40 de cutii poate face 40/10 = <<40/10=4>>4 cercuri. #### 4"
+  },
+  {
+    "Question": "Alexa a fost în vacanță timp de 3/4 din timpul necesar lui Ethan pentru a învăța 12 trucuri de scrimă. Joey și-a petrecut jumătate din acest timp (pe care Ethan l-a petrecut învățând trucurile) învățând să înoate. Dacă Alexa a petrecut o săptămână și 2 zile în vacanță, câte zile i-au luat lui Joey să învețe să înoate?",
+    "Answer": "Într-o săptămână sunt 7 zile, așa că o săptămână și 2 zile = 7+2 = <<7+2=9>>9 zile. Notăm cu e timpul pe care Ethan l-a petrecut învățând trucurile. Alexa a petrecut 9 zile în vacanță, ceea ce reprezintă 3/4 din timpul pe care Ethan l-a petrecut învățând 12 trucuri de scrimă, deci (3/4)e = 9 zile. Dacă înmulțim ambele părți ale ecuației cu 4/3, obținem e = (4/3)*9 zile = <<(4/3)*9=12>>12 zile. Joey și-a petrecut jumătate din 12 zile, adică 12/2 = <<12/2=6>>6 zile învățând să înoate. #### 6"
+  },
+  {
+    "Question": "Un magazin de dulciuri folosește colorant alimentar pentru diverse dulciuri. Fiecare dulceață pe băț folosește 5ml de colorant alimentar, iar fiecare dulceață tare are nevoie și ea de colorant alimentar. Într-o zi, magazinul de dulciuri produce 100 de dulciuri pe băț și 5 dulciuri tari. Nu folosesc colorant alimentar pentru nimic altceva. Până la sfârșitul zilei, magazinul a folosit 600ml de colorant alimentar. Cât colorant alimentar, în mililitri, are nevoie fiecare dulceață tare?",
+    "Answer": "În total, dulciurile pe băț au avut nevoie de 5ml de colorant alimentar * 100 dulciuri pe băț = <<5*100=500>>500ml de colorant alimentar. Acest lucru înseamnă că dulciurile tari au avut nevoie de 600ml de colorant alimentar total – 500ml de colorant alimentar pentru dulciurile pe băț = 100ml de colorant alimentar. Deci, fiecare dulceață tare a avut nevoie de 100ml de colorant alimentar / 5 dulciuri tari = <<100/5=20>>20 ml de colorant alimentar. #### 20"
+  },
+  {
+    "Question": "Jenny are dureri de stomac. Fratele ei, Mike, spune că este pentru că Jenny a mâncat cu 5 mai mult decât de trei ori numărul de pătrate de ciocolată pe care el le-a mâncat. Dacă Mike a mâncat 20 de pătrate de ciocolată, câte a mâncat Jenny?",
+    "Answer": "De trei ori numărul de pătrate de ciocolată pe care le-a mâncat Mike este 20 de pătrate * 3 = <<20*3=60>>60 de pătrate. Deci, Jenny a mâncat 60 de pătrate + 5 de pătrate = <<60+5=65>>65 de pătrate de ciocolată #### 65"
+  },
+  {
+    "Question": "Un podea dreptunghiulară cu 10 m lungime și 8 m lățime trebuie acoperită cu un covor pătrat cu laturi de 4 m. Câți metri pătrați de podea rămân neacoperiți?",
+    "Answer": "Aria podelei este de 10 m x 8 m = <<10*8=80>>80 metri pătrați. Aria covoarelor este de 4 m x 4 m = <<4*4=16>>16 metri pătrați. Prin urmare, aria podelei neacoperită de covor este de 80 metri pătrați - 16 metri pătrați = <<80-16=64>>64 metri pătrați, #### 64"
+  }
+]

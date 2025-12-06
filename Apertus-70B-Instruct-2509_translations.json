@@ -1,0 +1,22 @@
+[
+  {
+    "Question": "Ali și Ernie au folosit cutii pentru a forma cercuri. Ali a folosit 8 cutii pentru fiecare cerc și Ernie a folosit 10 cutii pentru al său. Au avut inițial 80 de cutii, iar Ali a făcut 5 cercuri. Câte cercuri poate face Ernie?",
+    "Answer": "Ali a făcut 5 cercuri folosind 8 cutii fiecare, deci a folosit 5*8 = <<5*8=40>>40 cutii. Au început cu 80 de cutii, deci au rămas 80-40 = <<80-40=40>>40 cutii. Ernie folosește 10 cutii pentru un cerc, deci cu 40 de cutii poate face 40/10 = <<40/10=4>>4 cercuri. #### 4"
+  },
+  {
+    "Question": "Alexa a fost în vacanță timp de 3/4 din timpul pe care îl a avut nevoie Ethan pentru a învăța 12 trucuri de scrimă. Joey a petrecut jumătate din acest timp învățând să înoate. Dacă Alexa a fost în vacanță o săptămână și 2 zile, adică 9 zile, câte zile i-au trebuit lui Joey să învețe să înoate?",
+    "Answer": "O săptămână are 7 zile, deci 7 zile plus 2 zile înseamnă 9 zile. Să numim timpul pe care l-a petrecut Ethan învățând trucurile e zile. Alexa a fost în vacanță 9 zile, care este 3/4 din timpul pe care l-a petrecut Ethan învățând 12 trucuri de scrimă, deci (3/4)*e = 9 zile. Dacă înmulțim ambele părți ale ecuației cu 4/3, obținem e = (4/3)*9 zile = <<(4/3)*9=12>>12 zile. Joey a petrecut jumătate din 12 zile, adică 12/2 = <<12/2=6>>6 zile să învețe să înoate. #### 6"
+  },
+  {
+    "Question": "Un magazin de dulciuri folosește colorant alimentar pentru diverse prăjituri. Fiecare acadea necesită 5ml de colorant alimentar, iar fiecare bomboană tare necesită și ea colorant alimentar. Într-o zi, magazinul produce 100 de acadele și 5 bomboane tari. Magazinul nu folosește colorant alimentar în nimic altceva. Până la sfârșitul zilei, s-au folosit 600ml de colorant alimentar. Cât colorant alimentar, în mililitri, necesită fiecare bomboană tare?",
+    "Answer": "În total, acadelele au necesitat 5ml de colorant alimentar * 100 de acadele = <<5*100=500>>500ml de colorant alimentar. Asta înseamnă că bomboanele tari au necesitat 600ml de colorant alimentar – 500ml de colorant pentru acadele = 100ml de colorant alimentar. Deci fiecare bomboană tare a necesitat 100ml de colorant alimentar / 5 bomboane tari = <<100/5=20>>20 ml de colorant alimentar. #### 20"
+  },
+  {
+    "Question": "Jenny are o durere de burtă. Fratele ei, Mike, spune că asta se întâmplă pentru că Jenny a mâncat cu 5 mai mult decât de trei ori numărul de pătrate de ciocolată pe care le-a mâncat el. Dacă Mike a mâncat 20 de pătrate de ciocolată, câte a mâncat Jenny?",
+    "Answer": "De trei ori numărul de pătrate de ciocolată mâncate de Mike este 20 * 3 = <<20*3=60>>60. Prin urmare, Jenny a mâncat 60 + 5 = <<60+5=65>>65 de pătrate de ciocolată. #### 65"
+  },
+  {
+    "Question": "Un podea dreptunghiulară lungă de 10 metri și lată de 8 metri urmează să fie acoperită cu un covor pătrat cu latura de 4 metri. Cât de mulți metri pătrați din podea rămân neacoperiți?",
+    "Answer": "Suprafața podelei este 10 m x 8 m = <<10*8=80>>80 metri pătrați. Suprafața covorului este 4 m x 4 m = <<4*4=16>>16 metri pătrați. Prin urmare, suprafața podelei care rămâne neacoperită este 80 metri pătrați - 16 metri pătrați = <<80-16=64>>64 metri pătrați, #### 64"
+  }
+]
