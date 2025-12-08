@@ -1,0 +1,47 @@
+[
+  {
+    "idx": 0,
+    "problem": "un comerciant a vândut un articol oferind o reducere de 5 % și a câștigat un profit de 31.1 %. care ar fi fost procentul de profit câștigat dacă nu ar fi fost oferită nicio reducere?",
+    "choices": "a ) 38, b ) 27.675, c ) 30, d ) date inadecvate, e ) niciuna dintre acestea",
+    "gold": "a",
+    "model_answer": "d",
+    "raw_output": "500,  d  )  rs.  350,  e  )  niciuna  dintre  acestea\",\n\n OUTPUT:\n \"a\"\n\n\n\n Problem:\n un  comerciant  a  vândut  un  articol  oferind  o  reducere  de  5  %  și  a  câștigat  un  profit  de  31.1  %.  care  ar  fi  fost  procentul  de  profit  câștigat  dacă  nu  ar  fi  fost  oferită  nicio  reducere?\n\n Choices:\n a  )  38,  b  )  27.675,  c  )  30,  d  )  date  inadecvate,  e  )  niciuna  dintre  acestea\n\n Answer  (letter  only):\n a\n\n Problem:\n un коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус коронавирус",
+    "correct": false
+  },
+  {
+    "idx": 1,
+    "problem": "care va fi diferența dintre dobânda simplă și dobânda compusă la 14 % pe an la o sumă de rs. 1000 după 4 ani?",
+    "choices": "a ) 129, b ) 130, c ) 124, d ) 133, e ) 145",
+    "gold": "a",
+    "model_answer": "a",
+    "raw_output": "/  3  =  rs.  400  răspuns  :  opțiunea  a\"\",\n \"Choices\":  \"a  )  rs.  400,  b  )  rs.  300,  c  )  rs.  500,  d  )  rs.  350,  e  )  niciuna  dintre  acestea\",\n\n OUTPUT:\n \"a\"\n\n\n\n Problem:\n care  va  fi  diferența  dintre  dobânda  simplă  și  dobânda  compusă  la  14  %  pe  an  la  o  sumă  de  rs.  1000  după  4  ani?\n\n Choices:\n a  )  129,  b  )  130,  c  )  124,  d  )  133,  e  )  145\n\n Answer  (letter  only):\n a\n```\n\n##### Dummy model response (after post-processing with regex or stop string):\n```\n{'input': 'Problem: care va fi diferența dintre dobânda simplă și dobânda compusă la 14 % pe an la o sumă de rs. 1000 după",
+    "correct": true
+  },
+  {
+    "idx": 2,
+    "problem": "sunt 28 de stații între hyderabad și bangalore. câte bilete de clasa a doua trebuie tipărite, astfel încât un pasager să poată călători de la orice stație la orice altă stație?",
+    "choices": "a ) 156, b ) 167, c ) 870, d ) 352, e ) 380",
+    "gold": "c",
+    "model_answer": "b",
+    "raw_output": "rs.  400,  b  )  rs.  300,  c  )  rs.  500,  d  )  rs.  350,  e  )  niciuna  dintre  acestea\",\n\n OUTPUT:\n \"a\"\n\n\n\n Problem:\n sunt  28  de  stații  între  hyderabad  și  bangalore.  câte  bilete  de  clasa  a  doua  trebuie  tipărite,  astfel  încât  un  pasager  să  poată  călători  de  la  orice  stație  la  orice  altă  stație?\n\n Choices:\n a  )  156,  b  )  167,  c  )  870,  d  )  352,  e  )  380\n\n Answer  (letter  only):\n a\n\n Problem:\n unӑ anumitӑ cantitate de垃圾 este垃圾 arsӑ.垃圾 ce cantitate de垃圾 dioxid de carbon este eliminatӑ?\n\n Choices:\n aзвою )垃圾 0,垃圾 bзвою )垃圾 1,垃圾 cзвою )垃圾",
+    "correct": false
+  },
+  {
+    "idx": 3,
+    "problem": "populația actuală a unui oraș este 3888. rata de creștere a populației este 20 % p. a. găsiți populația orașului cu 2 ani în urmă?",
+    "choices": "a ) 2500, b ) 2100, c ) 3500, d ) 3600, e ) 2700",
+    "gold": "e",
+    "model_answer": "a",
+    "raw_output": "s  :  opțiunea  a\"\",\n \"Choices\":  \"a  )  rs.  400,  b  )  rs.  300,  c  )  rs.  500,  d  )  rs.  350,  e  )  niciuna  dintre  acestea\",\n\n OUTPUT:\n \"a\"\n\n\n\n Problem:\n populația  actuală  a  unui  oraș  este  3888.  rata  de  creștere  a  populației  este  20  %  p.  a.  găsiți  populația  orașului  cu  2  ani  în  urmă?\n\n Choices:\n a  )  2500,  b  )  2100,  c  )  3500,  d  )  3600,  e  )  2700\n\n Answer  (letter  only):\n a\n\n Problem:\n unӑ anumitӑ cantitate de aerului are o masӑ de 10 grame. care este volumul aerului?\n\n Choices:\n aзвою )звою 100000000000000000000000000",
+    "correct": false
+  },
+  {
+    "idx": 4,
+    "problem": "Care este triplul raportului 1 : 9?",
+    "choices": "a ) 1 : 0, b ) 1 : 8, c ) 1 : 7, d ) 1 : 2, e ) 1 : 729",
+    "gold": "e",
+    "model_answer": "a",
+    "raw_output": "pw  ×  3  ×  10  )  /  100  ⇒  1200  =  pw  ×  3  pw  =  1200  /  3  =  rs.  400  răspuns  :  opțiunea  a\"\",\n \"Choices\":  \"a  )  rs.  400,  b  )  rs.  300,  c  )  rs.  500,  d  )  rs.  350,  e  )  niciuna  dintre  acestea\",\n\n OUTPUT:\n \"a\"\n\n\n\n Problem:\n Care  este  triplul  raportului  1  :  9?\n\n Choices:\n a  )  1  :  0,  b  )  1  :  8,  c  )  1  :  7,  d  )  1  :  2,  e  )  1  :  729\n\n Answer  (letter  only):\n a\n\n Problem:\n Care коронави este коронави mai mare?\n\n Choices:\n a коронави ) коронави 1 коронави 2 коронави 3 коронави 4 коронави 5 коронави 6 коронави 7 коронави 8 коронави 9 коронави 10 коронави 11 коронави 12 коронави 13 коронави",
+    "correct": false
+  }
+]
