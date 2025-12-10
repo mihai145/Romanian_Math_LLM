@@ -1,0 +1,1166 @@
+  DEPRECATION: Setting PIP_CONSTRAINT will not affect build constraints in the future, pip 26.2 will enforce this behaviour change. A possible replacement is to specify build constraints using --build-constraint or PIP_BUILD_CONSTRAINT. To disable this warning without any build constraints set --use-feature=build-constraint or PIP_USE_FEATURE="build-constraint".
+WARNING: Skipping transformers as it is not installed.
+/usr/local/lib/python3.12/dist-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+CUDA-fused xIELU not available (No module named 'xielu') – falling back to a Python version.
+For CUDA xIELU (experimental), `pip install git+https://github.com/nickjbrowning/XIELU`
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:07,  2.38s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:04<00:04,  2.18s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:06<00:02,  2.11s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.49s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.75s/it]
+Evaluating Apertus-8B-Instruct-2509:   0%|          | 0/181 [00:00<?, ?batch/s]Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+Evaluating Apertus-8B-Instruct-2509:   0%|          | 0/181 [01:46<?, ?batch/s, Acc: 68.75% | Done: 16/2886]Evaluating Apertus-8B-Instruct-2509:   1%|          | 1/181 [01:46<5:20:15, 106.75s/batch, Acc: 68.75% | Done: 16/2886]Evaluating Apertus-8B-Instruct-2509:   1%|          | 1/181 [02:24<5:20:15, 106.75s/batch, Acc: 50.00% | Done: 32/2886]Evaluating Apertus-8B-Instruct-2509:   1%|          | 2/181 [02:24<3:17:34, 66.23s/batch, Acc: 50.00% | Done: 32/2886] Evaluating Apertus-8B-Instruct-2509:   1%|          | 2/181 [03:01<3:17:34, 66.23s/batch, Acc: 41.67% | Done: 48/2886]Evaluating Apertus-8B-Instruct-2509:   2%|▏         | 3/181 [03:01<2:36:19, 52.69s/batch, Acc: 41.67% | Done: 48/2886]Evaluating Apertus-8B-Instruct-2509:   2%|▏         | 3/181 [03:35<2:36:19, 52.69s/batch, Acc: 42.19% | Done: 64/2886]Evaluating Apertus-8B-Instruct-2509:   2%|▏         | 4/181 [03:35<2:13:57, 45.41s/batch, Acc: 42.19% | Done: 64/2886]Evaluating Apertus-8B-Instruct-2509:   2%|▏         | 4/181 [04:16<2:13:57, 45.41s/batch, Acc: 41.25% | Done: 80/2886]Evaluating Apertus-8B-Instruct-2509:   3%|▎         | 5/181 [04:16<2:08:29, 43.81s/batch, Acc: 41.25% | Done: 80/2886]Evaluating Apertus-8B-Instruct-2509:   3%|▎         | 5/181 [04:50<2:08:29, 43.81s/batch, Acc: 39.58% | Done: 96/2886]Evaluating Apertus-8B-Instruct-2509:   3%|▎         | 6/181 [04:50<1:58:14, 40.54s/batch, Acc: 39.58% | Done: 96/2886]Evaluating Apertus-8B-Instruct-2509:   3%|▎         | 6/181 [05:26<1:58:14, 40.54s/batch, Acc: 41.07% | Done: 112/2886]Evaluating Apertus-8B-Instruct-2509:   4%|▍         | 7/181 [05:26<1:53:02, 38.98s/batch, Acc: 41.07% | Done: 112/2886]Evaluating Apertus-8B-Instruct-2509:   4%|▍         | 7/181 [06:01<1:53:02, 38.98s/batch, Acc: 39.84% | Done: 128/2886]Evaluating Apertus-8B-Instruct-2509:   4%|▍         | 8/181 [06:01<1:48:32, 37.64s/batch, Acc: 39.84% | Done: 128/2886]Evaluating Apertus-8B-Instruct-2509:   4%|▍         | 8/181 [06:35<1:48:32, 37.64s/batch, Acc: 40.97% | Done: 144/2886]Evaluating Apertus-8B-Instruct-2509:   5%|▍         | 9/181 [06:35<1:44:43, 36.53s/batch, Acc: 40.97% | Done: 144/2886]Evaluating Apertus-8B-Instruct-2509:   5%|▍         | 9/181 [07:14<1:44:43, 36.53s/batch, Acc: 40.00% | Done: 160/2886]Evaluating Apertus-8B-Instruct-2509:   6%|▌         | 10/181 [07:14<1:46:11, 37.26s/batch, Acc: 40.00% | Done: 160/2886]Evaluating Apertus-8B-Instruct-2509:   6%|▌         | 10/181 [07:51<1:46:11, 37.26s/batch, Acc: 38.64% | Done: 176/2886]Evaluating Apertus-8B-Instruct-2509:   6%|▌         | 11/181 [07:51<1:45:37, 37.28s/batch, Acc: 38.64% | Done: 176/2886]Evaluating Apertus-8B-Instruct-2509:   6%|▌         | 11/181 [08:28<1:45:37, 37.28s/batch, Acc: 39.58% | Done: 192/2886]Evaluating Apertus-8B-Instruct-2509:   7%|▋         | 12/181 [08:28<1:44:33, 37.12s/batch, Acc: 39.58% | Done: 192/2886]Evaluating Apertus-8B-Instruct-2509:   7%|▋         | 12/181 [09:04<1:44:33, 37.12s/batch, Acc: 39.42% | Done: 208/2886]Evaluating Apertus-8B-Instruct-2509:   7%|▋         | 13/181 [09:04<1:43:36, 37.00s/batch, Acc: 39.42% | Done: 208/2886]Evaluating Apertus-8B-Instruct-2509:   7%|▋         | 13/181 [09:41<1:43:36, 37.00s/batch, Acc: 38.39% | Done: 224/2886]Evaluating Apertus-8B-Instruct-2509:   8%|▊         | 14/181 [09:41<1:42:42, 36.90s/batch, Acc: 38.39% | Done: 224/2886]Evaluating Apertus-8B-Instruct-2509:   8%|▊         | 14/181 [10:18<1:42:42, 36.90s/batch, Acc: 37.50% | Done: 240/2886]Evaluating Apertus-8B-Instruct-2509:   8%|▊         | 15/181 [10:18<1:41:57, 36.85s/batch, Acc: 37.50% | Done: 240/2886]Evaluating Apertus-8B-Instruct-2509:   8%|▊         | 15/181 [10:55<1:41:57, 36.85s/batch, Acc: 37.50% | Done: 256/2886]Evaluating Apertus-8B-Instruct-2509:   9%|▉         | 16/181 [10:55<1:41:15, 36.82s/batch, Acc: 37.50% | Done: 256/2886]Evaluating Apertus-8B-Instruct-2509:   9%|▉         | 16/181 [11:31<1:41:15, 36.82s/batch, Acc: 36.76% | Done: 272/2886]Evaluating Apertus-8B-Instruct-2509:   9%|▉         | 17/181 [11:31<1:40:23, 36.73s/batch, Acc: 36.76% | Done: 272/2886]Evaluating Apertus-8B-Instruct-2509:   9%|▉         | 17/181 [12:08<1:40:23, 36.73s/batch, Acc: 36.81% | Done: 288/2886]Evaluating Apertus-8B-Instruct-2509:  10%|▉         | 18/181 [12:08<1:39:45, 36.72s/batch, Acc: 36.81% | Done: 288/2886]Evaluating Apertus-8B-Instruct-2509:  10%|▉         | 18/181 [12:45<1:39:45, 36.72s/batch, Acc: 36.84% | Done: 304/2886]Evaluating Apertus-8B-Instruct-2509:  10%|█         | 19/181 [12:45<1:39:22, 36.80s/batch, Acc: 36.84% | Done: 304/2886]Evaluating Apertus-8B-Instruct-2509:  10%|█         | 19/181 [13:22<1:39:22, 36.80s/batch, Acc: 36.56% | Done: 320/2886]Evaluating Apertus-8B-Instruct-2509:  11%|█         | 20/181 [13:22<1:38:40, 36.77s/batch, Acc: 36.56% | Done: 320/2886]Evaluating Apertus-8B-Instruct-2509:  11%|█         | 20/181 [13:58<1:38:40, 36.77s/batch, Acc: 35.71% | Done: 336/2886]Evaluating Apertus-8B-Instruct-2509:  12%|█▏        | 21/181 [13:58<1:38:00, 36.75s/batch, Acc: 35.71% | Done: 336/2886]Evaluating Apertus-8B-Instruct-2509:  12%|█▏        | 21/181 [14:35<1:38:00, 36.75s/batch, Acc: 36.65% | Done: 352/2886]Evaluating Apertus-8B-Instruct-2509:  12%|█▏        | 22/181 [14:35<1:37:26, 36.77s/batch, Acc: 36.65% | Done: 352/2886]Evaluating Apertus-8B-Instruct-2509:  12%|█▏        | 22/181 [15:12<1:37:26, 36.77s/batch, Acc: 36.41% | Done: 368/2886]Evaluating Apertus-8B-Instruct-2509:  13%|█▎        | 23/181 [15:12<1:36:41, 36.72s/batch, Acc: 36.41% | Done: 368/2886]Evaluating Apertus-8B-Instruct-2509:  13%|█▎        | 23/181 [15:48<1:36:41, 36.72s/batch, Acc: 35.94% | Done: 384/2886]Evaluating Apertus-8B-Instruct-2509:  13%|█▎        | 24/181 [15:48<1:35:55, 36.66s/batch, Acc: 35.94% | Done: 384/2886]Evaluating Apertus-8B-Instruct-2509:  13%|█▎        | 24/181 [16:25<1:35:55, 36.66s/batch, Acc: 35.00% | Done: 400/2886]Evaluating Apertus-8B-Instruct-2509:  14%|█▍        | 25/181 [16:25<1:35:24, 36.70s/batch, Acc: 35.00% | Done: 400/2886]Evaluating Apertus-8B-Instruct-2509:  14%|█▍        | 25/181 [17:01<1:35:24, 36.70s/batch, Acc: 35.10% | Done: 416/2886]Evaluating Apertus-8B-Instruct-2509:  14%|█▍        | 26/181 [17:01<1:34:41, 36.66s/batch, Acc: 35.10% | Done: 416/2886]Evaluating Apertus-8B-Instruct-2509:  14%|█▍        | 26/181 [17:38<1:34:41, 36.66s/batch, Acc: 34.72% | Done: 432/2886]Evaluating Apertus-8B-Instruct-2509:  15%|█▍        | 27/181 [17:38<1:34:06, 36.66s/batch, Acc: 34.72% | Done: 432/2886]Evaluating Apertus-8B-Instruct-2509:  15%|█▍        | 27/181 [18:15<1:34:06, 36.66s/batch, Acc: 34.82% | Done: 448/2886]Evaluating Apertus-8B-Instruct-2509:  15%|█▌        | 28/181 [18:15<1:33:28, 36.65s/batch, Acc: 34.82% | Done: 448/2886]Evaluating Apertus-8B-Instruct-2509:  15%|█▌        | 28/181 [18:55<1:33:28, 36.65s/batch, Acc: 34.70% | Done: 464/2886]Evaluating Apertus-8B-Instruct-2509:  16%|█▌        | 29/181 [18:55<1:35:51, 37.84s/batch, Acc: 34.70% | Done: 464/2886]Evaluating Apertus-8B-Instruct-2509:  16%|█▌        | 29/181 [19:32<1:35:51, 37.84s/batch, Acc: 35.00% | Done: 480/2886]Evaluating Apertus-8B-Instruct-2509:  17%|█▋        | 30/181 [19:32<1:34:30, 37.55s/batch, Acc: 35.00% | Done: 480/2886]Evaluating Apertus-8B-Instruct-2509:  17%|█▋        | 30/181 [20:11<1:34:30, 37.55s/batch, Acc: 35.08% | Done: 496/2886]Evaluating Apertus-8B-Instruct-2509:  17%|█▋        | 31/181 [20:11<1:34:30, 37.80s/batch, Acc: 35.08% | Done: 496/2886]Evaluating Apertus-8B-Instruct-2509:  17%|█▋        | 31/181 [20:48<1:34:30, 37.80s/batch, Acc: 35.16% | Done: 512/2886]Evaluating Apertus-8B-Instruct-2509:  18%|█▊        | 32/181 [20:48<1:33:24, 37.61s/batch, Acc: 35.16% | Done: 512/2886]Evaluating Apertus-8B-Instruct-2509:  18%|█▊        | 32/181 [21:24<1:33:24, 37.61s/batch, Acc: 34.66% | Done: 528/2886]Evaluating Apertus-8B-Instruct-2509:  18%|█▊        | 33/181 [21:24<1:32:03, 37.32s/batch, Acc: 34.66% | Done: 528/2886]Evaluating Apertus-8B-Instruct-2509:  18%|█▊        | 33/181 [22:01<1:32:03, 37.32s/batch, Acc: 34.38% | Done: 544/2886]Evaluating Apertus-8B-Instruct-2509:  19%|█▉        | 34/181 [22:01<1:30:50, 37.08s/batch, Acc: 34.38% | Done: 544/2886]Evaluating Apertus-8B-Instruct-2509:  19%|█▉        | 34/181 [22:38<1:30:50, 37.08s/batch, Acc: 34.29% | Done: 560/2886]Evaluating Apertus-8B-Instruct-2509:  19%|█▉        | 35/181 [22:38<1:29:47, 36.90s/batch, Acc: 34.29% | Done: 560/2886]Evaluating Apertus-8B-Instruct-2509:  19%|█▉        | 35/181 [23:14<1:29:47, 36.90s/batch, Acc: 34.38% | Done: 576/2886]Evaluating Apertus-8B-Instruct-2509:  20%|█▉        | 36/181 [23:14<1:28:47, 36.74s/batch, Acc: 34.38% | Done: 576/2886]Evaluating Apertus-8B-Instruct-2509:  20%|█▉        | 36/181 [23:50<1:28:47, 36.74s/batch, Acc: 34.63% | Done: 592/2886]Evaluating Apertus-8B-Instruct-2509:  20%|██        | 37/181 [23:50<1:28:01, 36.68s/batch, Acc: 34.63% | Done: 592/2886]Evaluating Apertus-8B-Instruct-2509:  20%|██        | 37/181 [24:27<1:28:01, 36.68s/batch, Acc: 34.21% | Done: 608/2886]Evaluating Apertus-8B-Instruct-2509:  21%|██        | 38/181 [24:27<1:27:14, 36.60s/batch, Acc: 34.21% | Done: 608/2886]Evaluating Apertus-8B-Instruct-2509:  21%|██        | 38/181 [25:03<1:27:14, 36.60s/batch, Acc: 34.46% | Done: 624/2886]Evaluating Apertus-8B-Instruct-2509:  22%|██▏       | 39/181 [25:03<1:26:35, 36.58s/batch, Acc: 34.46% | Done: 624/2886]Evaluating Apertus-8B-Instruct-2509:  22%|██▏       | 39/181 [25:40<1:26:35, 36.58s/batch, Acc: 34.22% | Done: 640/2886]Evaluating Apertus-8B-Instruct-2509:  22%|██▏       | 40/181 [25:40<1:26:03, 36.62s/batch, Acc: 34.22% | Done: 640/2886]Evaluating Apertus-8B-Instruct-2509:  22%|██▏       | 40/181 [26:17<1:26:03, 36.62s/batch, Acc: 34.60% | Done: 656/2886]Evaluating Apertus-8B-Instruct-2509:  23%|██▎       | 41/181 [26:17<1:25:32, 36.66s/batch, Acc: 34.60% | Done: 656/2886]Evaluating Apertus-8B-Instruct-2509:  23%|██▎       | 41/181 [26:53<1:25:32, 36.66s/batch, Acc: 34.82% | Done: 672/2886]Evaluating Apertus-8B-Instruct-2509:  23%|██▎       | 42/181 [26:53<1:24:49, 36.62s/batch, Acc: 34.82% | Done: 672/2886]Evaluating Apertus-8B-Instruct-2509:  23%|██▎       | 42/181 [27:30<1:24:49, 36.62s/batch, Acc: 34.59% | Done: 688/2886]Evaluating Apertus-8B-Instruct-2509:  24%|██▍       | 43/181 [27:30<1:24:11, 36.61s/batch, Acc: 34.59% | Done: 688/2886]Evaluating Apertus-8B-Instruct-2509:  24%|██▍       | 43/181 [28:07<1:24:11, 36.61s/batch, Acc: 34.52% | Done: 704/2886]Evaluating Apertus-8B-Instruct-2509:  24%|██▍       | 44/181 [28:07<1:23:34, 36.60s/batch, Acc: 34.52% | Done: 704/2886]Evaluating Apertus-8B-Instruct-2509:  24%|██▍       | 44/181 [28:43<1:23:34, 36.60s/batch, Acc: 34.44% | Done: 720/2886]Evaluating Apertus-8B-Instruct-2509:  25%|██▍       | 45/181 [28:43<1:23:04, 36.65s/batch, Acc: 34.44% | Done: 720/2886]Evaluating Apertus-8B-Instruct-2509:  25%|██▍       | 45/181 [29:20<1:23:04, 36.65s/batch, Acc: 34.24% | Done: 736/2886]Evaluating Apertus-8B-Instruct-2509:  25%|██▌       | 46/181 [29:20<1:22:18, 36.58s/batch, Acc: 34.24% | Done: 736/2886]Evaluating Apertus-8B-Instruct-2509:  25%|██▌       | 46/181 [29:56<1:22:18, 36.58s/batch, Acc: 34.31% | Done: 752/2886]Evaluating Apertus-8B-Instruct-2509:  26%|██▌       | 47/181 [29:56<1:21:31, 36.51s/batch, Acc: 34.31% | Done: 752/2886]Evaluating Apertus-8B-Instruct-2509:  26%|██▌       | 47/181 [30:32<1:21:31, 36.51s/batch, Acc: 34.64% | Done: 768/2886]Evaluating Apertus-8B-Instruct-2509:  27%|██▋       | 48/181 [30:32<1:20:45, 36.43s/batch, Acc: 34.64% | Done: 768/2886]Evaluating Apertus-8B-Instruct-2509:  27%|██▋       | 48/181 [31:11<1:20:45, 36.43s/batch, Acc: 34.44% | Done: 784/2886]Evaluating Apertus-8B-Instruct-2509:  27%|██▋       | 49/181 [31:11<1:21:46, 37.17s/batch, Acc: 34.44% | Done: 784/2886]Evaluating Apertus-8B-Instruct-2509:  27%|██▋       | 49/181 [31:48<1:21:46, 37.17s/batch, Acc: 34.75% | Done: 800/2886]Evaluating Apertus-8B-Instruct-2509:  28%|██▊       | 50/181 [31:48<1:20:37, 36.93s/batch, Acc: 34.75% | Done: 800/2886]Evaluating Apertus-8B-Instruct-2509:  28%|██▊       | 50/181 [32:24<1:20:37, 36.93s/batch, Acc: 35.17% | Done: 816/2886]Evaluating Apertus-8B-Instruct-2509:  28%|██▊       | 51/181 [32:24<1:19:43, 36.80s/batch, Acc: 35.17% | Done: 816/2886]Evaluating Apertus-8B-Instruct-2509:  28%|██▊       | 51/181 [33:00<1:19:43, 36.80s/batch, Acc: 35.46% | Done: 832/2886]Evaluating Apertus-8B-Instruct-2509:  29%|██▊       | 52/181 [33:00<1:18:49, 36.67s/batch, Acc: 35.46% | Done: 832/2886]Evaluating Apertus-8B-Instruct-2509:  29%|██▊       | 52/181 [33:37<1:18:49, 36.67s/batch, Acc: 35.14% | Done: 848/2886]Evaluating Apertus-8B-Instruct-2509:  29%|██▉       | 53/181 [33:37<1:17:57, 36.55s/batch, Acc: 35.14% | Done: 848/2886]Evaluating Apertus-8B-Instruct-2509:  29%|██▉       | 53/181 [34:13<1:17:57, 36.55s/batch, Acc: 35.30% | Done: 864/2886]Evaluating Apertus-8B-Instruct-2509:  30%|██▉       | 54/181 [34:13<1:17:14, 36.49s/batch, Acc: 35.30% | Done: 864/2886]Evaluating Apertus-8B-Instruct-2509:  30%|██▉       | 54/181 [34:50<1:17:14, 36.49s/batch, Acc: 35.57% | Done: 880/2886]Evaluating Apertus-8B-Instruct-2509:  30%|███       | 55/181 [34:50<1:16:43, 36.54s/batch, Acc: 35.57% | Done: 880/2886]Evaluating Apertus-8B-Instruct-2509:  30%|███       | 55/181 [35:26<1:16:43, 36.54s/batch, Acc: 35.83% | Done: 896/2886]Evaluating Apertus-8B-Instruct-2509:  31%|███       | 56/181 [35:26<1:15:56, 36.45s/batch, Acc: 35.83% | Done: 896/2886]Evaluating Apertus-8B-Instruct-2509:  31%|███       | 56/181 [36:02<1:15:56, 36.45s/batch, Acc: 35.86% | Done: 912/2886]Evaluating Apertus-8B-Instruct-2509:  31%|███▏      | 57/181 [36:02<1:15:17, 36.43s/batch, Acc: 35.86% | Done: 912/2886]Evaluating Apertus-8B-Instruct-2509:  31%|███▏      | 57/181 [36:39<1:15:17, 36.43s/batch, Acc: 36.21% | Done: 928/2886]Evaluating Apertus-8B-Instruct-2509:  32%|███▏      | 58/181 [36:39<1:14:50, 36.51s/batch, Acc: 36.21% | Done: 928/2886]Evaluating Apertus-8B-Instruct-2509:  32%|███▏      | 58/181 [37:15<1:14:50, 36.51s/batch, Acc: 36.44% | Done: 944/2886]Evaluating Apertus-8B-Instruct-2509:  33%|███▎      | 59/181 [37:15<1:14:04, 36.43s/batch, Acc: 36.44% | Done: 944/2886]Evaluating Apertus-8B-Instruct-2509:  33%|███▎      | 59/181 [37:51<1:14:04, 36.43s/batch, Acc: 36.56% | Done: 960/2886]Evaluating Apertus-8B-Instruct-2509:  33%|███▎      | 60/181 [37:51<1:13:20, 36.37s/batch, Acc: 36.56% | Done: 960/2886]Evaluating Apertus-8B-Instruct-2509:  33%|███▎      | 60/181 [38:28<1:13:20, 36.37s/batch, Acc: 36.68% | Done: 976/2886]Evaluating Apertus-8B-Instruct-2509:  34%|███▎      | 61/181 [38:28<1:12:41, 36.35s/batch, Acc: 36.68% | Done: 976/2886]Evaluating Apertus-8B-Instruct-2509:  34%|███▎      | 61/181 [39:04<1:12:41, 36.35s/batch, Acc: 36.90% | Done: 992/2886]Evaluating Apertus-8B-Instruct-2509:  34%|███▍      | 62/181 [39:04<1:12:01, 36.31s/batch, Acc: 36.90% | Done: 992/2886]Evaluating Apertus-8B-Instruct-2509:  34%|███▍      | 62/181 [39:40<1:12:01, 36.31s/batch, Acc: 37.10% | Done: 1008/2886]Evaluating Apertus-8B-Instruct-2509:  35%|███▍      | 63/181 [39:40<1:11:22, 36.29s/batch, Acc: 37.10% | Done: 1008/2886]Evaluating Apertus-8B-Instruct-2509:  35%|███▍      | 63/181 [40:17<1:11:22, 36.29s/batch, Acc: 37.21% | Done: 1024/2886]Evaluating Apertus-8B-Instruct-2509:  35%|███▌      | 64/181 [40:17<1:10:50, 36.33s/batch, Acc: 37.21% | Done: 1024/2886]Evaluating Apertus-8B-Instruct-2509:  35%|███▌      | 64/181 [40:53<1:10:50, 36.33s/batch, Acc: 37.02% | Done: 1040/2886]Evaluating Apertus-8B-Instruct-2509:  36%|███▌      | 65/181 [40:53<1:10:16, 36.35s/batch, Acc: 37.02% | Done: 1040/2886]Evaluating Apertus-8B-Instruct-2509:  36%|███▌      | 65/181 [41:29<1:10:16, 36.35s/batch, Acc: 36.93% | Done: 1056/2886]Evaluating Apertus-8B-Instruct-2509:  36%|███▋      | 66/181 [41:29<1:09:34, 36.30s/batch, Acc: 36.93% | Done: 1056/2886]Evaluating Apertus-8B-Instruct-2509:  36%|███▋      | 66/181 [42:06<1:09:34, 36.30s/batch, Acc: 37.13% | Done: 1072/2886]Evaluating Apertus-8B-Instruct-2509:  37%|███▋      | 67/181 [42:06<1:08:57, 36.29s/batch, Acc: 37.13% | Done: 1072/2886]Evaluating Apertus-8B-Instruct-2509:  37%|███▋      | 67/181 [42:42<1:08:57, 36.29s/batch, Acc: 37.04% | Done: 1088/2886]Evaluating Apertus-8B-Instruct-2509:  38%|███▊      | 68/181 [42:42<1:08:21, 36.30s/batch, Acc: 37.04% | Done: 1088/2886]Evaluating Apertus-8B-Instruct-2509:  38%|███▊      | 68/181 [43:18<1:08:21, 36.30s/batch, Acc: 36.96% | Done: 1104/2886]Evaluating Apertus-8B-Instruct-2509:  38%|███▊      | 69/181 [43:18<1:07:52, 36.36s/batch, Acc: 36.96% | Done: 1104/2886]Evaluating Apertus-8B-Instruct-2509:  38%|███▊      | 69/181 [43:55<1:07:52, 36.36s/batch, Acc: 37.05% | Done: 1120/2886]Evaluating Apertus-8B-Instruct-2509:  39%|███▊      | 70/181 [43:55<1:07:15, 36.36s/batch, Acc: 37.05% | Done: 1120/2886]Evaluating Apertus-8B-Instruct-2509:  39%|███▊      | 70/181 [44:31<1:07:15, 36.36s/batch, Acc: 37.06% | Done: 1136/2886]Evaluating Apertus-8B-Instruct-2509:  39%|███▉      | 71/181 [44:31<1:06:50, 36.46s/batch, Acc: 37.06% | Done: 1136/2886]Evaluating Apertus-8B-Instruct-2509:  39%|███▉      | 71/181 [45:08<1:06:50, 36.46s/batch, Acc: 36.89% | Done: 1152/2886]Evaluating Apertus-8B-Instruct-2509:  40%|███▉      | 72/181 [45:08<1:06:05, 36.38s/batch, Acc: 36.89% | Done: 1152/2886]Evaluating Apertus-8B-Instruct-2509:  40%|███▉      | 72/181 [45:44<1:06:05, 36.38s/batch, Acc: 36.73% | Done: 1168/2886]Evaluating Apertus-8B-Instruct-2509:  40%|████      | 73/181 [45:44<1:05:31, 36.40s/batch, Acc: 36.73% | Done: 1168/2886]Evaluating Apertus-8B-Instruct-2509:  40%|████      | 73/181 [46:20<1:05:31, 36.40s/batch, Acc: 36.74% | Done: 1184/2886]Evaluating Apertus-8B-Instruct-2509:  41%|████      | 74/181 [46:20<1:04:56, 36.42s/batch, Acc: 36.74% | Done: 1184/2886]Evaluating Apertus-8B-Instruct-2509:  41%|████      | 74/181 [46:57<1:04:56, 36.42s/batch, Acc: 36.92% | Done: 1200/2886]Evaluating Apertus-8B-Instruct-2509:  41%|████▏     | 75/181 [46:57<1:04:24, 36.46s/batch, Acc: 36.92% | Done: 1200/2886]Evaluating Apertus-8B-Instruct-2509:  41%|████▏     | 75/181 [47:34<1:04:24, 36.46s/batch, Acc: 36.68% | Done: 1216/2886]Evaluating Apertus-8B-Instruct-2509:  42%|████▏     | 76/181 [47:34<1:03:48, 36.46s/batch, Acc: 36.68% | Done: 1216/2886]Evaluating Apertus-8B-Instruct-2509:  42%|████▏     | 76/181 [48:10<1:03:48, 36.46s/batch, Acc: 36.36% | Done: 1232/2886]Evaluating Apertus-8B-Instruct-2509:  43%|████▎     | 77/181 [48:10<1:03:08, 36.43s/batch, Acc: 36.36% | Done: 1232/2886]Evaluating Apertus-8B-Instruct-2509:  43%|████▎     | 77/181 [48:46<1:03:08, 36.43s/batch, Acc: 36.30% | Done: 1248/2886]Evaluating Apertus-8B-Instruct-2509:  43%|████▎     | 78/181 [48:46<1:02:28, 36.39s/batch, Acc: 36.30% | Done: 1248/2886]Evaluating Apertus-8B-Instruct-2509:  43%|████▎     | 78/181 [49:22<1:02:28, 36.39s/batch, Acc: 36.16% | Done: 1264/2886]Evaluating Apertus-8B-Instruct-2509:  44%|████▎     | 79/181 [49:22<1:01:48, 36.36s/batch, Acc: 36.16% | Done: 1264/2886]Evaluating Apertus-8B-Instruct-2509:  44%|████▎     | 79/181 [49:59<1:01:48, 36.36s/batch, Acc: 36.25% | Done: 1280/2886]Evaluating Apertus-8B-Instruct-2509:  44%|████▍     | 80/181 [49:59<1:01:04, 36.28s/batch, Acc: 36.25% | Done: 1280/2886]Evaluating Apertus-8B-Instruct-2509:  44%|████▍     | 80/181 [50:35<1:01:04, 36.28s/batch, Acc: 36.27% | Done: 1296/2886]Evaluating Apertus-8B-Instruct-2509:  45%|████▍     | 81/181 [50:35<1:00:28, 36.29s/batch, Acc: 36.27% | Done: 1296/2886]Evaluating Apertus-8B-Instruct-2509:  45%|████▍     | 81/181 [51:11<1:00:28, 36.29s/batch, Acc: 36.28% | Done: 1312/2886]Evaluating Apertus-8B-Instruct-2509:  45%|████▌     | 82/181 [51:11<59:52, 36.29s/batch, Acc: 36.28% | Done: 1312/2886]  Evaluating Apertus-8B-Instruct-2509:  45%|████▌     | 82/181 [51:48<59:52, 36.29s/batch, Acc: 36.30% | Done: 1328/2886]Evaluating Apertus-8B-Instruct-2509:  46%|████▌     | 83/181 [51:48<59:18, 36.31s/batch, Acc: 36.30% | Done: 1328/2886]Evaluating Apertus-8B-Instruct-2509:  46%|████▌     | 83/181 [52:24<59:18, 36.31s/batch, Acc: 36.24% | Done: 1344/2886]Evaluating Apertus-8B-Instruct-2509:  46%|████▋     | 84/181 [52:24<58:51, 36.40s/batch, Acc: 36.24% | Done: 1344/2886]Evaluating Apertus-8B-Instruct-2509:  46%|████▋     | 84/181 [53:00<58:51, 36.40s/batch, Acc: 36.25% | Done: 1360/2886]Evaluating Apertus-8B-Instruct-2509:  47%|████▋     | 85/181 [53:00<58:11, 36.37s/batch, Acc: 36.25% | Done: 1360/2886]Evaluating Apertus-8B-Instruct-2509:  47%|████▋     | 85/181 [53:37<58:11, 36.37s/batch, Acc: 36.34% | Done: 1376/2886]Evaluating Apertus-8B-Instruct-2509:  48%|████▊     | 86/181 [53:37<57:31, 36.33s/batch, Acc: 36.34% | Done: 1376/2886]Evaluating Apertus-8B-Instruct-2509:  48%|████▊     | 86/181 [54:13<57:31, 36.33s/batch, Acc: 36.35% | Done: 1392/2886]Evaluating Apertus-8B-Instruct-2509:  48%|████▊     | 87/181 [54:13<56:51, 36.30s/batch, Acc: 36.35% | Done: 1392/2886]Evaluating Apertus-8B-Instruct-2509:  48%|████▊     | 87/181 [54:49<56:51, 36.30s/batch, Acc: 36.29% | Done: 1408/2886]Evaluating Apertus-8B-Instruct-2509:  49%|████▊     | 88/181 [54:49<56:15, 36.30s/batch, Acc: 36.29% | Done: 1408/2886]Evaluating Apertus-8B-Instruct-2509:  49%|████▊     | 88/181 [55:26<56:15, 36.30s/batch, Acc: 36.31% | Done: 1424/2886]Evaluating Apertus-8B-Instruct-2509:  49%|████▉     | 89/181 [55:26<55:40, 36.31s/batch, Acc: 36.31% | Done: 1424/2886]Evaluating Apertus-8B-Instruct-2509:  49%|████▉     | 89/181 [56:02<55:40, 36.31s/batch, Acc: 36.32% | Done: 1440/2886]Evaluating Apertus-8B-Instruct-2509:  50%|████▉     | 90/181 [56:02<55:09, 36.37s/batch, Acc: 36.32% | Done: 1440/2886]Evaluating Apertus-8B-Instruct-2509:  50%|████▉     | 90/181 [56:38<55:09, 36.37s/batch, Acc: 36.33% | Done: 1456/2886]Evaluating Apertus-8B-Instruct-2509:  50%|█████     | 91/181 [56:38<54:32, 36.36s/batch, Acc: 36.33% | Done: 1456/2886]Evaluating Apertus-8B-Instruct-2509:  50%|█████     | 91/181 [57:15<54:32, 36.36s/batch, Acc: 36.28% | Done: 1472/2886]Evaluating Apertus-8B-Instruct-2509:  51%|█████     | 92/181 [57:15<54:01, 36.42s/batch, Acc: 36.28% | Done: 1472/2886]Evaluating Apertus-8B-Instruct-2509:  51%|█████     | 92/181 [57:51<54:01, 36.42s/batch, Acc: 36.29% | Done: 1488/2886]Evaluating Apertus-8B-Instruct-2509:  51%|█████▏    | 93/181 [57:51<53:23, 36.41s/batch, Acc: 36.29% | Done: 1488/2886]Evaluating Apertus-8B-Instruct-2509:  51%|█████▏    | 93/181 [58:28<53:23, 36.41s/batch, Acc: 36.37% | Done: 1504/2886]Evaluating Apertus-8B-Instruct-2509:  52%|█████▏    | 94/181 [58:28<52:49, 36.43s/batch, Acc: 36.37% | Done: 1504/2886]Evaluating Apertus-8B-Instruct-2509:  52%|█████▏    | 94/181 [59:04<52:49, 36.43s/batch, Acc: 36.58% | Done: 1520/2886]Evaluating Apertus-8B-Instruct-2509:  52%|█████▏    | 95/181 [59:04<52:06, 36.36s/batch, Acc: 36.58% | Done: 1520/2886]Evaluating Apertus-8B-Instruct-2509:  52%|█████▏    | 95/181 [59:40<52:06, 36.36s/batch, Acc: 36.85% | Done: 1536/2886]Evaluating Apertus-8B-Instruct-2509:  53%|█████▎    | 96/181 [59:40<51:30, 36.36s/batch, Acc: 36.85% | Done: 1536/2886]Evaluating Apertus-8B-Instruct-2509:  53%|█████▎    | 96/181 [1:00:20<51:30, 36.36s/batch, Acc: 36.79% | Done: 1552/2886]Evaluating Apertus-8B-Instruct-2509:  54%|█████▎    | 97/181 [1:00:20<52:06, 37.23s/batch, Acc: 36.79% | Done: 1552/2886]Evaluating Apertus-8B-Instruct-2509:  54%|█████▎    | 97/181 [1:00:56<52:06, 37.23s/batch, Acc: 36.61% | Done: 1568/2886]Evaluating Apertus-8B-Instruct-2509:  54%|█████▍    | 98/181 [1:00:56<51:08, 36.96s/batch, Acc: 36.61% | Done: 1568/2886]Evaluating Apertus-8B-Instruct-2509:  54%|█████▍    | 98/181 [1:01:32<51:08, 36.96s/batch, Acc: 36.68% | Done: 1584/2886]Evaluating Apertus-8B-Instruct-2509:  55%|█████▍    | 99/181 [1:01:32<50:14, 36.77s/batch, Acc: 36.68% | Done: 1584/2886]Evaluating Apertus-8B-Instruct-2509:  55%|█████▍    | 99/181 [1:02:09<50:14, 36.77s/batch, Acc: 36.94% | Done: 1600/2886]Evaluating Apertus-8B-Instruct-2509:  55%|█████▌    | 100/181 [1:02:09<49:31, 36.68s/batch, Acc: 36.94% | Done: 1600/2886]Evaluating Apertus-8B-Instruct-2509:  55%|█████▌    | 100/181 [1:02:45<49:31, 36.68s/batch, Acc: 36.94% | Done: 1616/2886]Evaluating Apertus-8B-Instruct-2509:  56%|█████▌    | 101/181 [1:02:45<48:40, 36.51s/batch, Acc: 36.94% | Done: 1616/2886]Evaluating Apertus-8B-Instruct-2509:  56%|█████▌    | 101/181 [1:03:21<48:40, 36.51s/batch, Acc: 37.01% | Done: 1632/2886]Evaluating Apertus-8B-Instruct-2509:  56%|█████▋    | 102/181 [1:03:21<48:02, 36.48s/batch, Acc: 37.01% | Done: 1632/2886]Evaluating Apertus-8B-Instruct-2509:  56%|█████▋    | 102/181 [1:03:58<48:02, 36.48s/batch, Acc: 37.14% | Done: 1648/2886]Evaluating Apertus-8B-Instruct-2509:  57%|█████▋    | 103/181 [1:03:58<47:24, 36.46s/batch, Acc: 37.14% | Done: 1648/2886]Evaluating Apertus-8B-Instruct-2509:  57%|█████▋    | 103/181 [1:04:34<47:24, 36.46s/batch, Acc: 37.20% | Done: 1664/2886]Evaluating Apertus-8B-Instruct-2509:  57%|█████▋    | 104/181 [1:04:34<46:49, 36.49s/batch, Acc: 37.20% | Done: 1664/2886]Evaluating Apertus-8B-Instruct-2509:  57%|█████▋    | 104/181 [1:05:11<46:49, 36.49s/batch, Acc: 37.44% | Done: 1680/2886]Evaluating Apertus-8B-Instruct-2509:  58%|█████▊    | 105/181 [1:05:11<46:12, 36.48s/batch, Acc: 37.44% | Done: 1680/2886]Evaluating Apertus-8B-Instruct-2509:  58%|█████▊    | 105/181 [1:05:47<46:12, 36.48s/batch, Acc: 37.26% | Done: 1696/2886]Evaluating Apertus-8B-Instruct-2509:  59%|█████▊    | 106/181 [1:05:47<45:38, 36.51s/batch, Acc: 37.26% | Done: 1696/2886]Evaluating Apertus-8B-Instruct-2509:  59%|█████▊    | 106/181 [1:06:24<45:38, 36.51s/batch, Acc: 37.50% | Done: 1712/2886]Evaluating Apertus-8B-Instruct-2509:  59%|█████▉    | 107/181 [1:06:24<44:58, 36.46s/batch, Acc: 37.50% | Done: 1712/2886]Evaluating Apertus-8B-Instruct-2509:  59%|█████▉    | 107/181 [1:07:00<44:58, 36.46s/batch, Acc: 37.44% | Done: 1728/2886]Evaluating Apertus-8B-Instruct-2509:  60%|█████▉    | 108/181 [1:07:00<44:22, 36.47s/batch, Acc: 37.44% | Done: 1728/2886]Evaluating Apertus-8B-Instruct-2509:  60%|█████▉    | 108/181 [1:07:37<44:22, 36.47s/batch, Acc: 37.44% | Done: 1744/2886]Evaluating Apertus-8B-Instruct-2509:  60%|██████    | 109/181 [1:07:37<43:46, 36.48s/batch, Acc: 37.44% | Done: 1744/2886]Evaluating Apertus-8B-Instruct-2509:  60%|██████    | 109/181 [1:08:13<43:46, 36.48s/batch, Acc: 37.44% | Done: 1760/2886]Evaluating Apertus-8B-Instruct-2509:  61%|██████    | 110/181 [1:08:13<43:08, 36.46s/batch, Acc: 37.44% | Done: 1760/2886]Evaluating Apertus-8B-Instruct-2509:  61%|██████    | 110/181 [1:08:50<43:08, 36.46s/batch, Acc: 37.50% | Done: 1776/2886]Evaluating Apertus-8B-Instruct-2509:  61%|██████▏   | 111/181 [1:08:50<42:39, 36.56s/batch, Acc: 37.50% | Done: 1776/2886]Evaluating Apertus-8B-Instruct-2509:  61%|██████▏   | 111/181 [1:09:26<42:39, 36.56s/batch, Acc: 37.50% | Done: 1792/2886]Evaluating Apertus-8B-Instruct-2509:  62%|██████▏   | 112/181 [1:09:26<41:57, 36.48s/batch, Acc: 37.50% | Done: 1792/2886]Evaluating Apertus-8B-Instruct-2509:  62%|██████▏   | 112/181 [1:10:03<41:57, 36.48s/batch, Acc: 37.50% | Done: 1808/2886]Evaluating Apertus-8B-Instruct-2509:  62%|██████▏   | 113/181 [1:10:03<41:18, 36.45s/batch, Acc: 37.50% | Done: 1808/2886]Evaluating Apertus-8B-Instruct-2509:  62%|██████▏   | 113/181 [1:10:39<41:18, 36.45s/batch, Acc: 37.50% | Done: 1824/2886]Evaluating Apertus-8B-Instruct-2509:  63%|██████▎   | 114/181 [1:10:39<40:40, 36.43s/batch, Acc: 37.50% | Done: 1824/2886]Evaluating Apertus-8B-Instruct-2509:  63%|██████▎   | 114/181 [1:11:15<40:40, 36.43s/batch, Acc: 37.72% | Done: 1840/2886]Evaluating Apertus-8B-Instruct-2509:  64%|██████▎   | 115/181 [1:11:15<40:02, 36.40s/batch, Acc: 37.72% | Done: 1840/2886]Evaluating Apertus-8B-Instruct-2509:  64%|██████▎   | 115/181 [1:11:52<40:02, 36.40s/batch, Acc: 37.66% | Done: 1856/2886]Evaluating Apertus-8B-Instruct-2509:  64%|██████▍   | 116/181 [1:11:52<39:26, 36.41s/batch, Acc: 37.66% | Done: 1856/2886]Evaluating Apertus-8B-Instruct-2509:  64%|██████▍   | 116/181 [1:12:28<39:26, 36.41s/batch, Acc: 37.71% | Done: 1872/2886]Evaluating Apertus-8B-Instruct-2509:  65%|██████▍   | 117/181 [1:12:28<38:44, 36.32s/batch, Acc: 37.71% | Done: 1872/2886]Evaluating Apertus-8B-Instruct-2509:  65%|██████▍   | 117/181 [1:13:04<38:44, 36.32s/batch, Acc: 37.76% | Done: 1888/2886]Evaluating Apertus-8B-Instruct-2509:  65%|██████▌   | 118/181 [1:13:04<38:08, 36.33s/batch, Acc: 37.76% | Done: 1888/2886]Evaluating Apertus-8B-Instruct-2509:  65%|██████▌   | 118/181 [1:13:41<38:08, 36.33s/batch, Acc: 37.66% | Done: 1904/2886]Evaluating Apertus-8B-Instruct-2509:  66%|██████▌   | 119/181 [1:13:41<37:35, 36.37s/batch, Acc: 37.66% | Done: 1904/2886]Evaluating Apertus-8B-Instruct-2509:  66%|██████▌   | 119/181 [1:14:17<37:35, 36.37s/batch, Acc: 37.71% | Done: 1920/2886]Evaluating Apertus-8B-Instruct-2509:  66%|██████▋   | 120/181 [1:14:17<36:58, 36.37s/batch, Acc: 37.71% | Done: 1920/2886]Evaluating Apertus-8B-Instruct-2509:  66%|██████▋   | 120/181 [1:14:53<36:58, 36.37s/batch, Acc: 37.65% | Done: 1936/2886]Evaluating Apertus-8B-Instruct-2509:  67%|██████▋   | 121/181 [1:14:53<36:18, 36.32s/batch, Acc: 37.65% | Done: 1936/2886]Evaluating Apertus-8B-Instruct-2509:  67%|██████▋   | 121/181 [1:15:29<36:18, 36.32s/batch, Acc: 37.60% | Done: 1952/2886]Evaluating Apertus-8B-Instruct-2509:  67%|██████▋   | 122/181 [1:15:29<35:37, 36.23s/batch, Acc: 37.60% | Done: 1952/2886]Evaluating Apertus-8B-Instruct-2509:  67%|██████▋   | 122/181 [1:16:06<35:37, 36.23s/batch, Acc: 37.55% | Done: 1968/2886]Evaluating Apertus-8B-Instruct-2509:  68%|██████▊   | 123/181 [1:16:06<35:04, 36.29s/batch, Acc: 37.55% | Done: 1968/2886]Evaluating Apertus-8B-Instruct-2509:  68%|██████▊   | 123/181 [1:16:42<35:04, 36.29s/batch, Acc: 37.65% | Done: 1984/2886]Evaluating Apertus-8B-Instruct-2509:  69%|██████▊   | 124/181 [1:16:42<34:29, 36.31s/batch, Acc: 37.65% | Done: 1984/2886]Evaluating Apertus-8B-Instruct-2509:  69%|██████▊   | 124/181 [1:17:18<34:29, 36.31s/batch, Acc: 37.70% | Done: 2000/2886]Evaluating Apertus-8B-Instruct-2509:  69%|██████▉   | 125/181 [1:17:18<33:50, 36.25s/batch, Acc: 37.70% | Done: 2000/2886]Evaluating Apertus-8B-Instruct-2509:  69%|██████▉   | 125/181 [1:17:54<33:50, 36.25s/batch, Acc: 37.90% | Done: 2016/2886]Evaluating Apertus-8B-Instruct-2509:  70%|██████▉   | 126/181 [1:17:54<33:13, 36.25s/batch, Acc: 37.90% | Done: 2016/2886]Evaluating Apertus-8B-Instruct-2509:  70%|██████▉   | 126/181 [1:18:30<33:13, 36.25s/batch, Acc: 37.89% | Done: 2032/2886]Evaluating Apertus-8B-Instruct-2509:  70%|███████   | 127/181 [1:18:30<32:35, 36.21s/batch, Acc: 37.89% | Done: 2032/2886]Evaluating Apertus-8B-Instruct-2509:  70%|███████   | 127/181 [1:19:07<32:35, 36.21s/batch, Acc: 37.94% | Done: 2048/2886]Evaluating Apertus-8B-Instruct-2509:  71%|███████   | 128/181 [1:19:07<32:01, 36.25s/batch, Acc: 37.94% | Done: 2048/2886]Evaluating Apertus-8B-Instruct-2509:  71%|███████   | 128/181 [1:19:43<32:01, 36.25s/batch, Acc: 38.03% | Done: 2064/2886]Evaluating Apertus-8B-Instruct-2509:  71%|███████▏  | 129/181 [1:19:43<31:25, 36.27s/batch, Acc: 38.03% | Done: 2064/2886]Evaluating Apertus-8B-Instruct-2509:  71%|███████▏  | 129/181 [1:20:20<31:25, 36.27s/batch, Acc: 37.93% | Done: 2080/2886]Evaluating Apertus-8B-Instruct-2509:  72%|███████▏  | 130/181 [1:20:20<30:52, 36.33s/batch, Acc: 37.93% | Done: 2080/2886]Evaluating Apertus-8B-Instruct-2509:  72%|███████▏  | 130/181 [1:20:56<30:52, 36.33s/batch, Acc: 37.83% | Done: 2096/2886]Evaluating Apertus-8B-Instruct-2509:  72%|███████▏  | 131/181 [1:20:56<30:15, 36.30s/batch, Acc: 37.83% | Done: 2096/2886]Evaluating Apertus-8B-Instruct-2509:  72%|███████▏  | 131/181 [1:21:32<30:15, 36.30s/batch, Acc: 37.69% | Done: 2112/2886]Evaluating Apertus-8B-Instruct-2509:  73%|███████▎  | 132/181 [1:21:32<29:39, 36.32s/batch, Acc: 37.69% | Done: 2112/2886]Evaluating Apertus-8B-Instruct-2509:  73%|███████▎  | 132/181 [1:22:08<29:39, 36.32s/batch, Acc: 37.69% | Done: 2128/2886]Evaluating Apertus-8B-Instruct-2509:  73%|███████▎  | 133/181 [1:22:08<29:02, 36.31s/batch, Acc: 37.69% | Done: 2128/2886]Evaluating Apertus-8B-Instruct-2509:  73%|███████▎  | 133/181 [1:22:45<29:02, 36.31s/batch, Acc: 37.55% | Done: 2144/2886]Evaluating Apertus-8B-Instruct-2509:  74%|███████▍  | 134/181 [1:22:45<28:24, 36.26s/batch, Acc: 37.55% | Done: 2144/2886]Evaluating Apertus-8B-Instruct-2509:  74%|███████▍  | 134/181 [1:23:21<28:24, 36.26s/batch, Acc: 37.45% | Done: 2160/2886]Evaluating Apertus-8B-Instruct-2509:  75%|███████▍  | 135/181 [1:23:21<27:44, 36.19s/batch, Acc: 37.45% | Done: 2160/2886]Evaluating Apertus-8B-Instruct-2509:  75%|███████▍  | 135/181 [1:23:57<27:44, 36.19s/batch, Acc: 37.73% | Done: 2176/2886]Evaluating Apertus-8B-Instruct-2509:  75%|███████▌  | 136/181 [1:23:57<27:04, 36.11s/batch, Acc: 37.73% | Done: 2176/2886]Evaluating Apertus-8B-Instruct-2509:  75%|███████▌  | 136/181 [1:24:33<27:04, 36.11s/batch, Acc: 37.86% | Done: 2192/2886]Evaluating Apertus-8B-Instruct-2509:  76%|███████▌  | 137/181 [1:24:33<26:33, 36.22s/batch, Acc: 37.86% | Done: 2192/2886]Evaluating Apertus-8B-Instruct-2509:  76%|███████▌  | 137/181 [1:25:09<26:33, 36.22s/batch, Acc: 37.86% | Done: 2208/2886]Evaluating Apertus-8B-Instruct-2509:  76%|███████▌  | 138/181 [1:25:09<25:56, 36.20s/batch, Acc: 37.86% | Done: 2208/2886]Evaluating Apertus-8B-Instruct-2509:  76%|███████▌  | 138/181 [1:25:45<25:56, 36.20s/batch, Acc: 37.86% | Done: 2224/2886]Evaluating Apertus-8B-Instruct-2509:  77%|███████▋  | 139/181 [1:25:45<25:18, 36.16s/batch, Acc: 37.86% | Done: 2224/2886]Evaluating Apertus-8B-Instruct-2509:  77%|███████▋  | 139/181 [1:26:21<25:18, 36.16s/batch, Acc: 37.77% | Done: 2240/2886]Evaluating Apertus-8B-Instruct-2509:  77%|███████▋  | 140/181 [1:26:21<24:43, 36.18s/batch, Acc: 37.77% | Done: 2240/2886]Evaluating Apertus-8B-Instruct-2509:  77%|███████▋  | 140/181 [1:26:58<24:43, 36.18s/batch, Acc: 37.81% | Done: 2256/2886]Evaluating Apertus-8B-Instruct-2509:  78%|███████▊  | 141/181 [1:26:58<24:09, 36.23s/batch, Acc: 37.81% | Done: 2256/2886]Evaluating Apertus-8B-Instruct-2509:  78%|███████▊  | 141/181 [1:27:34<24:09, 36.23s/batch, Acc: 37.76% | Done: 2272/2886]Evaluating Apertus-8B-Instruct-2509:  78%|███████▊  | 142/181 [1:27:34<23:34, 36.27s/batch, Acc: 37.76% | Done: 2272/2886]Evaluating Apertus-8B-Instruct-2509:  78%|███████▊  | 142/181 [1:28:11<23:34, 36.27s/batch, Acc: 37.67% | Done: 2288/2886]Evaluating Apertus-8B-Instruct-2509:  79%|███████▉  | 143/181 [1:28:11<23:00, 36.32s/batch, Acc: 37.67% | Done: 2288/2886]Evaluating Apertus-8B-Instruct-2509:  79%|███████▉  | 143/181 [1:28:47<23:00, 36.32s/batch, Acc: 37.76% | Done: 2304/2886]Evaluating Apertus-8B-Instruct-2509:  80%|███████▉  | 144/181 [1:28:47<22:24, 36.34s/batch, Acc: 37.76% | Done: 2304/2886]Evaluating Apertus-8B-Instruct-2509:  80%|███████▉  | 144/181 [1:29:23<22:24, 36.34s/batch, Acc: 37.72% | Done: 2320/2886]Evaluating Apertus-8B-Instruct-2509:  80%|████████  | 145/181 [1:29:23<21:46, 36.30s/batch, Acc: 37.72% | Done: 2320/2886]Evaluating Apertus-8B-Instruct-2509:  80%|████████  | 145/181 [1:29:59<21:46, 36.30s/batch, Acc: 37.80% | Done: 2336/2886]Evaluating Apertus-8B-Instruct-2509:  81%|████████  | 146/181 [1:29:59<21:08, 36.26s/batch, Acc: 37.80% | Done: 2336/2886]Evaluating Apertus-8B-Instruct-2509:  81%|████████  | 146/181 [1:30:36<21:08, 36.26s/batch, Acc: 37.88% | Done: 2352/2886]Evaluating Apertus-8B-Instruct-2509:  81%|████████  | 147/181 [1:30:36<20:33, 36.27s/batch, Acc: 37.88% | Done: 2352/2886]Evaluating Apertus-8B-Instruct-2509:  81%|████████  | 147/181 [1:31:12<20:33, 36.27s/batch, Acc: 37.84% | Done: 2368/2886]Evaluating Apertus-8B-Instruct-2509:  82%|████████▏ | 148/181 [1:31:12<19:57, 36.29s/batch, Acc: 37.84% | Done: 2368/2886]Evaluating Apertus-8B-Instruct-2509:  82%|████████▏ | 148/181 [1:31:48<19:57, 36.29s/batch, Acc: 37.92% | Done: 2384/2886]Evaluating Apertus-8B-Instruct-2509:  82%|████████▏ | 149/181 [1:31:48<19:20, 36.26s/batch, Acc: 37.92% | Done: 2384/2886]Evaluating Apertus-8B-Instruct-2509:  82%|████████▏ | 149/181 [1:32:25<19:20, 36.26s/batch, Acc: 37.79% | Done: 2400/2886]Evaluating Apertus-8B-Instruct-2509:  83%|████████▎ | 150/181 [1:32:25<18:45, 36.32s/batch, Acc: 37.79% | Done: 2400/2886]Evaluating Apertus-8B-Instruct-2509:  83%|████████▎ | 150/181 [1:33:01<18:45, 36.32s/batch, Acc: 37.75% | Done: 2416/2886]Evaluating Apertus-8B-Instruct-2509:  83%|████████▎ | 151/181 [1:33:01<18:06, 36.22s/batch, Acc: 37.75% | Done: 2416/2886]Evaluating Apertus-8B-Instruct-2509:  83%|████████▎ | 151/181 [1:33:37<18:06, 36.22s/batch, Acc: 37.79% | Done: 2432/2886]Evaluating Apertus-8B-Instruct-2509:  84%|████████▍ | 152/181 [1:33:37<17:27, 36.13s/batch, Acc: 37.79% | Done: 2432/2886]Evaluating Apertus-8B-Instruct-2509:  84%|████████▍ | 152/181 [1:34:13<17:27, 36.13s/batch, Acc: 37.79% | Done: 2448/2886]Evaluating Apertus-8B-Instruct-2509:  85%|████████▍ | 153/181 [1:34:13<16:53, 36.19s/batch, Acc: 37.79% | Done: 2448/2886]Evaluating Apertus-8B-Instruct-2509:  85%|████████▍ | 153/181 [1:34:49<16:53, 36.19s/batch, Acc: 37.78% | Done: 2464/2886]Evaluating Apertus-8B-Instruct-2509:  85%|████████▌ | 154/181 [1:34:49<16:18, 36.23s/batch, Acc: 37.78% | Done: 2464/2886]Evaluating Apertus-8B-Instruct-2509:  85%|████████▌ | 154/181 [1:35:25<16:18, 36.23s/batch, Acc: 37.94% | Done: 2480/2886]Evaluating Apertus-8B-Instruct-2509:  86%|████████▌ | 155/181 [1:35:25<15:40, 36.19s/batch, Acc: 37.94% | Done: 2480/2886]Evaluating Apertus-8B-Instruct-2509:  86%|████████▌ | 155/181 [1:36:01<15:40, 36.19s/batch, Acc: 37.94% | Done: 2496/2886]Evaluating Apertus-8B-Instruct-2509:  86%|████████▌ | 156/181 [1:36:01<15:04, 36.19s/batch, Acc: 37.94% | Done: 2496/2886]Evaluating Apertus-8B-Instruct-2509:  86%|████████▌ | 156/181 [1:36:38<15:04, 36.19s/batch, Acc: 37.86% | Done: 2512/2886]Evaluating Apertus-8B-Instruct-2509:  87%|████████▋ | 157/181 [1:36:38<14:30, 36.26s/batch, Acc: 37.86% | Done: 2512/2886]Evaluating Apertus-8B-Instruct-2509:  87%|████████▋ | 157/181 [1:37:14<14:30, 36.26s/batch, Acc: 37.78% | Done: 2528/2886]Evaluating Apertus-8B-Instruct-2509:  87%|████████▋ | 158/181 [1:37:14<13:55, 36.34s/batch, Acc: 37.78% | Done: 2528/2886]Evaluating Apertus-8B-Instruct-2509:  87%|████████▋ | 158/181 [1:37:51<13:55, 36.34s/batch, Acc: 37.81% | Done: 2544/2886]Evaluating Apertus-8B-Instruct-2509:  88%|████████▊ | 159/181 [1:37:51<13:19, 36.32s/batch, Acc: 37.81% | Done: 2544/2886]Evaluating Apertus-8B-Instruct-2509:  88%|████████▊ | 159/181 [1:38:27<13:19, 36.32s/batch, Acc: 37.89% | Done: 2560/2886]Evaluating Apertus-8B-Instruct-2509:  88%|████████▊ | 160/181 [1:38:27<12:42, 36.33s/batch, Acc: 37.89% | Done: 2560/2886]Evaluating Apertus-8B-Instruct-2509:  88%|████████▊ | 160/181 [1:39:03<12:42, 36.33s/batch, Acc: 37.89% | Done: 2576/2886]Evaluating Apertus-8B-Instruct-2509:  89%|████████▉ | 161/181 [1:39:03<12:06, 36.33s/batch, Acc: 37.89% | Done: 2576/2886]Evaluating Apertus-8B-Instruct-2509:  89%|████████▉ | 161/181 [1:39:40<12:06, 36.33s/batch, Acc: 37.77% | Done: 2592/2886]Evaluating Apertus-8B-Instruct-2509:  90%|████████▉ | 162/181 [1:39:40<11:30, 36.35s/batch, Acc: 37.77% | Done: 2592/2886]Evaluating Apertus-8B-Instruct-2509:  90%|████████▉ | 162/181 [1:40:16<11:30, 36.35s/batch, Acc: 37.85% | Done: 2608/2886]Evaluating Apertus-8B-Instruct-2509:  90%|█████████ | 163/181 [1:40:16<10:55, 36.39s/batch, Acc: 37.85% | Done: 2608/2886]Evaluating Apertus-8B-Instruct-2509:  90%|█████████ | 163/181 [1:40:52<10:55, 36.39s/batch, Acc: 37.69% | Done: 2624/2886]Evaluating Apertus-8B-Instruct-2509:  91%|█████████ | 164/181 [1:40:52<10:16, 36.27s/batch, Acc: 37.69% | Done: 2624/2886]Evaluating Apertus-8B-Instruct-2509:  91%|█████████ | 164/181 [1:41:29<10:16, 36.27s/batch, Acc: 37.65% | Done: 2640/2886]Evaluating Apertus-8B-Instruct-2509:  91%|█████████ | 165/181 [1:41:29<09:40, 36.27s/batch, Acc: 37.65% | Done: 2640/2886]Evaluating Apertus-8B-Instruct-2509:  91%|█████████ | 165/181 [1:42:05<09:40, 36.27s/batch, Acc: 37.73% | Done: 2656/2886]Evaluating Apertus-8B-Instruct-2509:  92%|█████████▏| 166/181 [1:42:05<09:04, 36.28s/batch, Acc: 37.73% | Done: 2656/2886]Evaluating Apertus-8B-Instruct-2509:  92%|█████████▏| 166/181 [1:42:41<09:04, 36.28s/batch, Acc: 37.65% | Done: 2672/2886]Evaluating Apertus-8B-Instruct-2509:  92%|█████████▏| 167/181 [1:42:41<08:27, 36.27s/batch, Acc: 37.65% | Done: 2672/2886]Evaluating Apertus-8B-Instruct-2509:  92%|█████████▏| 167/181 [1:43:17<08:27, 36.27s/batch, Acc: 37.83% | Done: 2688/2886]Evaluating Apertus-8B-Instruct-2509:  93%|█████████▎| 168/181 [1:43:17<07:51, 36.27s/batch, Acc: 37.83% | Done: 2688/2886]Evaluating Apertus-8B-Instruct-2509:  93%|█████████▎| 168/181 [1:43:54<07:51, 36.27s/batch, Acc: 37.80% | Done: 2704/2886]Evaluating Apertus-8B-Instruct-2509:  93%|█████████▎| 169/181 [1:43:54<07:15, 36.25s/batch, Acc: 37.80% | Done: 2704/2886]Evaluating Apertus-8B-Instruct-2509:  93%|█████████▎| 169/181 [1:44:30<07:15, 36.25s/batch, Acc: 37.79% | Done: 2720/2886]Evaluating Apertus-8B-Instruct-2509:  94%|█████████▍| 170/181 [1:44:30<06:39, 36.36s/batch, Acc: 37.79% | Done: 2720/2886]Evaluating Apertus-8B-Instruct-2509:  94%|█████████▍| 170/181 [1:45:06<06:39, 36.36s/batch, Acc: 37.68% | Done: 2736/2886]Evaluating Apertus-8B-Instruct-2509:  94%|█████████▍| 171/181 [1:45:06<06:02, 36.29s/batch, Acc: 37.68% | Done: 2736/2886]Evaluating Apertus-8B-Instruct-2509:  94%|█████████▍| 171/181 [1:45:42<06:02, 36.29s/batch, Acc: 37.72% | Done: 2752/2886]Evaluating Apertus-8B-Instruct-2509:  95%|█████████▌| 172/181 [1:45:43<05:26, 36.27s/batch, Acc: 37.72% | Done: 2752/2886]Evaluating Apertus-8B-Instruct-2509:  95%|█████████▌| 172/181 [1:46:19<05:26, 36.27s/batch, Acc: 37.75% | Done: 2768/2886]Evaluating Apertus-8B-Instruct-2509:  96%|█████████▌| 173/181 [1:46:19<04:49, 36.24s/batch, Acc: 37.75% | Done: 2768/2886]Evaluating Apertus-8B-Instruct-2509:  96%|█████████▌| 173/181 [1:46:55<04:49, 36.24s/batch, Acc: 37.79% | Done: 2784/2886]Evaluating Apertus-8B-Instruct-2509:  96%|█████████▌| 174/181 [1:46:55<04:14, 36.29s/batch, Acc: 37.79% | Done: 2784/2886]Evaluating Apertus-8B-Instruct-2509:  96%|█████████▌| 174/181 [1:47:31<04:14, 36.29s/batch, Acc: 37.82% | Done: 2800/2886]Evaluating Apertus-8B-Instruct-2509:  97%|█████████▋| 175/181 [1:47:31<03:37, 36.32s/batch, Acc: 37.82% | Done: 2800/2886]Evaluating Apertus-8B-Instruct-2509:  97%|█████████▋| 175/181 [1:48:08<03:37, 36.32s/batch, Acc: 37.75% | Done: 2816/2886]Evaluating Apertus-8B-Instruct-2509:  97%|█████████▋| 176/181 [1:48:08<03:02, 36.47s/batch, Acc: 37.75% | Done: 2816/2886]Evaluating Apertus-8B-Instruct-2509:  97%|█████████▋| 176/181 [1:48:44<03:02, 36.47s/batch, Acc: 37.82% | Done: 2832/2886]Evaluating Apertus-8B-Instruct-2509:  98%|█████████▊| 177/181 [1:48:44<02:25, 36.39s/batch, Acc: 37.82% | Done: 2832/2886]Evaluating Apertus-8B-Instruct-2509:  98%|█████████▊| 177/181 [1:49:21<02:25, 36.39s/batch, Acc: 37.82% | Done: 2848/2886]Evaluating Apertus-8B-Instruct-2509:  98%|█████████▊| 178/181 [1:49:21<01:49, 36.36s/batch, Acc: 37.82% | Done: 2848/2886]Evaluating Apertus-8B-Instruct-2509:  98%|█████████▊| 178/181 [1:49:57<01:49, 36.36s/batch, Acc: 37.88% | Done: 2864/2886]Evaluating Apertus-8B-Instruct-2509:  99%|█████████▉| 179/181 [1:49:57<01:12, 36.32s/batch, Acc: 37.88% | Done: 2864/2886]Evaluating Apertus-8B-Instruct-2509:  99%|█████████▉| 179/181 [1:50:33<01:12, 36.32s/batch, Acc: 37.95% | Done: 2880/2886]Evaluating Apertus-8B-Instruct-2509:  99%|█████████▉| 180/181 [1:50:33<00:36, 36.31s/batch, Acc: 37.95% | Done: 2880/2886]Evaluating Apertus-8B-Instruct-2509:  99%|█████████▉| 180/181 [1:52:04<00:36, 36.31s/batch, Acc: 38.01% | Done: 2886/2886]Evaluating Apertus-8B-Instruct-2509: 100%|██████████| 181/181 [1:52:04<00:00, 52.70s/batch, Acc: 38.01% | Done: 2886/2886]Evaluating Apertus-8B-Instruct-2509: 100%|██████████| 181/181 [1:52:05<00:00, 37.16s/batch, Acc: 38.01% | Done: 2886/2886]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:17,  5.70s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:09<00:09,  4.54s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:12<00:03,  3.89s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:14<00:00,  2.95s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:14<00:00,  3.51s/it]
+Evaluating Meta-Llama-3-8B:   0%|          | 0/181 [00:00<?, ?batch/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Evaluating Meta-Llama-3-8B:   0%|          | 0/181 [00:57<?, ?batch/s, Acc: 0.00% | Done: 16/2886]Evaluating Meta-Llama-3-8B:   1%|          | 1/181 [00:57<2:51:02, 57.01s/batch, Acc: 0.00% | Done: 16/2886]Evaluating Meta-Llama-3-8B:   1%|          | 1/181 [01:28<2:51:02, 57.01s/batch, Acc: 0.00% | Done: 32/2886]Evaluating Meta-Llama-3-8B:   1%|          | 2/181 [01:28<2:05:17, 42.00s/batch, Acc: 0.00% | Done: 32/2886]Evaluating Meta-Llama-3-8B:   1%|          | 2/181 [01:59<2:05:17, 42.00s/batch, Acc: 2.08% | Done: 48/2886]Evaluating Meta-Llama-3-8B:   2%|▏         | 3/181 [01:59<1:50:15, 37.17s/batch, Acc: 2.08% | Done: 48/2886]Evaluating Meta-Llama-3-8B:   2%|▏         | 3/181 [02:30<1:50:15, 37.17s/batch, Acc: 1.56% | Done: 64/2886]Evaluating Meta-Llama-3-8B:   2%|▏         | 4/181 [02:30<1:42:07, 34.62s/batch, Acc: 1.56% | Done: 64/2886]Evaluating Meta-Llama-3-8B:   2%|▏         | 4/181 [03:01<1:42:07, 34.62s/batch, Acc: 1.25% | Done: 80/2886]Evaluating Meta-Llama-3-8B:   3%|▎         | 5/181 [03:01<1:37:46, 33.33s/batch, Acc: 1.25% | Done: 80/2886]Evaluating Meta-Llama-3-8B:   3%|▎         | 5/181 [03:32<1:37:46, 33.33s/batch, Acc: 1.04% | Done: 96/2886]Evaluating Meta-Llama-3-8B:   3%|▎         | 6/181 [03:32<1:34:57, 32.56s/batch, Acc: 1.04% | Done: 96/2886]Evaluating Meta-Llama-3-8B:   3%|▎         | 6/181 [04:03<1:34:57, 32.56s/batch, Acc: 0.89% | Done: 112/2886]Evaluating Meta-Llama-3-8B:   4%|▍         | 7/181 [04:03<1:32:46, 31.99s/batch, Acc: 0.89% | Done: 112/2886]Evaluating Meta-Llama-3-8B:   4%|▍         | 7/181 [04:34<1:32:46, 31.99s/batch, Acc: 0.78% | Done: 128/2886]Evaluating Meta-Llama-3-8B:   4%|▍         | 8/181 [04:34<1:31:11, 31.63s/batch, Acc: 0.78% | Done: 128/2886]Evaluating Meta-Llama-3-8B:   4%|▍         | 8/181 [05:05<1:31:11, 31.63s/batch, Acc: 0.69% | Done: 144/2886]Evaluating Meta-Llama-3-8B:   5%|▍         | 9/181 [05:05<1:30:01, 31.40s/batch, Acc: 0.69% | Done: 144/2886]Evaluating Meta-Llama-3-8B:   5%|▍         | 9/181 [05:35<1:30:01, 31.40s/batch, Acc: 0.62% | Done: 160/2886]Evaluating Meta-Llama-3-8B:   6%|▌         | 10/181 [05:35<1:28:48, 31.16s/batch, Acc: 0.62% | Done: 160/2886]Evaluating Meta-Llama-3-8B:   6%|▌         | 10/181 [06:06<1:28:48, 31.16s/batch, Acc: 0.57% | Done: 176/2886]Evaluating Meta-Llama-3-8B:   6%|▌         | 11/181 [06:06<1:27:55, 31.03s/batch, Acc: 0.57% | Done: 176/2886]Evaluating Meta-Llama-3-8B:   6%|▌         | 11/181 [06:37<1:27:55, 31.03s/batch, Acc: 0.52% | Done: 192/2886]Evaluating Meta-Llama-3-8B:   7%|▋         | 12/181 [06:37<1:27:11, 30.95s/batch, Acc: 0.52% | Done: 192/2886]Evaluating Meta-Llama-3-8B:   7%|▋         | 12/181 [07:08<1:27:11, 30.95s/batch, Acc: 0.48% | Done: 208/2886]Evaluating Meta-Llama-3-8B:   7%|▋         | 13/181 [07:08<1:26:36, 30.93s/batch, Acc: 0.48% | Done: 208/2886]Evaluating Meta-Llama-3-8B:   7%|▋         | 13/181 [07:39<1:26:36, 30.93s/batch, Acc: 0.45% | Done: 224/2886]Evaluating Meta-Llama-3-8B:   8%|▊         | 14/181 [07:39<1:25:59, 30.90s/batch, Acc: 0.45% | Done: 224/2886]Evaluating Meta-Llama-3-8B:   8%|▊         | 14/181 [08:09<1:25:59, 30.90s/batch, Acc: 0.83% | Done: 240/2886]Evaluating Meta-Llama-3-8B:   8%|▊         | 15/181 [08:09<1:25:26, 30.88s/batch, Acc: 0.83% | Done: 240/2886]Evaluating Meta-Llama-3-8B:   8%|▊         | 15/181 [08:40<1:25:26, 30.88s/batch, Acc: 0.78% | Done: 256/2886]Evaluating Meta-Llama-3-8B:   9%|▉         | 16/181 [08:40<1:24:53, 30.87s/batch, Acc: 0.78% | Done: 256/2886]Evaluating Meta-Llama-3-8B:   9%|▉         | 16/181 [09:11<1:24:53, 30.87s/batch, Acc: 0.74% | Done: 272/2886]Evaluating Meta-Llama-3-8B:   9%|▉         | 17/181 [09:11<1:24:14, 30.82s/batch, Acc: 0.74% | Done: 272/2886]Evaluating Meta-Llama-3-8B:   9%|▉         | 17/181 [09:42<1:24:14, 30.82s/batch, Acc: 0.69% | Done: 288/2886]Evaluating Meta-Llama-3-8B:  10%|▉         | 18/181 [09:42<1:23:33, 30.76s/batch, Acc: 0.69% | Done: 288/2886]Evaluating Meta-Llama-3-8B:  10%|▉         | 18/181 [10:13<1:23:33, 30.76s/batch, Acc: 0.66% | Done: 304/2886]Evaluating Meta-Llama-3-8B:  10%|█         | 19/181 [10:13<1:23:09, 30.80s/batch, Acc: 0.66% | Done: 304/2886]Evaluating Meta-Llama-3-8B:  10%|█         | 19/181 [10:43<1:23:09, 30.80s/batch, Acc: 0.62% | Done: 320/2886]Evaluating Meta-Llama-3-8B:  11%|█         | 20/181 [10:43<1:22:30, 30.75s/batch, Acc: 0.62% | Done: 320/2886]Evaluating Meta-Llama-3-8B:  11%|█         | 20/181 [11:14<1:22:30, 30.75s/batch, Acc: 0.60% | Done: 336/2886]Evaluating Meta-Llama-3-8B:  12%|█▏        | 21/181 [11:14<1:21:52, 30.71s/batch, Acc: 0.60% | Done: 336/2886]Evaluating Meta-Llama-3-8B:  12%|█▏        | 21/181 [11:45<1:21:52, 30.71s/batch, Acc: 0.85% | Done: 352/2886]Evaluating Meta-Llama-3-8B:  12%|█▏        | 22/181 [11:45<1:21:24, 30.72s/batch, Acc: 0.85% | Done: 352/2886]Evaluating Meta-Llama-3-8B:  12%|█▏        | 22/181 [12:15<1:21:24, 30.72s/batch, Acc: 0.82% | Done: 368/2886]Evaluating Meta-Llama-3-8B:  13%|█▎        | 23/181 [12:15<1:20:52, 30.71s/batch, Acc: 0.82% | Done: 368/2886]Evaluating Meta-Llama-3-8B:  13%|█▎        | 23/181 [12:46<1:20:52, 30.71s/batch, Acc: 0.78% | Done: 384/2886]Evaluating Meta-Llama-3-8B:  13%|█▎        | 24/181 [12:46<1:20:19, 30.70s/batch, Acc: 0.78% | Done: 384/2886]Evaluating Meta-Llama-3-8B:  13%|█▎        | 24/181 [13:17<1:20:19, 30.70s/batch, Acc: 0.75% | Done: 400/2886]Evaluating Meta-Llama-3-8B:  14%|█▍        | 25/181 [13:17<1:19:47, 30.69s/batch, Acc: 0.75% | Done: 400/2886]Evaluating Meta-Llama-3-8B:  14%|█▍        | 25/181 [13:47<1:19:47, 30.69s/batch, Acc: 0.72% | Done: 416/2886]Evaluating Meta-Llama-3-8B:  14%|█▍        | 26/181 [13:47<1:19:10, 30.65s/batch, Acc: 0.72% | Done: 416/2886]Evaluating Meta-Llama-3-8B:  14%|█▍        | 26/181 [14:18<1:19:10, 30.65s/batch, Acc: 0.69% | Done: 432/2886]Evaluating Meta-Llama-3-8B:  15%|█▍        | 27/181 [14:18<1:18:40, 30.66s/batch, Acc: 0.69% | Done: 432/2886]Evaluating Meta-Llama-3-8B:  15%|█▍        | 27/181 [14:49<1:18:40, 30.66s/batch, Acc: 0.67% | Done: 448/2886]Evaluating Meta-Llama-3-8B:  15%|█▌        | 28/181 [14:49<1:18:21, 30.73s/batch, Acc: 0.67% | Done: 448/2886]Evaluating Meta-Llama-3-8B:  15%|█▌        | 28/181 [15:20<1:18:21, 30.73s/batch, Acc: 0.65% | Done: 464/2886]Evaluating Meta-Llama-3-8B:  16%|█▌        | 29/181 [15:20<1:18:03, 30.82s/batch, Acc: 0.65% | Done: 464/2886]Evaluating Meta-Llama-3-8B:  16%|█▌        | 29/181 [15:51<1:18:03, 30.82s/batch, Acc: 0.83% | Done: 480/2886]Evaluating Meta-Llama-3-8B:  17%|█▋        | 30/181 [15:51<1:17:32, 30.81s/batch, Acc: 0.83% | Done: 480/2886]Evaluating Meta-Llama-3-8B:  17%|█▋        | 30/181 [16:21<1:17:32, 30.81s/batch, Acc: 0.81% | Done: 496/2886]Evaluating Meta-Llama-3-8B:  17%|█▋        | 31/181 [16:21<1:17:02, 30.82s/batch, Acc: 0.81% | Done: 496/2886]Evaluating Meta-Llama-3-8B:  17%|█▋        | 31/181 [16:52<1:17:02, 30.82s/batch, Acc: 0.98% | Done: 512/2886]Evaluating Meta-Llama-3-8B:  18%|█▊        | 32/181 [16:52<1:16:40, 30.87s/batch, Acc: 0.98% | Done: 512/2886]Evaluating Meta-Llama-3-8B:  18%|█▊        | 32/181 [17:23<1:16:40, 30.87s/batch, Acc: 0.95% | Done: 528/2886]Evaluating Meta-Llama-3-8B:  18%|█▊        | 33/181 [17:23<1:15:57, 30.79s/batch, Acc: 0.95% | Done: 528/2886]Evaluating Meta-Llama-3-8B:  18%|█▊        | 33/181 [17:53<1:15:57, 30.79s/batch, Acc: 0.92% | Done: 544/2886]Evaluating Meta-Llama-3-8B:  19%|█▉        | 34/181 [17:53<1:15:08, 30.67s/batch, Acc: 0.92% | Done: 544/2886]Evaluating Meta-Llama-3-8B:  19%|█▉        | 34/181 [18:24<1:15:08, 30.67s/batch, Acc: 0.89% | Done: 560/2886]Evaluating Meta-Llama-3-8B:  19%|█▉        | 35/181 [18:24<1:14:40, 30.69s/batch, Acc: 0.89% | Done: 560/2886]Evaluating Meta-Llama-3-8B:  19%|█▉        | 35/181 [18:55<1:14:40, 30.69s/batch, Acc: 0.87% | Done: 576/2886]Evaluating Meta-Llama-3-8B:  20%|█▉        | 36/181 [18:55<1:14:04, 30.65s/batch, Acc: 0.87% | Done: 576/2886]Evaluating Meta-Llama-3-8B:  20%|█▉        | 36/181 [19:25<1:14:04, 30.65s/batch, Acc: 0.84% | Done: 592/2886]Evaluating Meta-Llama-3-8B:  20%|██        | 37/181 [19:25<1:13:30, 30.63s/batch, Acc: 0.84% | Done: 592/2886]Evaluating Meta-Llama-3-8B:  20%|██        | 37/181 [19:56<1:13:30, 30.63s/batch, Acc: 0.82% | Done: 608/2886]Evaluating Meta-Llama-3-8B:  21%|██        | 38/181 [19:56<1:12:56, 30.61s/batch, Acc: 0.82% | Done: 608/2886]Evaluating Meta-Llama-3-8B:  21%|██        | 38/181 [20:27<1:12:56, 30.61s/batch, Acc: 0.80% | Done: 624/2886]Evaluating Meta-Llama-3-8B:  22%|██▏       | 39/181 [20:27<1:12:35, 30.67s/batch, Acc: 0.80% | Done: 624/2886]Evaluating Meta-Llama-3-8B:  22%|██▏       | 39/181 [20:58<1:12:35, 30.67s/batch, Acc: 0.78% | Done: 640/2886]Evaluating Meta-Llama-3-8B:  22%|██▏       | 40/181 [20:58<1:12:15, 30.75s/batch, Acc: 0.78% | Done: 640/2886]Evaluating Meta-Llama-3-8B:  22%|██▏       | 40/181 [21:28<1:12:15, 30.75s/batch, Acc: 0.76% | Done: 656/2886]Evaluating Meta-Llama-3-8B:  23%|██▎       | 41/181 [21:28<1:11:49, 30.78s/batch, Acc: 0.76% | Done: 656/2886]Evaluating Meta-Llama-3-8B:  23%|██▎       | 41/181 [21:59<1:11:49, 30.78s/batch, Acc: 0.74% | Done: 672/2886]Evaluating Meta-Llama-3-8B:  23%|██▎       | 42/181 [21:59<1:11:04, 30.68s/batch, Acc: 0.74% | Done: 672/2886]Evaluating Meta-Llama-3-8B:  23%|██▎       | 42/181 [22:30<1:11:04, 30.68s/batch, Acc: 0.73% | Done: 688/2886]Evaluating Meta-Llama-3-8B:  24%|██▍       | 43/181 [22:30<1:10:35, 30.69s/batch, Acc: 0.73% | Done: 688/2886]Evaluating Meta-Llama-3-8B:  24%|██▍       | 43/181 [23:00<1:10:35, 30.69s/batch, Acc: 0.71% | Done: 704/2886]Evaluating Meta-Llama-3-8B:  24%|██▍       | 44/181 [23:00<1:10:02, 30.68s/batch, Acc: 0.71% | Done: 704/2886]Evaluating Meta-Llama-3-8B:  24%|██▍       | 44/181 [23:31<1:10:02, 30.68s/batch, Acc: 0.69% | Done: 720/2886]Evaluating Meta-Llama-3-8B:  25%|██▍       | 45/181 [23:31<1:09:39, 30.73s/batch, Acc: 0.69% | Done: 720/2886]Evaluating Meta-Llama-3-8B:  25%|██▍       | 45/181 [24:01<1:09:39, 30.73s/batch, Acc: 0.68% | Done: 736/2886]Evaluating Meta-Llama-3-8B:  25%|██▌       | 46/181 [24:01<1:08:56, 30.64s/batch, Acc: 0.68% | Done: 736/2886]Evaluating Meta-Llama-3-8B:  25%|██▌       | 46/181 [24:32<1:08:56, 30.64s/batch, Acc: 0.66% | Done: 752/2886]Evaluating Meta-Llama-3-8B:  26%|██▌       | 47/181 [24:32<1:08:19, 30.59s/batch, Acc: 0.66% | Done: 752/2886]Evaluating Meta-Llama-3-8B:  26%|██▌       | 47/181 [25:03<1:08:19, 30.59s/batch, Acc: 0.65% | Done: 768/2886]Evaluating Meta-Llama-3-8B:  27%|██▋       | 48/181 [25:03<1:07:49, 30.60s/batch, Acc: 0.65% | Done: 768/2886]Evaluating Meta-Llama-3-8B:  27%|██▋       | 48/181 [25:33<1:07:49, 30.60s/batch, Acc: 0.64% | Done: 784/2886]Evaluating Meta-Llama-3-8B:  27%|██▋       | 49/181 [25:33<1:07:24, 30.64s/batch, Acc: 0.64% | Done: 784/2886]Evaluating Meta-Llama-3-8B:  27%|██▋       | 49/181 [26:04<1:07:24, 30.64s/batch, Acc: 0.75% | Done: 800/2886]Evaluating Meta-Llama-3-8B:  28%|██▊       | 50/181 [26:04<1:06:43, 30.56s/batch, Acc: 0.75% | Done: 800/2886]Evaluating Meta-Llama-3-8B:  28%|██▊       | 50/181 [26:34<1:06:43, 30.56s/batch, Acc: 0.74% | Done: 816/2886]Evaluating Meta-Llama-3-8B:  28%|██▊       | 51/181 [26:34<1:06:13, 30.57s/batch, Acc: 0.74% | Done: 816/2886]Evaluating Meta-Llama-3-8B:  28%|██▊       | 51/181 [27:05<1:06:13, 30.57s/batch, Acc: 0.72% | Done: 832/2886]Evaluating Meta-Llama-3-8B:  29%|██▊       | 52/181 [27:05<1:05:41, 30.56s/batch, Acc: 0.72% | Done: 832/2886]Evaluating Meta-Llama-3-8B:  29%|██▊       | 52/181 [27:35<1:05:41, 30.56s/batch, Acc: 0.71% | Done: 848/2886]Evaluating Meta-Llama-3-8B:  29%|██▉       | 53/181 [27:35<1:05:10, 30.55s/batch, Acc: 0.71% | Done: 848/2886]Evaluating Meta-Llama-3-8B:  29%|██▉       | 53/181 [28:06<1:05:10, 30.55s/batch, Acc: 0.69% | Done: 864/2886]Evaluating Meta-Llama-3-8B:  30%|██▉       | 54/181 [28:06<1:04:34, 30.51s/batch, Acc: 0.69% | Done: 864/2886]Evaluating Meta-Llama-3-8B:  30%|██▉       | 54/181 [28:37<1:04:34, 30.51s/batch, Acc: 0.68% | Done: 880/2886]Evaluating Meta-Llama-3-8B:  30%|███       | 55/181 [28:37<1:04:15, 30.60s/batch, Acc: 0.68% | Done: 880/2886]Evaluating Meta-Llama-3-8B:  30%|███       | 55/181 [29:07<1:04:15, 30.60s/batch, Acc: 0.67% | Done: 896/2886]Evaluating Meta-Llama-3-8B:  31%|███       | 56/181 [29:07<1:03:46, 30.61s/batch, Acc: 0.67% | Done: 896/2886]Evaluating Meta-Llama-3-8B:  31%|███       | 56/181 [29:38<1:03:46, 30.61s/batch, Acc: 0.66% | Done: 912/2886]Evaluating Meta-Llama-3-8B:  31%|███▏      | 57/181 [29:38<1:03:15, 30.61s/batch, Acc: 0.66% | Done: 912/2886]Evaluating Meta-Llama-3-8B:  31%|███▏      | 57/181 [30:08<1:03:15, 30.61s/batch, Acc: 0.65% | Done: 928/2886]Evaluating Meta-Llama-3-8B:  32%|███▏      | 58/181 [30:08<1:02:42, 30.59s/batch, Acc: 0.65% | Done: 928/2886]Evaluating Meta-Llama-3-8B:  32%|███▏      | 58/181 [30:39<1:02:42, 30.59s/batch, Acc: 0.64% | Done: 944/2886]Evaluating Meta-Llama-3-8B:  33%|███▎      | 59/181 [30:39<1:02:14, 30.61s/batch, Acc: 0.64% | Done: 944/2886]Evaluating Meta-Llama-3-8B:  33%|███▎      | 59/181 [31:09<1:02:14, 30.61s/batch, Acc: 0.62% | Done: 960/2886]Evaluating Meta-Llama-3-8B:  33%|███▎      | 60/181 [31:09<1:01:38, 30.57s/batch, Acc: 0.62% | Done: 960/2886]Evaluating Meta-Llama-3-8B:  33%|███▎      | 60/181 [31:40<1:01:38, 30.57s/batch, Acc: 0.72% | Done: 976/2886]Evaluating Meta-Llama-3-8B:  34%|███▎      | 61/181 [31:40<1:01:05, 30.55s/batch, Acc: 0.72% | Done: 976/2886]Evaluating Meta-Llama-3-8B:  34%|███▎      | 61/181 [32:11<1:01:05, 30.55s/batch, Acc: 0.71% | Done: 992/2886]Evaluating Meta-Llama-3-8B:  34%|███▍      | 62/181 [32:11<1:00:36, 30.56s/batch, Acc: 0.71% | Done: 992/2886]Evaluating Meta-Llama-3-8B:  34%|███▍      | 62/181 [32:41<1:00:36, 30.56s/batch, Acc: 0.69% | Done: 1008/2886]Evaluating Meta-Llama-3-8B:  35%|███▍      | 63/181 [32:41<1:00:02, 30.53s/batch, Acc: 0.69% | Done: 1008/2886]Evaluating Meta-Llama-3-8B:  35%|███▍      | 63/181 [33:12<1:00:02, 30.53s/batch, Acc: 0.68% | Done: 1024/2886]Evaluating Meta-Llama-3-8B:  35%|███▌      | 64/181 [33:12<59:31, 30.53s/batch, Acc: 0.68% | Done: 1024/2886]  Evaluating Meta-Llama-3-8B:  35%|███▌      | 64/181 [33:42<59:31, 30.53s/batch, Acc: 0.67% | Done: 1040/2886]Evaluating Meta-Llama-3-8B:  36%|███▌      | 65/181 [33:42<59:05, 30.57s/batch, Acc: 0.67% | Done: 1040/2886]Evaluating Meta-Llama-3-8B:  36%|███▌      | 65/181 [34:13<59:05, 30.57s/batch, Acc: 0.66% | Done: 1056/2886]Evaluating Meta-Llama-3-8B:  36%|███▋      | 66/181 [34:13<58:35, 30.57s/batch, Acc: 0.66% | Done: 1056/2886]Evaluating Meta-Llama-3-8B:  36%|███▋      | 66/181 [34:43<58:35, 30.57s/batch, Acc: 0.65% | Done: 1072/2886]Evaluating Meta-Llama-3-8B:  37%|███▋      | 67/181 [34:43<58:04, 30.57s/batch, Acc: 0.65% | Done: 1072/2886]Evaluating Meta-Llama-3-8B:  37%|███▋      | 67/181 [35:14<58:04, 30.57s/batch, Acc: 0.64% | Done: 1088/2886]Evaluating Meta-Llama-3-8B:  38%|███▊      | 68/181 [35:14<57:35, 30.58s/batch, Acc: 0.64% | Done: 1088/2886]Evaluating Meta-Llama-3-8B:  38%|███▊      | 68/181 [35:45<57:35, 30.58s/batch, Acc: 0.63% | Done: 1104/2886]Evaluating Meta-Llama-3-8B:  38%|███▊      | 69/181 [35:45<57:08, 30.61s/batch, Acc: 0.63% | Done: 1104/2886]Evaluating Meta-Llama-3-8B:  38%|███▊      | 69/181 [36:15<57:08, 30.61s/batch, Acc: 0.62% | Done: 1120/2886]Evaluating Meta-Llama-3-8B:  39%|███▊      | 70/181 [36:15<56:43, 30.66s/batch, Acc: 0.62% | Done: 1120/2886]Evaluating Meta-Llama-3-8B:  39%|███▊      | 70/181 [36:46<56:43, 30.66s/batch, Acc: 0.62% | Done: 1136/2886]Evaluating Meta-Llama-3-8B:  39%|███▉      | 71/181 [36:46<56:10, 30.64s/batch, Acc: 0.62% | Done: 1136/2886]Evaluating Meta-Llama-3-8B:  39%|███▉      | 71/181 [37:17<56:10, 30.64s/batch, Acc: 0.61% | Done: 1152/2886]Evaluating Meta-Llama-3-8B:  40%|███▉      | 72/181 [37:17<55:44, 30.69s/batch, Acc: 0.61% | Done: 1152/2886]Evaluating Meta-Llama-3-8B:  40%|███▉      | 72/181 [37:48<55:44, 30.69s/batch, Acc: 0.60% | Done: 1168/2886]Evaluating Meta-Llama-3-8B:  40%|████      | 73/181 [37:48<55:16, 30.71s/batch, Acc: 0.60% | Done: 1168/2886]Evaluating Meta-Llama-3-8B:  40%|████      | 73/181 [38:18<55:16, 30.71s/batch, Acc: 0.59% | Done: 1184/2886]Evaluating Meta-Llama-3-8B:  41%|████      | 74/181 [38:18<54:46, 30.71s/batch, Acc: 0.59% | Done: 1184/2886]Evaluating Meta-Llama-3-8B:  41%|████      | 74/181 [38:49<54:46, 30.71s/batch, Acc: 0.58% | Done: 1200/2886]Evaluating Meta-Llama-3-8B:  41%|████▏     | 75/181 [38:49<54:19, 30.75s/batch, Acc: 0.58% | Done: 1200/2886]Evaluating Meta-Llama-3-8B:  41%|████▏     | 75/181 [39:20<54:19, 30.75s/batch, Acc: 0.58% | Done: 1216/2886]Evaluating Meta-Llama-3-8B:  42%|████▏     | 76/181 [39:20<53:50, 30.76s/batch, Acc: 0.58% | Done: 1216/2886]Evaluating Meta-Llama-3-8B:  42%|████▏     | 76/181 [39:51<53:50, 30.76s/batch, Acc: 0.57% | Done: 1232/2886]Evaluating Meta-Llama-3-8B:  43%|████▎     | 77/181 [39:51<53:15, 30.73s/batch, Acc: 0.57% | Done: 1232/2886]Evaluating Meta-Llama-3-8B:  43%|████▎     | 77/181 [40:21<53:15, 30.73s/batch, Acc: 0.56% | Done: 1248/2886]Evaluating Meta-Llama-3-8B:  43%|████▎     | 78/181 [40:21<52:43, 30.71s/batch, Acc: 0.56% | Done: 1248/2886]Evaluating Meta-Llama-3-8B:  43%|████▎     | 78/181 [40:52<52:43, 30.71s/batch, Acc: 0.55% | Done: 1264/2886]Evaluating Meta-Llama-3-8B:  44%|████▎     | 79/181 [40:52<52:16, 30.75s/batch, Acc: 0.55% | Done: 1264/2886]Evaluating Meta-Llama-3-8B:  44%|████▎     | 79/181 [41:23<52:16, 30.75s/batch, Acc: 0.55% | Done: 1280/2886]Evaluating Meta-Llama-3-8B:  44%|████▍     | 80/181 [41:23<51:43, 30.72s/batch, Acc: 0.55% | Done: 1280/2886]Evaluating Meta-Llama-3-8B:  44%|████▍     | 80/181 [41:54<51:43, 30.72s/batch, Acc: 0.54% | Done: 1296/2886]Evaluating Meta-Llama-3-8B:  45%|████▍     | 81/181 [41:54<51:15, 30.75s/batch, Acc: 0.54% | Done: 1296/2886]Evaluating Meta-Llama-3-8B:  45%|████▍     | 81/181 [42:24<51:15, 30.75s/batch, Acc: 0.53% | Done: 1312/2886]Evaluating Meta-Llama-3-8B:  45%|████▌     | 82/181 [42:24<50:44, 30.75s/batch, Acc: 0.53% | Done: 1312/2886]Evaluating Meta-Llama-3-8B:  45%|████▌     | 82/181 [42:55<50:44, 30.75s/batch, Acc: 0.53% | Done: 1328/2886]Evaluating Meta-Llama-3-8B:  46%|████▌     | 83/181 [42:55<50:16, 30.78s/batch, Acc: 0.53% | Done: 1328/2886]Evaluating Meta-Llama-3-8B:  46%|████▌     | 83/181 [43:26<50:16, 30.78s/batch, Acc: 0.52% | Done: 1344/2886]Evaluating Meta-Llama-3-8B:  46%|████▋     | 84/181 [43:26<49:50, 30.83s/batch, Acc: 0.52% | Done: 1344/2886]Evaluating Meta-Llama-3-8B:  46%|████▋     | 84/181 [43:57<49:50, 30.83s/batch, Acc: 0.51% | Done: 1360/2886]Evaluating Meta-Llama-3-8B:  47%|████▋     | 85/181 [43:57<49:22, 30.86s/batch, Acc: 0.51% | Done: 1360/2886]Evaluating Meta-Llama-3-8B:  47%|████▋     | 85/181 [44:28<49:22, 30.86s/batch, Acc: 0.51% | Done: 1376/2886]Evaluating Meta-Llama-3-8B:  48%|████▊     | 86/181 [44:28<48:43, 30.77s/batch, Acc: 0.51% | Done: 1376/2886]Evaluating Meta-Llama-3-8B:  48%|████▊     | 86/181 [44:58<48:43, 30.77s/batch, Acc: 0.50% | Done: 1392/2886]Evaluating Meta-Llama-3-8B:  48%|████▊     | 87/181 [44:58<48:06, 30.71s/batch, Acc: 0.50% | Done: 1392/2886]Evaluating Meta-Llama-3-8B:  48%|████▊     | 87/181 [45:29<48:06, 30.71s/batch, Acc: 0.50% | Done: 1408/2886]Evaluating Meta-Llama-3-8B:  49%|████▊     | 88/181 [45:29<47:34, 30.69s/batch, Acc: 0.50% | Done: 1408/2886]Evaluating Meta-Llama-3-8B:  49%|████▊     | 88/181 [46:00<47:34, 30.69s/batch, Acc: 0.49% | Done: 1424/2886]Evaluating Meta-Llama-3-8B:  49%|████▉     | 89/181 [46:00<47:05, 30.71s/batch, Acc: 0.49% | Done: 1424/2886]Evaluating Meta-Llama-3-8B:  49%|████▉     | 89/181 [46:30<47:05, 30.71s/batch, Acc: 0.49% | Done: 1440/2886]Evaluating Meta-Llama-3-8B:  50%|████▉     | 90/181 [46:30<46:38, 30.75s/batch, Acc: 0.49% | Done: 1440/2886]Evaluating Meta-Llama-3-8B:  50%|████▉     | 90/181 [47:01<46:38, 30.75s/batch, Acc: 0.48% | Done: 1456/2886]Evaluating Meta-Llama-3-8B:  50%|█████     | 91/181 [47:01<46:16, 30.85s/batch, Acc: 0.48% | Done: 1456/2886]Evaluating Meta-Llama-3-8B:  50%|█████     | 91/181 [47:33<46:16, 30.85s/batch, Acc: 0.48% | Done: 1472/2886]Evaluating Meta-Llama-3-8B:  51%|█████     | 92/181 [47:33<45:54, 30.94s/batch, Acc: 0.48% | Done: 1472/2886]Evaluating Meta-Llama-3-8B:  51%|█████     | 92/181 [48:03<45:54, 30.94s/batch, Acc: 0.47% | Done: 1488/2886]Evaluating Meta-Llama-3-8B:  51%|█████▏    | 93/181 [48:03<45:17, 30.88s/batch, Acc: 0.47% | Done: 1488/2886]Evaluating Meta-Llama-3-8B:  51%|█████▏    | 93/181 [48:34<45:17, 30.88s/batch, Acc: 0.47% | Done: 1504/2886]Evaluating Meta-Llama-3-8B:  52%|█████▏    | 94/181 [48:34<44:46, 30.88s/batch, Acc: 0.47% | Done: 1504/2886]Evaluating Meta-Llama-3-8B:  52%|█████▏    | 94/181 [49:05<44:46, 30.88s/batch, Acc: 0.46% | Done: 1520/2886]Evaluating Meta-Llama-3-8B:  52%|█████▏    | 95/181 [49:05<44:16, 30.89s/batch, Acc: 0.46% | Done: 1520/2886]Evaluating Meta-Llama-3-8B:  52%|█████▏    | 95/181 [49:36<44:16, 30.89s/batch, Acc: 0.46% | Done: 1536/2886]Evaluating Meta-Llama-3-8B:  53%|█████▎    | 96/181 [49:36<43:45, 30.89s/batch, Acc: 0.46% | Done: 1536/2886]Evaluating Meta-Llama-3-8B:  53%|█████▎    | 96/181 [50:08<43:45, 30.89s/batch, Acc: 0.45% | Done: 1552/2886]Evaluating Meta-Llama-3-8B:  54%|█████▎    | 97/181 [50:08<43:37, 31.16s/batch, Acc: 0.45% | Done: 1552/2886]Evaluating Meta-Llama-3-8B:  54%|█████▎    | 97/181 [50:39<43:37, 31.16s/batch, Acc: 0.45% | Done: 1568/2886]Evaluating Meta-Llama-3-8B:  54%|█████▍    | 98/181 [50:39<43:02, 31.11s/batch, Acc: 0.45% | Done: 1568/2886]Evaluating Meta-Llama-3-8B:  54%|█████▍    | 98/181 [51:10<43:02, 31.11s/batch, Acc: 0.51% | Done: 1584/2886]Evaluating Meta-Llama-3-8B:  55%|█████▍    | 99/181 [51:10<42:24, 31.03s/batch, Acc: 0.51% | Done: 1584/2886]Evaluating Meta-Llama-3-8B:  55%|█████▍    | 99/181 [51:40<42:24, 31.03s/batch, Acc: 0.50% | Done: 1600/2886]Evaluating Meta-Llama-3-8B:  55%|█████▌    | 100/181 [51:40<41:47, 30.95s/batch, Acc: 0.50% | Done: 1600/2886]Evaluating Meta-Llama-3-8B:  55%|█████▌    | 100/181 [52:11<41:47, 30.95s/batch, Acc: 0.50% | Done: 1616/2886]Evaluating Meta-Llama-3-8B:  56%|█████▌    | 101/181 [52:11<41:14, 30.93s/batch, Acc: 0.50% | Done: 1616/2886]Evaluating Meta-Llama-3-8B:  56%|█████▌    | 101/181 [52:42<41:14, 30.93s/batch, Acc: 0.55% | Done: 1632/2886]Evaluating Meta-Llama-3-8B:  56%|█████▋    | 102/181 [52:42<40:41, 30.90s/batch, Acc: 0.55% | Done: 1632/2886]Evaluating Meta-Llama-3-8B:  56%|█████▋    | 102/181 [53:13<40:41, 30.90s/batch, Acc: 0.61% | Done: 1648/2886]Evaluating Meta-Llama-3-8B:  57%|█████▋    | 103/181 [53:13<40:08, 30.88s/batch, Acc: 0.61% | Done: 1648/2886]Evaluating Meta-Llama-3-8B:  57%|█████▋    | 103/181 [53:44<40:08, 30.88s/batch, Acc: 0.60% | Done: 1664/2886]Evaluating Meta-Llama-3-8B:  57%|█████▋    | 104/181 [53:44<39:39, 30.90s/batch, Acc: 0.60% | Done: 1664/2886]Evaluating Meta-Llama-3-8B:  57%|█████▋    | 104/181 [54:15<39:39, 30.90s/batch, Acc: 0.60% | Done: 1680/2886]Evaluating Meta-Llama-3-8B:  58%|█████▊    | 105/181 [54:15<39:06, 30.87s/batch, Acc: 0.60% | Done: 1680/2886]Evaluating Meta-Llama-3-8B:  58%|█████▊    | 105/181 [54:46<39:06, 30.87s/batch, Acc: 0.59% | Done: 1696/2886]Evaluating Meta-Llama-3-8B:  59%|█████▊    | 106/181 [54:46<38:34, 30.86s/batch, Acc: 0.59% | Done: 1696/2886]Evaluating Meta-Llama-3-8B:  59%|█████▊    | 106/181 [55:16<38:34, 30.86s/batch, Acc: 0.58% | Done: 1712/2886]Evaluating Meta-Llama-3-8B:  59%|█████▉    | 107/181 [55:16<38:00, 30.81s/batch, Acc: 0.58% | Done: 1712/2886]Evaluating Meta-Llama-3-8B:  59%|█████▉    | 107/181 [55:47<38:00, 30.81s/batch, Acc: 0.58% | Done: 1728/2886]Evaluating Meta-Llama-3-8B:  60%|█████▉    | 108/181 [55:47<37:29, 30.81s/batch, Acc: 0.58% | Done: 1728/2886]Evaluating Meta-Llama-3-8B:  60%|█████▉    | 108/181 [56:18<37:29, 30.81s/batch, Acc: 0.57% | Done: 1744/2886]Evaluating Meta-Llama-3-8B:  60%|██████    | 109/181 [56:18<37:00, 30.85s/batch, Acc: 0.57% | Done: 1744/2886]Evaluating Meta-Llama-3-8B:  60%|██████    | 109/181 [56:49<37:00, 30.85s/batch, Acc: 0.57% | Done: 1760/2886]Evaluating Meta-Llama-3-8B:  61%|██████    | 110/181 [56:49<36:29, 30.84s/batch, Acc: 0.57% | Done: 1760/2886]Evaluating Meta-Llama-3-8B:  61%|██████    | 110/181 [57:20<36:29, 30.84s/batch, Acc: 0.62% | Done: 1776/2886]Evaluating Meta-Llama-3-8B:  61%|██████▏   | 111/181 [57:20<36:00, 30.87s/batch, Acc: 0.62% | Done: 1776/2886]Evaluating Meta-Llama-3-8B:  61%|██████▏   | 111/181 [57:50<36:00, 30.87s/batch, Acc: 0.61% | Done: 1792/2886]Evaluating Meta-Llama-3-8B:  62%|██████▏   | 112/181 [57:50<35:23, 30.78s/batch, Acc: 0.61% | Done: 1792/2886]Evaluating Meta-Llama-3-8B:  62%|██████▏   | 112/181 [58:21<35:23, 30.78s/batch, Acc: 0.61% | Done: 1808/2886]Evaluating Meta-Llama-3-8B:  62%|██████▏   | 113/181 [58:21<34:51, 30.76s/batch, Acc: 0.61% | Done: 1808/2886]Evaluating Meta-Llama-3-8B:  62%|██████▏   | 113/181 [58:52<34:51, 30.76s/batch, Acc: 0.60% | Done: 1824/2886]Evaluating Meta-Llama-3-8B:  63%|██████▎   | 114/181 [58:52<34:22, 30.79s/batch, Acc: 0.60% | Done: 1824/2886]Evaluating Meta-Llama-3-8B:  63%|██████▎   | 114/181 [59:23<34:22, 30.79s/batch, Acc: 0.60% | Done: 1840/2886]Evaluating Meta-Llama-3-8B:  64%|██████▎   | 115/181 [59:23<33:51, 30.77s/batch, Acc: 0.60% | Done: 1840/2886]Evaluating Meta-Llama-3-8B:  64%|██████▎   | 115/181 [59:53<33:51, 30.77s/batch, Acc: 0.59% | Done: 1856/2886]Evaluating Meta-Llama-3-8B:  64%|██████▍   | 116/181 [59:53<33:14, 30.68s/batch, Acc: 0.59% | Done: 1856/2886]Evaluating Meta-Llama-3-8B:  64%|██████▍   | 116/181 [1:00:23<33:14, 30.68s/batch, Acc: 0.59% | Done: 1872/2886]Evaluating Meta-Llama-3-8B:  65%|██████▍   | 117/181 [1:00:23<32:34, 30.54s/batch, Acc: 0.59% | Done: 1872/2886]Evaluating Meta-Llama-3-8B:  65%|██████▍   | 117/181 [1:00:54<32:34, 30.54s/batch, Acc: 0.58% | Done: 1888/2886]Evaluating Meta-Llama-3-8B:  65%|██████▌   | 118/181 [1:00:54<32:02, 30.51s/batch, Acc: 0.58% | Done: 1888/2886]Evaluating Meta-Llama-3-8B:  65%|██████▌   | 118/181 [1:01:24<32:02, 30.51s/batch, Acc: 0.58% | Done: 1904/2886]Evaluating Meta-Llama-3-8B:  66%|██████▌   | 119/181 [1:01:24<31:32, 30.52s/batch, Acc: 0.58% | Done: 1904/2886]Evaluating Meta-Llama-3-8B:  66%|██████▌   | 119/181 [1:01:55<31:32, 30.52s/batch, Acc: 0.62% | Done: 1920/2886]Evaluating Meta-Llama-3-8B:  66%|██████▋   | 120/181 [1:01:55<31:05, 30.58s/batch, Acc: 0.62% | Done: 1920/2886]Evaluating Meta-Llama-3-8B:  66%|██████▋   | 120/181 [1:02:26<31:05, 30.58s/batch, Acc: 0.62% | Done: 1936/2886]Evaluating Meta-Llama-3-8B:  67%|██████▋   | 121/181 [1:02:26<30:38, 30.63s/batch, Acc: 0.62% | Done: 1936/2886]Evaluating Meta-Llama-3-8B:  67%|██████▋   | 121/181 [1:02:57<30:38, 30.63s/batch, Acc: 0.61% | Done: 1952/2886]Evaluating Meta-Llama-3-8B:  67%|██████▋   | 122/181 [1:02:57<30:09, 30.67s/batch, Acc: 0.61% | Done: 1952/2886]Evaluating Meta-Llama-3-8B:  67%|██████▋   | 122/181 [1:03:27<30:09, 30.67s/batch, Acc: 0.61% | Done: 1968/2886]Evaluating Meta-Llama-3-8B:  68%|██████▊   | 123/181 [1:03:27<29:41, 30.72s/batch, Acc: 0.61% | Done: 1968/2886]Evaluating Meta-Llama-3-8B:  68%|██████▊   | 123/181 [1:03:58<29:41, 30.72s/batch, Acc: 0.60% | Done: 1984/2886]Evaluating Meta-Llama-3-8B:  69%|██████▊   | 124/181 [1:03:58<29:11, 30.73s/batch, Acc: 0.60% | Done: 1984/2886]Evaluating Meta-Llama-3-8B:  69%|██████▊   | 124/181 [1:04:29<29:11, 30.73s/batch, Acc: 0.60% | Done: 2000/2886]Evaluating Meta-Llama-3-8B:  69%|██████▉   | 125/181 [1:04:29<28:38, 30.69s/batch, Acc: 0.60% | Done: 2000/2886]Evaluating Meta-Llama-3-8B:  69%|██████▉   | 125/181 [1:04:59<28:38, 30.69s/batch, Acc: 0.64% | Done: 2016/2886]Evaluating Meta-Llama-3-8B:  70%|██████▉   | 126/181 [1:04:59<28:04, 30.63s/batch, Acc: 0.64% | Done: 2016/2886]Evaluating Meta-Llama-3-8B:  70%|██████▉   | 126/181 [1:05:30<28:04, 30.63s/batch, Acc: 0.64% | Done: 2032/2886]Evaluating Meta-Llama-3-8B:  70%|███████   | 127/181 [1:05:30<27:34, 30.64s/batch, Acc: 0.64% | Done: 2032/2886]Evaluating Meta-Llama-3-8B:  70%|███████   | 127/181 [1:06:00<27:34, 30.64s/batch, Acc: 0.63% | Done: 2048/2886]Evaluating Meta-Llama-3-8B:  71%|███████   | 128/181 [1:06:00<27:00, 30.58s/batch, Acc: 0.63% | Done: 2048/2886]Evaluating Meta-Llama-3-8B:  71%|███████   | 128/181 [1:06:31<27:00, 30.58s/batch, Acc: 0.63% | Done: 2064/2886]Evaluating Meta-Llama-3-8B:  71%|███████▏  | 129/181 [1:06:31<26:29, 30.58s/batch, Acc: 0.63% | Done: 2064/2886]Evaluating Meta-Llama-3-8B:  71%|███████▏  | 129/181 [1:07:01<26:29, 30.58s/batch, Acc: 0.62% | Done: 2080/2886]Evaluating Meta-Llama-3-8B:  72%|███████▏  | 130/181 [1:07:01<25:59, 30.57s/batch, Acc: 0.62% | Done: 2080/2886]Evaluating Meta-Llama-3-8B:  72%|███████▏  | 130/181 [1:07:32<25:59, 30.57s/batch, Acc: 0.62% | Done: 2096/2886]Evaluating Meta-Llama-3-8B:  72%|███████▏  | 131/181 [1:07:32<25:29, 30.59s/batch, Acc: 0.62% | Done: 2096/2886]Evaluating Meta-Llama-3-8B:  72%|███████▏  | 131/181 [1:08:03<25:29, 30.59s/batch, Acc: 0.62% | Done: 2112/2886]Evaluating Meta-Llama-3-8B:  73%|███████▎  | 132/181 [1:08:03<24:57, 30.56s/batch, Acc: 0.62% | Done: 2112/2886]Evaluating Meta-Llama-3-8B:  73%|███████▎  | 132/181 [1:08:33<24:57, 30.56s/batch, Acc: 0.61% | Done: 2128/2886]Evaluating Meta-Llama-3-8B:  73%|███████▎  | 133/181 [1:08:33<24:27, 30.57s/batch, Acc: 0.61% | Done: 2128/2886]Evaluating Meta-Llama-3-8B:  73%|███████▎  | 133/181 [1:09:04<24:27, 30.57s/batch, Acc: 0.61% | Done: 2144/2886]Evaluating Meta-Llama-3-8B:  74%|███████▍  | 134/181 [1:09:04<23:57, 30.58s/batch, Acc: 0.61% | Done: 2144/2886]Evaluating Meta-Llama-3-8B:  74%|███████▍  | 134/181 [1:09:34<23:57, 30.58s/batch, Acc: 0.60% | Done: 2160/2886]Evaluating Meta-Llama-3-8B:  75%|███████▍  | 135/181 [1:09:34<23:26, 30.57s/batch, Acc: 0.60% | Done: 2160/2886]Evaluating Meta-Llama-3-8B:  75%|███████▍  | 135/181 [1:10:05<23:26, 30.57s/batch, Acc: 0.60% | Done: 2176/2886]Evaluating Meta-Llama-3-8B:  75%|███████▌  | 136/181 [1:10:05<22:52, 30.51s/batch, Acc: 0.60% | Done: 2176/2886]Evaluating Meta-Llama-3-8B:  75%|███████▌  | 136/181 [1:10:35<22:52, 30.51s/batch, Acc: 0.64% | Done: 2192/2886]Evaluating Meta-Llama-3-8B:  76%|███████▌  | 137/181 [1:10:35<22:25, 30.58s/batch, Acc: 0.64% | Done: 2192/2886]Evaluating Meta-Llama-3-8B:  76%|███████▌  | 137/181 [1:11:06<22:25, 30.58s/batch, Acc: 0.63% | Done: 2208/2886]Evaluating Meta-Llama-3-8B:  76%|███████▌  | 138/181 [1:11:06<21:53, 30.55s/batch, Acc: 0.63% | Done: 2208/2886]Evaluating Meta-Llama-3-8B:  76%|███████▌  | 138/181 [1:11:36<21:53, 30.55s/batch, Acc: 0.63% | Done: 2224/2886]Evaluating Meta-Llama-3-8B:  77%|███████▋  | 139/181 [1:11:36<21:22, 30.54s/batch, Acc: 0.63% | Done: 2224/2886]Evaluating Meta-Llama-3-8B:  77%|███████▋  | 139/181 [1:12:07<21:22, 30.54s/batch, Acc: 0.62% | Done: 2240/2886]Evaluating Meta-Llama-3-8B:  77%|███████▋  | 140/181 [1:12:07<20:51, 30.51s/batch, Acc: 0.62% | Done: 2240/2886]Evaluating Meta-Llama-3-8B:  77%|███████▋  | 140/181 [1:12:37<20:51, 30.51s/batch, Acc: 0.62% | Done: 2256/2886]Evaluating Meta-Llama-3-8B:  78%|███████▊  | 141/181 [1:12:37<20:21, 30.54s/batch, Acc: 0.62% | Done: 2256/2886]Evaluating Meta-Llama-3-8B:  78%|███████▊  | 141/181 [1:13:08<20:21, 30.54s/batch, Acc: 0.62% | Done: 2272/2886]Evaluating Meta-Llama-3-8B:  78%|███████▊  | 142/181 [1:13:08<19:52, 30.58s/batch, Acc: 0.62% | Done: 2272/2886]Evaluating Meta-Llama-3-8B:  78%|███████▊  | 142/181 [1:13:39<19:52, 30.58s/batch, Acc: 0.66% | Done: 2288/2886]Evaluating Meta-Llama-3-8B:  79%|███████▉  | 143/181 [1:13:39<19:24, 30.63s/batch, Acc: 0.66% | Done: 2288/2886]Evaluating Meta-Llama-3-8B:  79%|███████▉  | 143/181 [1:14:10<19:24, 30.63s/batch, Acc: 0.65% | Done: 2304/2886]Evaluating Meta-Llama-3-8B:  80%|███████▉  | 144/181 [1:14:10<18:53, 30.63s/batch, Acc: 0.65% | Done: 2304/2886]Evaluating Meta-Llama-3-8B:  80%|███████▉  | 144/181 [1:14:40<18:53, 30.63s/batch, Acc: 0.65% | Done: 2320/2886]Evaluating Meta-Llama-3-8B:  80%|████████  | 145/181 [1:14:40<18:22, 30.62s/batch, Acc: 0.65% | Done: 2320/2886]Evaluating Meta-Llama-3-8B:  80%|████████  | 145/181 [1:15:11<18:22, 30.62s/batch, Acc: 0.64% | Done: 2336/2886]Evaluating Meta-Llama-3-8B:  81%|████████  | 146/181 [1:15:11<17:50, 30.60s/batch, Acc: 0.64% | Done: 2336/2886]Evaluating Meta-Llama-3-8B:  81%|████████  | 146/181 [1:15:41<17:50, 30.60s/batch, Acc: 0.64% | Done: 2352/2886]Evaluating Meta-Llama-3-8B:  81%|████████  | 147/181 [1:15:41<17:21, 30.63s/batch, Acc: 0.64% | Done: 2352/2886]Evaluating Meta-Llama-3-8B:  81%|████████  | 147/181 [1:16:12<17:21, 30.63s/batch, Acc: 0.63% | Done: 2368/2886]Evaluating Meta-Llama-3-8B:  82%|████████▏ | 148/181 [1:16:12<16:51, 30.66s/batch, Acc: 0.63% | Done: 2368/2886]Evaluating Meta-Llama-3-8B:  82%|████████▏ | 148/181 [1:16:43<16:51, 30.66s/batch, Acc: 0.63% | Done: 2384/2886]Evaluating Meta-Llama-3-8B:  82%|████████▏ | 149/181 [1:16:43<16:19, 30.62s/batch, Acc: 0.63% | Done: 2384/2886]Evaluating Meta-Llama-3-8B:  82%|████████▏ | 149/181 [1:17:13<16:19, 30.62s/batch, Acc: 0.62% | Done: 2400/2886]Evaluating Meta-Llama-3-8B:  83%|████████▎ | 150/181 [1:17:13<15:48, 30.59s/batch, Acc: 0.62% | Done: 2400/2886]Evaluating Meta-Llama-3-8B:  83%|████████▎ | 150/181 [1:17:44<15:48, 30.59s/batch, Acc: 0.62% | Done: 2416/2886]Evaluating Meta-Llama-3-8B:  83%|████████▎ | 151/181 [1:17:44<15:18, 30.62s/batch, Acc: 0.62% | Done: 2416/2886]Evaluating Meta-Llama-3-8B:  83%|████████▎ | 151/181 [1:18:14<15:18, 30.62s/batch, Acc: 0.62% | Done: 2432/2886]Evaluating Meta-Llama-3-8B:  84%|████████▍ | 152/181 [1:18:14<14:46, 30.55s/batch, Acc: 0.62% | Done: 2432/2886]Evaluating Meta-Llama-3-8B:  84%|████████▍ | 152/181 [1:18:45<14:46, 30.55s/batch, Acc: 0.61% | Done: 2448/2886]Evaluating Meta-Llama-3-8B:  85%|████████▍ | 153/181 [1:18:45<14:18, 30.65s/batch, Acc: 0.61% | Done: 2448/2886]Evaluating Meta-Llama-3-8B:  85%|████████▍ | 153/181 [1:19:16<14:18, 30.65s/batch, Acc: 0.65% | Done: 2464/2886]Evaluating Meta-Llama-3-8B:  85%|████████▌ | 154/181 [1:19:16<13:48, 30.67s/batch, Acc: 0.65% | Done: 2464/2886]Evaluating Meta-Llama-3-8B:  85%|████████▌ | 154/181 [1:19:46<13:48, 30.67s/batch, Acc: 0.65% | Done: 2480/2886]Evaluating Meta-Llama-3-8B:  86%|████████▌ | 155/181 [1:19:46<13:16, 30.63s/batch, Acc: 0.65% | Done: 2480/2886]Evaluating Meta-Llama-3-8B:  86%|████████▌ | 155/181 [1:20:17<13:16, 30.63s/batch, Acc: 0.64% | Done: 2496/2886]Evaluating Meta-Llama-3-8B:  86%|████████▌ | 156/181 [1:20:17<12:46, 30.66s/batch, Acc: 0.64% | Done: 2496/2886]Evaluating Meta-Llama-3-8B:  86%|████████▌ | 156/181 [1:20:48<12:46, 30.66s/batch, Acc: 0.64% | Done: 2512/2886]Evaluating Meta-Llama-3-8B:  87%|████████▋ | 157/181 [1:20:48<12:14, 30.59s/batch, Acc: 0.64% | Done: 2512/2886]Evaluating Meta-Llama-3-8B:  87%|████████▋ | 157/181 [1:21:18<12:14, 30.59s/batch, Acc: 0.63% | Done: 2528/2886]Evaluating Meta-Llama-3-8B:  87%|████████▋ | 158/181 [1:21:18<11:43, 30.57s/batch, Acc: 0.63% | Done: 2528/2886]Evaluating Meta-Llama-3-8B:  87%|████████▋ | 158/181 [1:21:48<11:43, 30.57s/batch, Acc: 0.63% | Done: 2544/2886]Evaluating Meta-Llama-3-8B:  88%|████████▊ | 159/181 [1:21:48<11:11, 30.51s/batch, Acc: 0.63% | Done: 2544/2886]Evaluating Meta-Llama-3-8B:  88%|████████▊ | 159/181 [1:22:19<11:11, 30.51s/batch, Acc: 0.62% | Done: 2560/2886]Evaluating Meta-Llama-3-8B:  88%|████████▊ | 160/181 [1:22:19<10:41, 30.53s/batch, Acc: 0.62% | Done: 2560/2886]Evaluating Meta-Llama-3-8B:  88%|████████▊ | 160/181 [1:22:49<10:41, 30.53s/batch, Acc: 0.62% | Done: 2576/2886]Evaluating Meta-Llama-3-8B:  89%|████████▉ | 161/181 [1:22:49<10:09, 30.50s/batch, Acc: 0.62% | Done: 2576/2886]Evaluating Meta-Llama-3-8B:  89%|████████▉ | 161/181 [1:23:20<10:09, 30.50s/batch, Acc: 0.62% | Done: 2592/2886]Evaluating Meta-Llama-3-8B:  90%|████████▉ | 162/181 [1:23:20<09:40, 30.53s/batch, Acc: 0.62% | Done: 2592/2886]Evaluating Meta-Llama-3-8B:  90%|████████▉ | 162/181 [1:23:50<09:40, 30.53s/batch, Acc: 0.61% | Done: 2608/2886]Evaluating Meta-Llama-3-8B:  90%|█████████ | 163/181 [1:23:50<09:09, 30.50s/batch, Acc: 0.61% | Done: 2608/2886]Evaluating Meta-Llama-3-8B:  90%|█████████ | 163/181 [1:24:21<09:09, 30.50s/batch, Acc: 0.61% | Done: 2624/2886]Evaluating Meta-Llama-3-8B:  91%|█████████ | 164/181 [1:24:21<08:39, 30.57s/batch, Acc: 0.61% | Done: 2624/2886]Evaluating Meta-Llama-3-8B:  91%|█████████ | 164/181 [1:24:52<08:39, 30.57s/batch, Acc: 0.61% | Done: 2640/2886]Evaluating Meta-Llama-3-8B:  91%|█████████ | 165/181 [1:24:52<08:08, 30.54s/batch, Acc: 0.61% | Done: 2640/2886]Evaluating Meta-Llama-3-8B:  91%|█████████ | 165/181 [1:25:22<08:08, 30.54s/batch, Acc: 0.60% | Done: 2656/2886]Evaluating Meta-Llama-3-8B:  92%|█████████▏| 166/181 [1:25:22<07:38, 30.54s/batch, Acc: 0.60% | Done: 2656/2886]Evaluating Meta-Llama-3-8B:  92%|█████████▏| 166/181 [1:25:53<07:38, 30.54s/batch, Acc: 0.60% | Done: 2672/2886]Evaluating Meta-Llama-3-8B:  92%|█████████▏| 167/181 [1:25:53<07:06, 30.48s/batch, Acc: 0.60% | Done: 2672/2886]Evaluating Meta-Llama-3-8B:  92%|█████████▏| 167/181 [1:26:23<07:06, 30.48s/batch, Acc: 0.60% | Done: 2688/2886]Evaluating Meta-Llama-3-8B:  93%|█████████▎| 168/181 [1:26:23<06:36, 30.47s/batch, Acc: 0.60% | Done: 2688/2886]Evaluating Meta-Llama-3-8B:  93%|█████████▎| 168/181 [1:26:53<06:36, 30.47s/batch, Acc: 0.59% | Done: 2704/2886]Evaluating Meta-Llama-3-8B:  93%|█████████▎| 169/181 [1:26:53<06:05, 30.43s/batch, Acc: 0.59% | Done: 2704/2886]Evaluating Meta-Llama-3-8B:  93%|█████████▎| 169/181 [1:27:24<06:05, 30.43s/batch, Acc: 0.59% | Done: 2720/2886]Evaluating Meta-Llama-3-8B:  94%|█████████▍| 170/181 [1:27:24<05:35, 30.53s/batch, Acc: 0.59% | Done: 2720/2886]Evaluating Meta-Llama-3-8B:  94%|█████████▍| 170/181 [1:27:54<05:35, 30.53s/batch, Acc: 0.58% | Done: 2736/2886]Evaluating Meta-Llama-3-8B:  94%|█████████▍| 171/181 [1:27:54<05:04, 30.48s/batch, Acc: 0.58% | Done: 2736/2886]Evaluating Meta-Llama-3-8B:  94%|█████████▍| 171/181 [1:28:25<05:04, 30.48s/batch, Acc: 0.58% | Done: 2752/2886]Evaluating Meta-Llama-3-8B:  95%|█████████▌| 172/181 [1:28:25<04:34, 30.52s/batch, Acc: 0.58% | Done: 2752/2886]Evaluating Meta-Llama-3-8B:  95%|█████████▌| 172/181 [1:28:56<04:34, 30.52s/batch, Acc: 0.58% | Done: 2768/2886]Evaluating Meta-Llama-3-8B:  96%|█████████▌| 173/181 [1:28:56<04:04, 30.58s/batch, Acc: 0.58% | Done: 2768/2886]Evaluating Meta-Llama-3-8B:  96%|█████████▌| 173/181 [1:29:26<04:04, 30.58s/batch, Acc: 0.57% | Done: 2784/2886]Evaluating Meta-Llama-3-8B:  96%|█████████▌| 174/181 [1:29:26<03:33, 30.56s/batch, Acc: 0.57% | Done: 2784/2886]Evaluating Meta-Llama-3-8B:  96%|█████████▌| 174/181 [1:29:57<03:33, 30.56s/batch, Acc: 0.57% | Done: 2800/2886]Evaluating Meta-Llama-3-8B:  97%|█████████▋| 175/181 [1:29:57<03:03, 30.57s/batch, Acc: 0.57% | Done: 2800/2886]Evaluating Meta-Llama-3-8B:  97%|█████████▋| 175/181 [1:30:28<03:03, 30.57s/batch, Acc: 0.57% | Done: 2816/2886]Evaluating Meta-Llama-3-8B:  97%|█████████▋| 176/181 [1:30:28<02:33, 30.63s/batch, Acc: 0.57% | Done: 2816/2886]Evaluating Meta-Llama-3-8B:  97%|█████████▋| 176/181 [1:30:58<02:33, 30.63s/batch, Acc: 0.56% | Done: 2832/2886]Evaluating Meta-Llama-3-8B:  98%|█████████▊| 177/181 [1:30:58<02:02, 30.67s/batch, Acc: 0.56% | Done: 2832/2886]Evaluating Meta-Llama-3-8B:  98%|█████████▊| 177/181 [1:31:29<02:02, 30.67s/batch, Acc: 0.56% | Done: 2848/2886]Evaluating Meta-Llama-3-8B:  98%|█████████▊| 178/181 [1:31:29<01:31, 30.62s/batch, Acc: 0.56% | Done: 2848/2886]Evaluating Meta-Llama-3-8B:  98%|█████████▊| 178/181 [1:31:59<01:31, 30.62s/batch, Acc: 0.59% | Done: 2864/2886]Evaluating Meta-Llama-3-8B:  99%|█████████▉| 179/181 [1:31:59<01:01, 30.57s/batch, Acc: 0.59% | Done: 2864/2886]Evaluating Meta-Llama-3-8B:  99%|█████████▉| 179/181 [1:32:30<01:01, 30.57s/batch, Acc: 0.59% | Done: 2880/2886]Evaluating Meta-Llama-3-8B:  99%|█████████▉| 180/181 [1:32:30<00:30, 30.56s/batch, Acc: 0.59% | Done: 2880/2886]Evaluating Meta-Llama-3-8B:  99%|█████████▉| 180/181 [1:33:02<00:30, 30.56s/batch, Acc: 0.59% | Done: 2886/2886]Evaluating Meta-Llama-3-8B: 100%|██████████| 181/181 [1:33:02<00:00, 31.17s/batch, Acc: 0.59% | Done: 2886/2886]Evaluating Meta-Llama-3-8B: 100%|██████████| 181/181 [1:33:03<00:00, 30.85s/batch, Acc: 0.59% | Done: 2886/2886]

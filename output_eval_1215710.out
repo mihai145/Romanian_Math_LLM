@@ -1,0 +1,175 @@
+Collecting accelerate
+  Downloading accelerate-1.12.0-py3-none-any.whl.metadata (19 kB)
+Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.12/dist-packages (from accelerate) (2.1.0)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.12/dist-packages (from accelerate) (25.0)
+Requirement already satisfied: psutil in /usr/local/lib/python3.12/dist-packages (from accelerate) (7.1.3)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.12/dist-packages (from accelerate) (6.0.3)
+Requirement already satisfied: torch>=2.0.0 in /usr/local/lib/python3.12/dist-packages (from accelerate) (2.10.0a0+b558c986e8.nv25.11)
+Requirement already satisfied: huggingface_hub>=0.21.0 in /usr/local/lib/python3.12/dist-packages (from accelerate) (1.1.2)
+Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.12/dist-packages (from accelerate) (0.6.2)
+Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate) (3.20.0)
+Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate) (2025.10.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.2.0 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate) (1.2.0)
+Requirement already satisfied: httpx<1,>=0.23.0 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate) (0.28.1)
+Requirement already satisfied: shellingham in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate) (1.5.4)
+Requirement already satisfied: tqdm>=4.42.1 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate) (4.67.1)
+Requirement already satisfied: typer-slim in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate) (0.20.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate) (4.15.0)
+Requirement already satisfied: anyio in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface_hub>=0.21.0->accelerate) (4.11.0)
+Requirement already satisfied: certifi in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface_hub>=0.21.0->accelerate) (2025.10.5)
+Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface_hub>=0.21.0->accelerate) (1.0.9)
+Requirement already satisfied: idna in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface_hub>=0.21.0->accelerate) (3.11)
+Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.12/dist-packages (from httpcore==1.*->httpx<1,>=0.23.0->huggingface_hub>=0.21.0->accelerate) (0.16.0)
+Requirement already satisfied: setuptools in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (80.9.0)
+Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (1.14.0)
+Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (3.5)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (3.1.6)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from sympy>=1.13.3->torch>=2.0.0->accelerate) (1.3.0)
+Requirement already satisfied: sniffio>=1.1 in /usr/local/lib/python3.12/dist-packages (from anyio->httpx<1,>=0.23.0->huggingface_hub>=0.21.0->accelerate) (1.3.1)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/dist-packages (from jinja2->torch>=2.0.0->accelerate) (3.0.3)
+Requirement already satisfied: click>=8.0.0 in /usr/local/lib/python3.12/dist-packages (from typer-slim->huggingface_hub>=0.21.0->accelerate) (8.3.0)
+Downloading accelerate-1.12.0-py3-none-any.whl (380 kB)
+Installing collected packages: accelerate
+Successfully installed accelerate-1.12.0
+Collecting reasoning-gym
+  Downloading reasoning_gym-0.1.24-py3-none-any.whl.metadata (9.5 kB)
+Collecting arckit==0.1.0 (from reasoning-gym)
+  Downloading arckit-0.1.0-py3-none-any.whl.metadata (503 bytes)
+Collecting bfi==1.0.4 (from reasoning-gym)
+  Downloading bfi-1.0.4-py3-none-any.whl.metadata (12 kB)
+Collecting cellpylib==2.4.0 (from reasoning-gym)
+  Downloading cellpylib-2.4.0.tar.gz (38 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting magiccube==0.3.0 (from reasoning-gym)
+  Downloading magiccube-0.3.0-py3-none-any.whl.metadata (3.9 kB)
+Collecting pycosat==0.6.6 (from reasoning-gym)
+  Downloading pycosat-0.6.6.tar.gz (71 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting pyfiglet==1.0.2 (from reasoning-gym)
+  Downloading pyfiglet-1.0.2-py3-none-any.whl.metadata (7.1 kB)
+Requirement already satisfied: pytz>=2024.1 in /usr/local/lib/python3.12/dist-packages (from reasoning-gym) (2025.2)
+Requirement already satisfied: pyyaml>=6.0.2 in /usr/local/lib/python3.12/dist-packages (from reasoning-gym) (6.0.3)
+Requirement already satisfied: sympy>=1.13.1 in /usr/local/lib/python3.12/dist-packages (from reasoning-gym) (1.14.0)
+Requirement already satisfied: tabulate==0.9.0 in /usr/local/lib/python3.12/dist-packages (from reasoning-gym) (0.9.0)
+Collecting zss>=1.2.0 (from reasoning-gym)
+  Downloading zss-1.2.0.tar.gz (9.8 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy in /usr/local/lib/python3.12/dist-packages (from arckit==0.1.0->reasoning-gym) (2.1.0)
+Requirement already satisfied: rich in /usr/local/lib/python3.12/dist-packages (from arckit==0.1.0->reasoning-gym) (14.2.0)
+Collecting drawsvg (from arckit==0.1.0->reasoning-gym)
+  Downloading drawsvg-2.4.0-py3-none-any.whl.metadata (19 kB)
+Requirement already satisfied: matplotlib>=3.0.2 in /usr/local/lib/python3.12/dist-packages (from cellpylib==2.4.0->reasoning-gym) (3.10.7)
+Requirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (4.60.1)
+Requirement already satisfied: kiwisolver>=1.3.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (1.4.9)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (25.0)
+Requirement already satisfied: pillow>=8 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (12.0.0)
+Requirement already satisfied: pyparsing>=3 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (3.2.5)
+Requirement already satisfied: python-dateutil>=2.7 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.12/dist-packages (from python-dateutil>=2.7->matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (1.16.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from sympy>=1.13.1->reasoning-gym) (1.3.0)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.12/dist-packages (from rich->arckit==0.1.0->reasoning-gym) (4.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.12/dist-packages (from rich->arckit==0.1.0->reasoning-gym) (2.19.2)
+Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.12/dist-packages (from markdown-it-py>=2.2.0->rich->arckit==0.1.0->reasoning-gym) (0.1.2)
+Downloading reasoning_gym-0.1.24-py3-none-any.whl (7.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 135.8 MB/s  0:00:00
+Downloading arckit-0.1.0-py3-none-any.whl (730 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 730.3/730.3 kB 202.3 MB/s  0:00:00
+Downloading bfi-1.0.4-py3-none-any.whl (159 kB)
+Downloading magiccube-0.3.0-py3-none-any.whl (16 kB)
+Downloading pyfiglet-1.0.2-py3-none-any.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 249.4 MB/s  0:00:00
+Downloading drawsvg-2.4.0-py3-none-any.whl (44 kB)
+Building wheels for collected packages: cellpylib, pycosat, zss
+  Building wheel for cellpylib (pyproject.toml): started
+  Building wheel for cellpylib (pyproject.toml): finished with status 'done'
+  Created wheel for cellpylib: filename=cellpylib-2.4.0-py3-none-any.whl size=38009 sha256=de14d8e458c64eaf11b7d367b23383313175231339302354bf95cbba462ccd86
+  Stored in directory: /users/igabor/.cache/pip/wheels/71/61/57/bbbbd5e8b79d6898242d075bd552bafab484034c3fcf710177
+  Building wheel for pycosat (pyproject.toml): started
+  Building wheel for pycosat (pyproject.toml): finished with status 'done'
+  Created wheel for pycosat: filename=pycosat-0.6.6-cp312-cp312-linux_aarch64.whl size=169418 sha256=d65da7e31fb1b968b63bd835cd6cf012807ff8e6ca8f52049b7e67adcd8c5142
+  Stored in directory: /users/igabor/.cache/pip/wheels/a2/34/2e/81095f4bfa4d06004e3bebc7e415733c40f0d0ab583100d3af
+  Building wheel for zss (pyproject.toml): started
+  Building wheel for zss (pyproject.toml): finished with status 'done'
+  Created wheel for zss: filename=zss-1.2.0-py3-none-any.whl size=6792 sha256=491b73e12a97ff7a23f8aed9893cdbfa172df50e9735b8f5f7c7516a2693d82c
+  Stored in directory: /users/igabor/.cache/pip/wheels/46/e7/2e/44fb39352ad468427a7528cacbefefaa438a898dfd1ad2eaa4
+Successfully built cellpylib pycosat zss
+Installing collected packages: pycosat, drawsvg, bfi, zss, pyfiglet, magiccube, cellpylib, arckit, reasoning-gym
+
+Successfully installed arckit-0.1.0 bfi-1.0.4 cellpylib-2.4.0 drawsvg-2.4.0 magiccube-0.3.0 pycosat-0.6.6 pyfiglet-1.0.2 reasoning-gym-0.1.24 zss-1.2.0
+Found existing installation: tokenizers 0.22.1
+Uninstalling tokenizers-0.22.1:
+  Successfully uninstalled tokenizers-0.22.1
+Collecting tokenizers
+  Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.8 kB)
+Collecting transformers
+  Downloading transformers-4.57.3-py3-none-any.whl.metadata (43 kB)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.12/dist-packages (4.67.1)
+Requirement already satisfied: huggingface-hub<2.0,>=0.16.4 in /usr/local/lib/python3.12/dist-packages (from tokenizers) (1.1.2)
+Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (3.20.0)
+Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (2025.10.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.2.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (1.2.0)
+Requirement already satisfied: httpx<1,>=0.23.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (0.28.1)
+Requirement already satisfied: packaging>=20.9 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (25.0)
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (6.0.3)
+Requirement already satisfied: shellingham in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (1.5.4)
+Requirement already satisfied: typer-slim in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (0.20.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (4.15.0)
+Requirement already satisfied: anyio in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers) (4.11.0)
+Requirement already satisfied: certifi in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers) (2025.10.5)
+Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers) (1.0.9)
+Requirement already satisfied: idna in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers) (3.11)
+Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.12/dist-packages (from httpcore==1.*->httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers) (0.16.0)
+Collecting huggingface-hub<2.0,>=0.16.4 (from tokenizers)
+  Downloading huggingface_hub-0.36.0-py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.12/dist-packages (from transformers) (2.1.0)
+Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.12/dist-packages (from transformers) (2025.11.3)
+Requirement already satisfied: requests in /usr/local/lib/python3.12/dist-packages (from transformers) (2.32.5)
+Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.12/dist-packages (from transformers) (0.6.2)
+Requirement already satisfied: sniffio>=1.1 in /usr/local/lib/python3.12/dist-packages (from anyio->httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers) (1.3.1)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/dist-packages (from requests->transformers) (3.4.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests->transformers) (2.5.0)
+Requirement already satisfied: click>=8.0.0 in /usr/local/lib/python3.12/dist-packages (from typer-slim->huggingface-hub<2.0,>=0.16.4->tokenizers) (8.3.0)
+Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (3.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 79.3 MB/s  0:00:00
+Downloading transformers-4.57.3-py3-none-any.whl (12.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 297.4 MB/s  0:00:00
+Downloading huggingface_hub-0.36.0-py3-none-any.whl (566 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.1/566.1 kB 178.6 MB/s  0:00:00
+Installing collected packages: huggingface-hub, tokenizers, transformers
+  Attempting uninstall: huggingface-hub
+    Found existing installation: huggingface_hub 1.1.2
+    Uninstalling huggingface_hub-1.1.2:
+      Successfully uninstalled huggingface_hub-1.1.2
+
+Successfully installed huggingface-hub-0.36.0 tokenizers-0.22.1 transformers-4.57.3
+
+===== Loading Apertus-8B-Instruct-2509: swiss-ai/Apertus-8B-Instruct-2509 =====
+
+
+>>> Apertus-8B-Instruct-2509 accuracy: 38.01%
+
+Saved results (including full reasoning) to /iopsstor/scratch/cscs/igabor/project/Romanian_Math_LLM/Apertus-8B-Instruct-2509_results.json
+
+===== Loading Meta-Llama-3-8B: meta-llama/Meta-Llama-3-8B =====
+
+
+>>> Meta-Llama-3-8B accuracy: 0.59%
+
+Saved results (including full reasoning) to /iopsstor/scratch/cscs/igabor/project/Romanian_Math_LLM/Meta-Llama-3-8B_results.json
