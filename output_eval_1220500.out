@@ -1,0 +1,445 @@
+Collecting accelerate
+  Downloading accelerate-1.12.0-py3-none-any.whl.metadata (19 kB)
+Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.12/dist-packages (from accelerate) (2.1.0)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.12/dist-packages (from accelerate) (25.0)
+Requirement already satisfied: psutil in /usr/local/lib/python3.12/dist-packages (from accelerate) (7.1.3)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.12/dist-packages (from accelerate) (6.0.3)
+Requirement already satisfied: torch>=2.0.0 in /usr/local/lib/python3.12/dist-packages (from accelerate) (2.10.0a0+b558c986e8.nv25.11)
+Requirement already satisfied: huggingface_hub>=0.21.0 in /usr/local/lib/python3.12/dist-packages (from accelerate) (1.1.2)
+Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.12/dist-packages (from accelerate) (0.6.2)
+Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate) (3.20.0)
+Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate) (2025.10.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.2.0 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate) (1.2.0)
+Requirement already satisfied: httpx<1,>=0.23.0 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate) (0.28.1)
+Requirement already satisfied: shellingham in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate) (1.5.4)
+Requirement already satisfied: tqdm>=4.42.1 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate) (4.67.1)
+Requirement already satisfied: typer-slim in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate) (0.20.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate) (4.15.0)
+Requirement already satisfied: anyio in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface_hub>=0.21.0->accelerate) (4.11.0)
+Requirement already satisfied: certifi in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface_hub>=0.21.0->accelerate) (2025.10.5)
+Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface_hub>=0.21.0->accelerate) (1.0.9)
+Requirement already satisfied: idna in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface_hub>=0.21.0->accelerate) (3.11)
+Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.12/dist-packages (from httpcore==1.*->httpx<1,>=0.23.0->huggingface_hub>=0.21.0->accelerate) (0.16.0)
+Requirement already satisfied: setuptools in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (80.9.0)
+Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (1.14.0)
+Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (3.5)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (3.1.6)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from sympy>=1.13.3->torch>=2.0.0->accelerate) (1.3.0)
+Requirement already satisfied: sniffio>=1.1 in /usr/local/lib/python3.12/dist-packages (from anyio->httpx<1,>=0.23.0->huggingface_hub>=0.21.0->accelerate) (1.3.1)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/dist-packages (from jinja2->torch>=2.0.0->accelerate) (3.0.3)
+Requirement already satisfied: click>=8.0.0 in /usr/local/lib/python3.12/dist-packages (from typer-slim->huggingface_hub>=0.21.0->accelerate) (8.3.0)
+Downloading accelerate-1.12.0-py3-none-any.whl (380 kB)
+Installing collected packages: accelerate
+Successfully installed accelerate-1.12.0
+Collecting reasoning-gym
+  Downloading reasoning_gym-0.1.24-py3-none-any.whl.metadata (9.5 kB)
+Collecting arckit==0.1.0 (from reasoning-gym)
+  Downloading arckit-0.1.0-py3-none-any.whl.metadata (503 bytes)
+Collecting bfi==1.0.4 (from reasoning-gym)
+  Downloading bfi-1.0.4-py3-none-any.whl.metadata (12 kB)
+Collecting cellpylib==2.4.0 (from reasoning-gym)
+  Downloading cellpylib-2.4.0.tar.gz (38 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting magiccube==0.3.0 (from reasoning-gym)
+  Downloading magiccube-0.3.0-py3-none-any.whl.metadata (3.9 kB)
+Collecting pycosat==0.6.6 (from reasoning-gym)
+  Downloading pycosat-0.6.6.tar.gz (71 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting pyfiglet==1.0.2 (from reasoning-gym)
+  Downloading pyfiglet-1.0.2-py3-none-any.whl.metadata (7.1 kB)
+Requirement already satisfied: pytz>=2024.1 in /usr/local/lib/python3.12/dist-packages (from reasoning-gym) (2025.2)
+Requirement already satisfied: pyyaml>=6.0.2 in /usr/local/lib/python3.12/dist-packages (from reasoning-gym) (6.0.3)
+Requirement already satisfied: sympy>=1.13.1 in /usr/local/lib/python3.12/dist-packages (from reasoning-gym) (1.14.0)
+Requirement already satisfied: tabulate==0.9.0 in /usr/local/lib/python3.12/dist-packages (from reasoning-gym) (0.9.0)
+Collecting zss>=1.2.0 (from reasoning-gym)
+  Downloading zss-1.2.0.tar.gz (9.8 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy in /usr/local/lib/python3.12/dist-packages (from arckit==0.1.0->reasoning-gym) (2.1.0)
+Requirement already satisfied: rich in /usr/local/lib/python3.12/dist-packages (from arckit==0.1.0->reasoning-gym) (14.2.0)
+Collecting drawsvg (from arckit==0.1.0->reasoning-gym)
+  Downloading drawsvg-2.4.0-py3-none-any.whl.metadata (19 kB)
+Requirement already satisfied: matplotlib>=3.0.2 in /usr/local/lib/python3.12/dist-packages (from cellpylib==2.4.0->reasoning-gym) (3.10.7)
+Requirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (4.60.1)
+Requirement already satisfied: kiwisolver>=1.3.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (1.4.9)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (25.0)
+Requirement already satisfied: pillow>=8 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (12.0.0)
+Requirement already satisfied: pyparsing>=3 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (3.2.5)
+Requirement already satisfied: python-dateutil>=2.7 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.12/dist-packages (from python-dateutil>=2.7->matplotlib>=3.0.2->cellpylib==2.4.0->reasoning-gym) (1.16.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from sympy>=1.13.1->reasoning-gym) (1.3.0)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.12/dist-packages (from rich->arckit==0.1.0->reasoning-gym) (4.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.12/dist-packages (from rich->arckit==0.1.0->reasoning-gym) (2.19.2)
+Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.12/dist-packages (from markdown-it-py>=2.2.0->rich->arckit==0.1.0->reasoning-gym) (0.1.2)
+Downloading reasoning_gym-0.1.24-py3-none-any.whl (7.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 133.6 MB/s  0:00:00
+Downloading arckit-0.1.0-py3-none-any.whl (730 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 730.3/730.3 kB 216.6 MB/s  0:00:00
+Downloading bfi-1.0.4-py3-none-any.whl (159 kB)
+Downloading magiccube-0.3.0-py3-none-any.whl (16 kB)
+Downloading pyfiglet-1.0.2-py3-none-any.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 161.0 MB/s  0:00:00
+Downloading drawsvg-2.4.0-py3-none-any.whl (44 kB)
+Building wheels for collected packages: cellpylib, pycosat, zss
+  Building wheel for cellpylib (pyproject.toml): started
+  Building wheel for cellpylib (pyproject.toml): finished with status 'done'
+  Created wheel for cellpylib: filename=cellpylib-2.4.0-py3-none-any.whl size=38009 sha256=144ff960a7e10fc11addd4b6c774d878587193600ed4b2d19cf33b242072f777
+  Stored in directory: /users/igabor/.cache/pip/wheels/71/61/57/bbbbd5e8b79d6898242d075bd552bafab484034c3fcf710177
+  Building wheel for pycosat (pyproject.toml): started
+  Building wheel for pycosat (pyproject.toml): finished with status 'done'
+  Created wheel for pycosat: filename=pycosat-0.6.6-cp312-cp312-linux_aarch64.whl size=169415 sha256=243c8d7431276c5eb17e73d94da28cd292b59deb4547ccbca66adf31bbbabfd1
+  Stored in directory: /users/igabor/.cache/pip/wheels/a2/34/2e/81095f4bfa4d06004e3bebc7e415733c40f0d0ab583100d3af
+  Building wheel for zss (pyproject.toml): started
+  Building wheel for zss (pyproject.toml): finished with status 'done'
+  Created wheel for zss: filename=zss-1.2.0-py3-none-any.whl size=6792 sha256=dd7b224ec1f7c7357ba8b61f832cab0cdbb9c9e8d86acff34424d3c509aea19c
+  Stored in directory: /users/igabor/.cache/pip/wheels/46/e7/2e/44fb39352ad468427a7528cacbefefaa438a898dfd1ad2eaa4
+Successfully built cellpylib pycosat zss
+Installing collected packages: pycosat, drawsvg, bfi, zss, pyfiglet, magiccube, cellpylib, arckit, reasoning-gym
+
+Successfully installed arckit-0.1.0 bfi-1.0.4 cellpylib-2.4.0 drawsvg-2.4.0 magiccube-0.3.0 pycosat-0.6.6 pyfiglet-1.0.2 reasoning-gym-0.1.24 zss-1.2.0
+Found existing installation: tokenizers 0.22.1
+Uninstalling tokenizers-0.22.1:
+  Successfully uninstalled tokenizers-0.22.1
+Collecting tokenizers
+  Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.8 kB)
+Collecting transformers
+  Downloading transformers-4.57.3-py3-none-any.whl.metadata (43 kB)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.12/dist-packages (4.67.1)
+Requirement already satisfied: huggingface-hub<2.0,>=0.16.4 in /usr/local/lib/python3.12/dist-packages (from tokenizers) (1.1.2)
+Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (3.20.0)
+Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (2025.10.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.2.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (1.2.0)
+Requirement already satisfied: httpx<1,>=0.23.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (0.28.1)
+Requirement already satisfied: packaging>=20.9 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (25.0)
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (6.0.3)
+Requirement already satisfied: shellingham in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (1.5.4)
+Requirement already satisfied: typer-slim in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (0.20.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers) (4.15.0)
+Requirement already satisfied: anyio in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers) (4.11.0)
+Requirement already satisfied: certifi in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers) (2025.10.5)
+Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers) (1.0.9)
+Requirement already satisfied: idna in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers) (3.11)
+Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.12/dist-packages (from httpcore==1.*->httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers) (0.16.0)
+Collecting huggingface-hub<2.0,>=0.16.4 (from tokenizers)
+  Downloading huggingface_hub-0.36.0-py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.12/dist-packages (from transformers) (2.1.0)
+Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.12/dist-packages (from transformers) (2025.11.3)
+Requirement already satisfied: requests in /usr/local/lib/python3.12/dist-packages (from transformers) (2.32.5)
+Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.12/dist-packages (from transformers) (0.6.2)
+Requirement already satisfied: sniffio>=1.1 in /usr/local/lib/python3.12/dist-packages (from anyio->httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers) (1.3.1)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/dist-packages (from requests->transformers) (3.4.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests->transformers) (2.5.0)
+Requirement already satisfied: click>=8.0.0 in /usr/local/lib/python3.12/dist-packages (from typer-slim->huggingface-hub<2.0,>=0.16.4->tokenizers) (8.3.0)
+Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (3.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 79.6 MB/s  0:00:00
+Downloading transformers-4.57.3-py3-none-any.whl (12.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 298.4 MB/s  0:00:00
+Downloading huggingface_hub-0.36.0-py3-none-any.whl (566 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.1/566.1 kB 184.4 MB/s  0:00:00
+Installing collected packages: huggingface-hub, tokenizers, transformers
+  Attempting uninstall: huggingface-hub
+    Found existing installation: huggingface_hub 1.1.2
+    Uninstalling huggingface_hub-1.1.2:
+      Successfully uninstalled huggingface_hub-1.1.2
+
+Successfully installed huggingface-hub-0.36.0 tokenizers-0.22.1 transformers-4.57.3
+
+===== Starting SFT Training for: meta-llama/Meta-Llama-3-8B =====
+
+Starting training...
+{'loss': 0.8268, 'grad_norm': 3.109375, 'learning_rate': 1.993348115299335e-05, 'epoch': 0.01}
+{'loss': 0.4899, 'grad_norm': 2.6875, 'learning_rate': 1.9859571322985958e-05, 'epoch': 0.02}
+{'loss': 0.4836, 'grad_norm': 2.90625, 'learning_rate': 1.978566149297857e-05, 'epoch': 0.03}
+{'loss': 0.4601, 'grad_norm': 2.71875, 'learning_rate': 1.9711751662971176e-05, 'epoch': 0.04}
+{'loss': 0.4513, 'grad_norm': 3.078125, 'learning_rate': 1.9637841832963787e-05, 'epoch': 0.06}
+{'loss': 0.4425, 'grad_norm': 2.6875, 'learning_rate': 1.9563932002956394e-05, 'epoch': 0.07}
+{'loss': 0.4318, 'grad_norm': 3.03125, 'learning_rate': 1.9490022172949005e-05, 'epoch': 0.08}
+{'loss': 0.4394, 'grad_norm': 2.8125, 'learning_rate': 1.9416112342941612e-05, 'epoch': 0.09}
+{'loss': 0.4226, 'grad_norm': 2.328125, 'learning_rate': 1.9342202512934223e-05, 'epoch': 0.1}
+{'loss': 0.4027, 'grad_norm': 2.46875, 'learning_rate': 1.926829268292683e-05, 'epoch': 0.11}
+{'loss': 0.4218, 'grad_norm': 2.734375, 'learning_rate': 1.919438285291944e-05, 'epoch': 0.12}
+{'loss': 0.3896, 'grad_norm': 2.25, 'learning_rate': 1.912047302291205e-05, 'epoch': 0.13}
+{'loss': 0.4038, 'grad_norm': 2.46875, 'learning_rate': 1.9046563192904656e-05, 'epoch': 0.14}
+{'loss': 0.3985, 'grad_norm': 2.625, 'learning_rate': 1.8972653362897267e-05, 'epoch': 0.16}
+{'loss': 0.3847, 'grad_norm': 2.53125, 'learning_rate': 1.8898743532889878e-05, 'epoch': 0.17}
+{'loss': 0.4099, 'grad_norm': 2.375, 'learning_rate': 1.8824833702882485e-05, 'epoch': 0.18}
+{'loss': 0.376, 'grad_norm': 2.140625, 'learning_rate': 1.8750923872875092e-05, 'epoch': 0.19}
+{'loss': 0.3742, 'grad_norm': 2.359375, 'learning_rate': 1.8677014042867703e-05, 'epoch': 0.2}
+{'loss': 0.3779, 'grad_norm': 2.1875, 'learning_rate': 1.8603104212860314e-05, 'epoch': 0.21}
+{'loss': 0.3756, 'grad_norm': 2.265625, 'learning_rate': 1.852919438285292e-05, 'epoch': 0.22}
+{'loss': 0.371, 'grad_norm': 2.34375, 'learning_rate': 1.845528455284553e-05, 'epoch': 0.23}
+{'loss': 0.3761, 'grad_norm': 2.078125, 'learning_rate': 1.838137472283814e-05, 'epoch': 0.24}
+{'loss': 0.3601, 'grad_norm': 2.4375, 'learning_rate': 1.830746489283075e-05, 'epoch': 0.26}
+{'loss': 0.3682, 'grad_norm': 2.28125, 'learning_rate': 1.8233555062823358e-05, 'epoch': 0.27}
+{'loss': 0.3542, 'grad_norm': 2.71875, 'learning_rate': 1.8159645232815965e-05, 'epoch': 0.28}
+{'loss': 0.3376, 'grad_norm': 2.15625, 'learning_rate': 1.8085735402808576e-05, 'epoch': 0.29}
+{'loss': 0.3386, 'grad_norm': 2.390625, 'learning_rate': 1.8011825572801183e-05, 'epoch': 0.3}
+{'loss': 0.3284, 'grad_norm': 2.40625, 'learning_rate': 1.793791574279379e-05, 'epoch': 0.31}
+{'loss': 0.3281, 'grad_norm': 2.546875, 'learning_rate': 1.78640059127864e-05, 'epoch': 0.32}
+{'loss': 0.3314, 'grad_norm': 2.0, 'learning_rate': 1.7790096082779012e-05, 'epoch': 0.33}
+{'loss': 0.3236, 'grad_norm': 2.203125, 'learning_rate': 1.771618625277162e-05, 'epoch': 0.34}
+{'loss': 0.3166, 'grad_norm': 2.125, 'learning_rate': 1.7642276422764227e-05, 'epoch': 0.35}
+{'loss': 0.3387, 'grad_norm': 2.375, 'learning_rate': 1.7568366592756838e-05, 'epoch': 0.37}
+{'loss': 0.2946, 'grad_norm': 2.40625, 'learning_rate': 1.749445676274945e-05, 'epoch': 0.38}
+{'loss': 0.3139, 'grad_norm': 2.28125, 'learning_rate': 1.7420546932742056e-05, 'epoch': 0.39}
+{'loss': 0.3188, 'grad_norm': 2.390625, 'learning_rate': 1.7346637102734663e-05, 'epoch': 0.4}
+{'loss': 0.2911, 'grad_norm': 2.171875, 'learning_rate': 1.7272727272727274e-05, 'epoch': 0.41}
+{'loss': 0.2914, 'grad_norm': 2.53125, 'learning_rate': 1.7198817442719885e-05, 'epoch': 0.42}
+{'loss': 0.294, 'grad_norm': 2.078125, 'learning_rate': 1.7124907612712492e-05, 'epoch': 0.43}
+{'loss': 0.3021, 'grad_norm': 2.09375, 'learning_rate': 1.70509977827051e-05, 'epoch': 0.44}
+{'loss': 0.2998, 'grad_norm': 2.34375, 'learning_rate': 1.697708795269771e-05, 'epoch': 0.45}
+{'loss': 0.2936, 'grad_norm': 2.40625, 'learning_rate': 1.690317812269032e-05, 'epoch': 0.47}
+{'loss': 0.308, 'grad_norm': 2.234375, 'learning_rate': 1.682926829268293e-05, 'epoch': 0.48}
+{'loss': 0.2952, 'grad_norm': 2.15625, 'learning_rate': 1.6755358462675536e-05, 'epoch': 0.49}
+{'loss': 0.2749, 'grad_norm': 2.203125, 'learning_rate': 1.6681448632668147e-05, 'epoch': 0.5}
+{'loss': 0.2933, 'grad_norm': 2.34375, 'learning_rate': 1.6607538802660754e-05, 'epoch': 0.51}
+{'loss': 0.2811, 'grad_norm': 2.21875, 'learning_rate': 1.6533628972653365e-05, 'epoch': 0.52}
+{'loss': 0.2762, 'grad_norm': 2.1875, 'learning_rate': 1.6459719142645972e-05, 'epoch': 0.53}
+{'loss': 0.2736, 'grad_norm': 2.359375, 'learning_rate': 1.6385809312638583e-05, 'epoch': 0.54}
+{'loss': 0.2652, 'grad_norm': 2.328125, 'learning_rate': 1.631189948263119e-05, 'epoch': 0.55}
+{'loss': 0.285, 'grad_norm': 2.140625, 'learning_rate': 1.62379896526238e-05, 'epoch': 0.57}
+{'loss': 0.2822, 'grad_norm': 2.34375, 'learning_rate': 1.616407982261641e-05, 'epoch': 0.58}
+{'loss': 0.2716, 'grad_norm': 2.375, 'learning_rate': 1.609016999260902e-05, 'epoch': 0.59}
+{'loss': 0.2603, 'grad_norm': 2.046875, 'learning_rate': 1.6016260162601627e-05, 'epoch': 0.6}
+{'loss': 0.2618, 'grad_norm': 2.15625, 'learning_rate': 1.5942350332594238e-05, 'epoch': 0.61}
+{'loss': 0.262, 'grad_norm': 2.484375, 'learning_rate': 1.5868440502586845e-05, 'epoch': 0.62}
+{'loss': 0.2683, 'grad_norm': 2.265625, 'learning_rate': 1.5794530672579452e-05, 'epoch': 0.63}
+{'loss': 0.2558, 'grad_norm': 2.3125, 'learning_rate': 1.5720620842572063e-05, 'epoch': 0.64}
+{'loss': 0.2531, 'grad_norm': 2.28125, 'learning_rate': 1.5646711012564674e-05, 'epoch': 0.65}
+{'loss': 0.2476, 'grad_norm': 2.171875, 'learning_rate': 1.557280118255728e-05, 'epoch': 0.67}
+{'loss': 0.2584, 'grad_norm': 2.5, 'learning_rate': 1.549889135254989e-05, 'epoch': 0.68}
+{'loss': 0.2478, 'grad_norm': 2.453125, 'learning_rate': 1.54249815225425e-05, 'epoch': 0.69}
+{'loss': 0.2457, 'grad_norm': 2.28125, 'learning_rate': 1.535107169253511e-05, 'epoch': 0.7}
+{'loss': 0.2566, 'grad_norm': 2.5625, 'learning_rate': 1.5277161862527718e-05, 'epoch': 0.71}
+{'loss': 0.2528, 'grad_norm': 2.171875, 'learning_rate': 1.5203252032520327e-05, 'epoch': 0.72}
+{'loss': 0.2467, 'grad_norm': 2.265625, 'learning_rate': 1.5129342202512936e-05, 'epoch': 0.73}
+{'loss': 0.2467, 'grad_norm': 2.0625, 'learning_rate': 1.5055432372505545e-05, 'epoch': 0.74}
+{'loss': 0.2443, 'grad_norm': 2.25, 'learning_rate': 1.4981522542498152e-05, 'epoch': 0.75}
+{'loss': 0.2397, 'grad_norm': 2.15625, 'learning_rate': 1.4907612712490761e-05, 'epoch': 0.77}
+{'loss': 0.2326, 'grad_norm': 2.671875, 'learning_rate': 1.4833702882483372e-05, 'epoch': 0.78}
+{'loss': 0.2332, 'grad_norm': 2.109375, 'learning_rate': 1.4759793052475981e-05, 'epoch': 0.79}
+{'loss': 0.24, 'grad_norm': 2.390625, 'learning_rate': 1.4685883222468589e-05, 'epoch': 0.8}
+{'loss': 0.223, 'grad_norm': 2.140625, 'learning_rate': 1.4611973392461198e-05, 'epoch': 0.81}
+{'loss': 0.2314, 'grad_norm': 2.453125, 'learning_rate': 1.4538063562453808e-05, 'epoch': 0.82}
+{'loss': 0.2356, 'grad_norm': 2.265625, 'learning_rate': 1.4464153732446418e-05, 'epoch': 0.83}
+{'loss': 0.2112, 'grad_norm': 2.1875, 'learning_rate': 1.4390243902439025e-05, 'epoch': 0.84}
+{'loss': 0.2287, 'grad_norm': 2.234375, 'learning_rate': 1.4316334072431634e-05, 'epoch': 0.85}
+{'loss': 0.2322, 'grad_norm': 2.234375, 'learning_rate': 1.4242424242424245e-05, 'epoch': 0.87}
+{'loss': 0.2441, 'grad_norm': 2.0625, 'learning_rate': 1.4168514412416852e-05, 'epoch': 0.88}
+{'loss': 0.2214, 'grad_norm': 2.40625, 'learning_rate': 1.4094604582409461e-05, 'epoch': 0.89}
+{'loss': 0.2184, 'grad_norm': 2.515625, 'learning_rate': 1.402069475240207e-05, 'epoch': 0.9}
+{'loss': 0.2219, 'grad_norm': 2.203125, 'learning_rate': 1.3946784922394681e-05, 'epoch': 0.91}
+{'loss': 0.2147, 'grad_norm': 1.9375, 'learning_rate': 1.3872875092387289e-05, 'epoch': 0.92}
+{'loss': 0.2248, 'grad_norm': 2.03125, 'learning_rate': 1.3798965262379898e-05, 'epoch': 0.93}
+{'loss': 0.2021, 'grad_norm': 2.515625, 'learning_rate': 1.3725055432372507e-05, 'epoch': 0.94}
+{'loss': 0.2115, 'grad_norm': 1.984375, 'learning_rate': 1.3651145602365117e-05, 'epoch': 0.95}
+{'loss': 0.2339, 'grad_norm': 2.421875, 'learning_rate': 1.3577235772357725e-05, 'epoch': 0.97}
+{'loss': 0.2239, 'grad_norm': 2.515625, 'learning_rate': 1.3503325942350334e-05, 'epoch': 0.98}
+{'loss': 0.2115, 'grad_norm': 1.9921875, 'learning_rate': 1.3429416112342943e-05, 'epoch': 0.99}
+{'loss': 0.2125, 'grad_norm': 2.40625, 'learning_rate': 1.335550628233555e-05, 'epoch': 1.0}
+{'loss': 0.1625, 'grad_norm': 2.375, 'learning_rate': 1.3281596452328161e-05, 'epoch': 1.01}
+{'loss': 0.1492, 'grad_norm': 2.234375, 'learning_rate': 1.320768662232077e-05, 'epoch': 1.02}
+{'loss': 0.1568, 'grad_norm': 2.03125, 'learning_rate': 1.313377679231338e-05, 'epoch': 1.03}
+{'loss': 0.1446, 'grad_norm': 2.421875, 'learning_rate': 1.3059866962305987e-05, 'epoch': 1.04}
+{'loss': 0.1449, 'grad_norm': 1.6953125, 'learning_rate': 1.2985957132298596e-05, 'epoch': 1.05}
+{'loss': 0.1414, 'grad_norm': 2.1875, 'learning_rate': 1.2912047302291207e-05, 'epoch': 1.06}
+{'loss': 0.1453, 'grad_norm': 2.015625, 'learning_rate': 1.2838137472283816e-05, 'epoch': 1.08}
+{'loss': 0.1461, 'grad_norm': 2.0625, 'learning_rate': 1.2764227642276423e-05, 'epoch': 1.09}
+{'loss': 0.1446, 'grad_norm': 1.6875, 'learning_rate': 1.2690317812269032e-05, 'epoch': 1.1}
+{'loss': 0.155, 'grad_norm': 1.9296875, 'learning_rate': 1.2616407982261643e-05, 'epoch': 1.11}
+{'loss': 0.1528, 'grad_norm': 2.109375, 'learning_rate': 1.254249815225425e-05, 'epoch': 1.12}
+{'loss': 0.1486, 'grad_norm': 2.21875, 'learning_rate': 1.246858832224686e-05, 'epoch': 1.13}
+{'loss': 0.148, 'grad_norm': 1.875, 'learning_rate': 1.2394678492239469e-05, 'epoch': 1.14}
+{'loss': 0.1457, 'grad_norm': 2.234375, 'learning_rate': 1.232076866223208e-05, 'epoch': 1.15}
+{'loss': 0.1472, 'grad_norm': 2.203125, 'learning_rate': 1.2246858832224687e-05, 'epoch': 1.16}
+{'loss': 0.1561, 'grad_norm': 1.8359375, 'learning_rate': 1.2172949002217296e-05, 'epoch': 1.18}
+{'loss': 0.1413, 'grad_norm': 2.265625, 'learning_rate': 1.2099039172209905e-05, 'epoch': 1.19}
+{'loss': 0.1472, 'grad_norm': 1.796875, 'learning_rate': 1.2025129342202512e-05, 'epoch': 1.2}
+{'loss': 0.1327, 'grad_norm': 1.859375, 'learning_rate': 1.1951219512195123e-05, 'epoch': 1.21}
+{'loss': 0.1567, 'grad_norm': 2.25, 'learning_rate': 1.1877309682187732e-05, 'epoch': 1.22}
+{'loss': 0.1325, 'grad_norm': 2.015625, 'learning_rate': 1.1803399852180341e-05, 'epoch': 1.23}
+{'loss': 0.1418, 'grad_norm': 2.109375, 'learning_rate': 1.1729490022172949e-05, 'epoch': 1.24}
+{'loss': 0.1363, 'grad_norm': 1.6015625, 'learning_rate': 1.165558019216556e-05, 'epoch': 1.25}
+{'loss': 0.1413, 'grad_norm': 2.1875, 'learning_rate': 1.1581670362158168e-05, 'epoch': 1.26}
+{'loss': 0.1378, 'grad_norm': 2.234375, 'learning_rate': 1.1507760532150778e-05, 'epoch': 1.28}
+{'loss': 0.1492, 'grad_norm': 1.84375, 'learning_rate': 1.1433850702143385e-05, 'epoch': 1.29}
+{'loss': 0.1457, 'grad_norm': 2.078125, 'learning_rate': 1.1359940872135996e-05, 'epoch': 1.3}
+{'loss': 0.138, 'grad_norm': 2.015625, 'learning_rate': 1.1286031042128605e-05, 'epoch': 1.31}
+{'loss': 0.1415, 'grad_norm': 1.9453125, 'learning_rate': 1.1212121212121212e-05, 'epoch': 1.32}
+{'loss': 0.1385, 'grad_norm': 1.9296875, 'learning_rate': 1.1138211382113821e-05, 'epoch': 1.33}
+{'loss': 0.1354, 'grad_norm': 2.0625, 'learning_rate': 1.1064301552106432e-05, 'epoch': 1.34}
+{'loss': 0.1383, 'grad_norm': 1.9453125, 'learning_rate': 1.0990391722099041e-05, 'epoch': 1.35}
+{'loss': 0.1318, 'grad_norm': 1.84375, 'learning_rate': 1.0916481892091649e-05, 'epoch': 1.36}
+{'loss': 0.1487, 'grad_norm': 2.09375, 'learning_rate': 1.0842572062084258e-05, 'epoch': 1.37}
+{'loss': 0.1466, 'grad_norm': 1.9921875, 'learning_rate': 1.0768662232076867e-05, 'epoch': 1.39}
+{'loss': 0.1395, 'grad_norm': 1.7890625, 'learning_rate': 1.0694752402069477e-05, 'epoch': 1.4}
+{'loss': 0.1406, 'grad_norm': 1.84375, 'learning_rate': 1.0620842572062085e-05, 'epoch': 1.41}
+{'loss': 0.1402, 'grad_norm': 1.9921875, 'learning_rate': 1.0546932742054694e-05, 'epoch': 1.42}
+{'loss': 0.1462, 'grad_norm': 2.1875, 'learning_rate': 1.0473022912047303e-05, 'epoch': 1.43}
+{'loss': 0.1361, 'grad_norm': 2.1875, 'learning_rate': 1.039911308203991e-05, 'epoch': 1.44}
+{'loss': 0.1353, 'grad_norm': 1.8515625, 'learning_rate': 1.0325203252032521e-05, 'epoch': 1.45}
+{'loss': 0.1293, 'grad_norm': 2.125, 'learning_rate': 1.025129342202513e-05, 'epoch': 1.46}
+{'loss': 0.1379, 'grad_norm': 1.8515625, 'learning_rate': 1.017738359201774e-05, 'epoch': 1.47}
+{'loss': 0.1361, 'grad_norm': 1.9609375, 'learning_rate': 1.0103473762010347e-05, 'epoch': 1.49}
+{'loss': 0.1324, 'grad_norm': 2.109375, 'learning_rate': 1.0029563932002958e-05, 'epoch': 1.5}
+{'loss': 0.1321, 'grad_norm': 1.921875, 'learning_rate': 9.955654101995567e-06, 'epoch': 1.51}
+{'loss': 0.1392, 'grad_norm': 2.171875, 'learning_rate': 9.881744271988176e-06, 'epoch': 1.52}
+{'loss': 0.132, 'grad_norm': 1.8125, 'learning_rate': 9.807834441980785e-06, 'epoch': 1.53}
+{'loss': 0.1301, 'grad_norm': 1.9921875, 'learning_rate': 9.733924611973394e-06, 'epoch': 1.54}
+{'loss': 0.1327, 'grad_norm': 1.921875, 'learning_rate': 9.660014781966001e-06, 'epoch': 1.55}
+{'loss': 0.1301, 'grad_norm': 2.0625, 'learning_rate': 9.586104951958612e-06, 'epoch': 1.56}
+{'loss': 0.1367, 'grad_norm': 1.9296875, 'learning_rate': 9.51219512195122e-06, 'epoch': 1.57}
+{'loss': 0.126, 'grad_norm': 2.65625, 'learning_rate': 9.43828529194383e-06, 'epoch': 1.59}
+{'loss': 0.1378, 'grad_norm': 2.171875, 'learning_rate': 9.364375461936438e-06, 'epoch': 1.6}
+{'loss': 0.1315, 'grad_norm': 2.03125, 'learning_rate': 9.290465631929048e-06, 'epoch': 1.61}
+{'loss': 0.1251, 'grad_norm': 1.859375, 'learning_rate': 9.216555801921656e-06, 'epoch': 1.62}
+{'loss': 0.1379, 'grad_norm': 2.3125, 'learning_rate': 9.142645971914267e-06, 'epoch': 1.63}
+{'loss': 0.1393, 'grad_norm': 2.0625, 'learning_rate': 9.068736141906874e-06, 'epoch': 1.64}
+{'loss': 0.1365, 'grad_norm': 1.859375, 'learning_rate': 8.994826311899483e-06, 'epoch': 1.65}
+{'loss': 0.1302, 'grad_norm': 1.578125, 'learning_rate': 8.920916481892092e-06, 'epoch': 1.66}
+{'loss': 0.1318, 'grad_norm': 2.296875, 'learning_rate': 8.847006651884701e-06, 'epoch': 1.67}
+{'loss': 0.1341, 'grad_norm': 1.890625, 'learning_rate': 8.77309682187731e-06, 'epoch': 1.69}
+{'loss': 0.1342, 'grad_norm': 2.078125, 'learning_rate': 8.69918699186992e-06, 'epoch': 1.7}
+{'loss': 0.1329, 'grad_norm': 2.28125, 'learning_rate': 8.625277161862528e-06, 'epoch': 1.71}
+{'loss': 0.1283, 'grad_norm': 1.7890625, 'learning_rate': 8.551367331855138e-06, 'epoch': 1.72}
+{'loss': 0.1378, 'grad_norm': 1.9453125, 'learning_rate': 8.477457501847747e-06, 'epoch': 1.73}
+{'loss': 0.1282, 'grad_norm': 2.359375, 'learning_rate': 8.403547671840356e-06, 'epoch': 1.74}
+{'loss': 0.1316, 'grad_norm': 1.9765625, 'learning_rate': 8.329637841832965e-06, 'epoch': 1.75}
+{'loss': 0.1432, 'grad_norm': 2.015625, 'learning_rate': 8.255728011825574e-06, 'epoch': 1.76}
+{'loss': 0.1356, 'grad_norm': 2.078125, 'learning_rate': 8.181818181818183e-06, 'epoch': 1.77}
+{'loss': 0.1372, 'grad_norm': 2.328125, 'learning_rate': 8.107908351810792e-06, 'epoch': 1.79}
+{'loss': 0.1263, 'grad_norm': 1.84375, 'learning_rate': 8.0339985218034e-06, 'epoch': 1.8}
+{'loss': 0.1327, 'grad_norm': 1.84375, 'learning_rate': 7.96008869179601e-06, 'epoch': 1.81}
+{'loss': 0.131, 'grad_norm': 1.734375, 'learning_rate': 7.886178861788618e-06, 'epoch': 1.82}
+{'loss': 0.1267, 'grad_norm': 1.8671875, 'learning_rate': 7.812269031781228e-06, 'epoch': 1.83}
+{'loss': 0.1372, 'grad_norm': 2.0, 'learning_rate': 7.738359201773836e-06, 'epoch': 1.84}
+{'loss': 0.1372, 'grad_norm': 1.828125, 'learning_rate': 7.664449371766447e-06, 'epoch': 1.85}
+{'loss': 0.133, 'grad_norm': 2.109375, 'learning_rate': 7.590539541759055e-06, 'epoch': 1.86}
+{'loss': 0.1278, 'grad_norm': 1.9921875, 'learning_rate': 7.516629711751664e-06, 'epoch': 1.87}
+{'loss': 0.1198, 'grad_norm': 1.7578125, 'learning_rate': 7.442719881744272e-06, 'epoch': 1.89}
+{'loss': 0.1262, 'grad_norm': 1.9453125, 'learning_rate': 7.368810051736882e-06, 'epoch': 1.9}
+{'loss': 0.1333, 'grad_norm': 2.03125, 'learning_rate': 7.29490022172949e-06, 'epoch': 1.91}
+{'loss': 0.1305, 'grad_norm': 2.125, 'learning_rate': 7.220990391722099e-06, 'epoch': 1.92}
+{'loss': 0.1366, 'grad_norm': 1.9140625, 'learning_rate': 7.1470805617147084e-06, 'epoch': 1.93}
+{'loss': 0.1326, 'grad_norm': 1.8046875, 'learning_rate': 7.0731707317073175e-06, 'epoch': 1.94}
+{'loss': 0.1213, 'grad_norm': 1.890625, 'learning_rate': 6.999260901699927e-06, 'epoch': 1.95}
+{'loss': 0.1346, 'grad_norm': 1.828125, 'learning_rate': 6.925351071692536e-06, 'epoch': 1.96}
+{'loss': 0.1352, 'grad_norm': 2.171875, 'learning_rate': 6.851441241685145e-06, 'epoch': 1.97}
+{'loss': 0.1231, 'grad_norm': 1.6953125, 'learning_rate': 6.777531411677754e-06, 'epoch': 1.99}
+{'loss': 0.1401, 'grad_norm': 1.9375, 'learning_rate': 6.703621581670363e-06, 'epoch': 2.0}
+{'loss': 0.1075, 'grad_norm': 1.78125, 'learning_rate': 6.629711751662972e-06, 'epoch': 2.01}
+{'loss': 0.0887, 'grad_norm': 2.015625, 'learning_rate': 6.555801921655581e-06, 'epoch': 2.02}
+{'loss': 0.0836, 'grad_norm': 2.40625, 'learning_rate': 6.481892091648189e-06, 'epoch': 2.03}
+{'loss': 0.0849, 'grad_norm': 2.421875, 'learning_rate': 6.4079822616407984e-06, 'epoch': 2.04}
+{'loss': 0.0848, 'grad_norm': 2.1875, 'learning_rate': 6.3340724316334075e-06, 'epoch': 2.05}
+{'loss': 0.0871, 'grad_norm': 2.171875, 'learning_rate': 6.260162601626017e-06, 'epoch': 2.06}
+{'loss': 0.0935, 'grad_norm': 1.75, 'learning_rate': 6.186252771618626e-06, 'epoch': 2.07}
+{'loss': 0.0873, 'grad_norm': 2.078125, 'learning_rate': 6.112342941611235e-06, 'epoch': 2.08}
+{'loss': 0.0866, 'grad_norm': 2.203125, 'learning_rate': 6.038433111603844e-06, 'epoch': 2.1}
+{'loss': 0.0757, 'grad_norm': 2.0625, 'learning_rate': 5.964523281596453e-06, 'epoch': 2.11}
+{'loss': 0.0891, 'grad_norm': 2.171875, 'learning_rate': 5.890613451589062e-06, 'epoch': 2.12}
+{'loss': 0.0808, 'grad_norm': 2.046875, 'learning_rate': 5.816703621581671e-06, 'epoch': 2.13}
+{'loss': 0.0847, 'grad_norm': 2.140625, 'learning_rate': 5.742793791574279e-06, 'epoch': 2.14}
+{'loss': 0.0897, 'grad_norm': 2.125, 'learning_rate': 5.668883961566889e-06, 'epoch': 2.15}
+{'loss': 0.0885, 'grad_norm': 2.140625, 'learning_rate': 5.5949741315594975e-06, 'epoch': 2.16}
+{'loss': 0.0813, 'grad_norm': 2.171875, 'learning_rate': 5.5210643015521075e-06, 'epoch': 2.17}
+{'loss': 0.0858, 'grad_norm': 2.078125, 'learning_rate': 5.447154471544716e-06, 'epoch': 2.18}
+{'loss': 0.0915, 'grad_norm': 2.1875, 'learning_rate': 5.373244641537325e-06, 'epoch': 2.2}
+{'loss': 0.0908, 'grad_norm': 2.046875, 'learning_rate': 5.299334811529934e-06, 'epoch': 2.21}
+{'loss': 0.0878, 'grad_norm': 2.015625, 'learning_rate': 5.225424981522543e-06, 'epoch': 2.22}
+{'loss': 0.083, 'grad_norm': 2.015625, 'learning_rate': 5.151515151515152e-06, 'epoch': 2.23}
+{'loss': 0.0868, 'grad_norm': 2.125, 'learning_rate': 5.077605321507761e-06, 'epoch': 2.24}
+{'loss': 0.0856, 'grad_norm': 1.890625, 'learning_rate': 5.00369549150037e-06, 'epoch': 2.25}
+{'loss': 0.0842, 'grad_norm': 2.125, 'learning_rate': 4.929785661492979e-06, 'epoch': 2.26}
+{'loss': 0.0862, 'grad_norm': 1.9296875, 'learning_rate': 4.855875831485588e-06, 'epoch': 2.27}
+{'loss': 0.0858, 'grad_norm': 2.296875, 'learning_rate': 4.7819660014781975e-06, 'epoch': 2.28}
+{'loss': 0.0974, 'grad_norm': 2.15625, 'learning_rate': 4.7080561714708065e-06, 'epoch': 2.3}
+{'loss': 0.0829, 'grad_norm': 2.171875, 'learning_rate': 4.634146341463416e-06, 'epoch': 2.31}
+{'loss': 0.0826, 'grad_norm': 1.953125, 'learning_rate': 4.560236511456024e-06, 'epoch': 2.32}
+{'loss': 0.0881, 'grad_norm': 2.171875, 'learning_rate': 4.486326681448633e-06, 'epoch': 2.33}
+{'loss': 0.0897, 'grad_norm': 2.0625, 'learning_rate': 4.412416851441242e-06, 'epoch': 2.34}
+{'loss': 0.0896, 'grad_norm': 2.1875, 'learning_rate': 4.338507021433851e-06, 'epoch': 2.35}
+{'loss': 0.087, 'grad_norm': 2.28125, 'learning_rate': 4.26459719142646e-06, 'epoch': 2.36}
+{'loss': 0.0873, 'grad_norm': 2.078125, 'learning_rate': 4.190687361419069e-06, 'epoch': 2.37}
+{'loss': 0.0825, 'grad_norm': 1.796875, 'learning_rate': 4.116777531411678e-06, 'epoch': 2.38}
+{'loss': 0.0837, 'grad_norm': 1.9921875, 'learning_rate': 4.0428677014042875e-06, 'epoch': 2.39}
+{'loss': 0.0809, 'grad_norm': 1.78125, 'learning_rate': 3.9689578713968965e-06, 'epoch': 2.41}
+{'loss': 0.0905, 'grad_norm': 1.8984375, 'learning_rate': 3.895048041389506e-06, 'epoch': 2.42}
+{'loss': 0.0834, 'grad_norm': 2.046875, 'learning_rate': 3.821138211382115e-06, 'epoch': 2.43}
+{'loss': 0.0827, 'grad_norm': 2.03125, 'learning_rate': 3.747228381374723e-06, 'epoch': 2.44}
+{'loss': 0.0871, 'grad_norm': 2.328125, 'learning_rate': 3.673318551367332e-06, 'epoch': 2.45}
+{'loss': 0.0855, 'grad_norm': 2.234375, 'learning_rate': 3.599408721359941e-06, 'epoch': 2.46}
+{'loss': 0.0815, 'grad_norm': 1.984375, 'learning_rate': 3.52549889135255e-06, 'epoch': 2.47}
+{'loss': 0.0868, 'grad_norm': 1.90625, 'learning_rate': 3.4515890613451593e-06, 'epoch': 2.48}
+{'loss': 0.0837, 'grad_norm': 1.9921875, 'learning_rate': 3.3776792313377684e-06, 'epoch': 2.49}
+{'loss': 0.0821, 'grad_norm': 2.28125, 'learning_rate': 3.3037694013303775e-06, 'epoch': 2.51}
+{'loss': 0.0883, 'grad_norm': 2.25, 'learning_rate': 3.229859571322986e-06, 'epoch': 2.52}
+{'loss': 0.085, 'grad_norm': 2.09375, 'learning_rate': 3.1559497413155952e-06, 'epoch': 2.53}
+{'loss': 0.0797, 'grad_norm': 1.78125, 'learning_rate': 3.0820399113082043e-06, 'epoch': 2.54}
+{'loss': 0.0832, 'grad_norm': 1.953125, 'learning_rate': 3.0081300813008134e-06, 'epoch': 2.55}
+{'loss': 0.0864, 'grad_norm': 1.9375, 'learning_rate': 2.934220251293422e-06, 'epoch': 2.56}
+{'loss': 0.0845, 'grad_norm': 2.140625, 'learning_rate': 2.860310421286031e-06, 'epoch': 2.57}
+{'loss': 0.0848, 'grad_norm': 2.421875, 'learning_rate': 2.7864005912786402e-06, 'epoch': 2.58}
+{'loss': 0.0794, 'grad_norm': 2.03125, 'learning_rate': 2.7124907612712493e-06, 'epoch': 2.59}
+{'loss': 0.0809, 'grad_norm': 2.046875, 'learning_rate': 2.6385809312638584e-06, 'epoch': 2.61}
+{'loss': 0.0834, 'grad_norm': 1.8125, 'learning_rate': 2.5646711012564675e-06, 'epoch': 2.62}
+{'loss': 0.0776, 'grad_norm': 2.390625, 'learning_rate': 2.4907612712490766e-06, 'epoch': 2.63}
+{'loss': 0.0815, 'grad_norm': 2.15625, 'learning_rate': 2.4168514412416856e-06, 'epoch': 2.64}
+{'loss': 0.0876, 'grad_norm': 2.28125, 'learning_rate': 2.3429416112342943e-06, 'epoch': 2.65}
+{'loss': 0.0868, 'grad_norm': 2.015625, 'learning_rate': 2.2690317812269034e-06, 'epoch': 2.66}
+{'loss': 0.0823, 'grad_norm': 2.0625, 'learning_rate': 2.1951219512195125e-06, 'epoch': 2.67}
+{'loss': 0.0849, 'grad_norm': 2.1875, 'learning_rate': 2.1212121212121216e-06, 'epoch': 2.68}
+{'loss': 0.0812, 'grad_norm': 2.0625, 'learning_rate': 2.0473022912047306e-06, 'epoch': 2.69}
+{'loss': 0.0871, 'grad_norm': 2.359375, 'learning_rate': 1.9733924611973393e-06, 'epoch': 2.71}
+{'loss': 0.0824, 'grad_norm': 1.84375, 'learning_rate': 1.8994826311899484e-06, 'epoch': 2.72}
+{'loss': 0.0849, 'grad_norm': 2.53125, 'learning_rate': 1.8255728011825575e-06, 'epoch': 2.73}
+{'loss': 0.0842, 'grad_norm': 2.09375, 'learning_rate': 1.7516629711751666e-06, 'epoch': 2.74}
+{'loss': 0.0822, 'grad_norm': 1.8828125, 'learning_rate': 1.6777531411677756e-06, 'epoch': 2.75}
+{'loss': 0.0804, 'grad_norm': 2.0, 'learning_rate': 1.6038433111603843e-06, 'epoch': 2.76}
+{'loss': 0.0871, 'grad_norm': 1.8828125, 'learning_rate': 1.5299334811529934e-06, 'epoch': 2.77}
+{'loss': 0.0818, 'grad_norm': 2.109375, 'learning_rate': 1.4560236511456025e-06, 'epoch': 2.78}
+{'loss': 0.0797, 'grad_norm': 1.7734375, 'learning_rate': 1.3821138211382116e-06, 'epoch': 2.79}
+{'loss': 0.0869, 'grad_norm': 2.203125, 'learning_rate': 1.3082039911308206e-06, 'epoch': 2.81}
+{'loss': 0.0887, 'grad_norm': 2.625, 'learning_rate': 1.2342941611234295e-06, 'epoch': 2.82}
+{'loss': 0.0892, 'grad_norm': 1.90625, 'learning_rate': 1.1603843311160386e-06, 'epoch': 2.83}
+{'loss': 0.0892, 'grad_norm': 2.25, 'learning_rate': 1.0864745011086475e-06, 'epoch': 2.84}
+{'loss': 0.0829, 'grad_norm': 2.046875, 'learning_rate': 1.0125646711012566e-06, 'epoch': 2.85}
+{'loss': 0.086, 'grad_norm': 2.234375, 'learning_rate': 9.386548410938656e-07, 'epoch': 2.86}
+{'loss': 0.0818, 'grad_norm': 1.9609375, 'learning_rate': 8.647450110864745e-07, 'epoch': 2.87}
+{'loss': 0.0822, 'grad_norm': 2.171875, 'learning_rate': 7.908351810790836e-07, 'epoch': 2.88}
+{'loss': 0.0823, 'grad_norm': 2.40625, 'learning_rate': 7.169253510716926e-07, 'epoch': 2.89}
+{'loss': 0.0886, 'grad_norm': 2.1875, 'learning_rate': 6.430155210643016e-07, 'epoch': 2.91}
+{'loss': 0.0839, 'grad_norm': 2.03125, 'learning_rate': 5.691056910569106e-07, 'epoch': 2.92}
+{'loss': 0.0826, 'grad_norm': 2.390625, 'learning_rate': 4.951958610495196e-07, 'epoch': 2.93}
+{'loss': 0.0865, 'grad_norm': 2.109375, 'learning_rate': 4.2128603104212865e-07, 'epoch': 2.94}
+{'loss': 0.0812, 'grad_norm': 2.125, 'learning_rate': 3.4737620103473763e-07, 'epoch': 2.95}
+{'loss': 0.0835, 'grad_norm': 2.0625, 'learning_rate': 2.7346637102734666e-07, 'epoch': 2.96}
+{'loss': 0.0864, 'grad_norm': 1.984375, 'learning_rate': 1.9955654101995567e-07, 'epoch': 2.97}
+{'loss': 0.0769, 'grad_norm': 2.015625, 'learning_rate': 1.256467110125647e-07, 'epoch': 2.98}
+{'loss': 0.0839, 'grad_norm': 2.15625, 'learning_rate': 5.173688100517369e-08, 'epoch': 2.99}
+{'train_runtime': 9860.9486, 'train_samples_per_second': 8.776, 'train_steps_per_second': 0.274, 'train_loss': 0.17705705754200088, 'epoch': 3.0}
+
+✅ Training complete. Model saved to: /iopsstor/scratch/cscs/igabor/project/Romanian_Math_LLM/sft_output/Meta-Llama-3-8B_sft
+
+===== Re-Evaluating Meta-Llama-3-8B from /iopsstor/scratch/cscs/igabor/project/Romanian_Math_LLM/sft_output/Meta-Llama-3-8B_sft =====
+
+
+>>> Meta-Llama-3-8B Fine-Tuned Accuracy: 68.09%
+
+Saved evaluation results to /iopsstor/scratch/cscs/igabor/project/Romanian_Math_LLM/sft_output/Meta-Llama-3-8B_sft/fine_tuned_Meta-Llama-3-8B_results.json
