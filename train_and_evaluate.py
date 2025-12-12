@@ -331,7 +331,8 @@ if __name__ == "__main__":
         print("Warning: REPO_ROOT environment variable is not set. Using default './'. Check your setup.", flush=True)
     
     models_to_train = {
-        "Meta-Llama-3-8B": "meta-llama/Meta-Llama-3-8B",
+        #"Meta-Llama-3-8B": "meta-llama/Meta-Llama-3-8B",
+        "Apertus-8B-Instruct-2509":"swiss-ai/Apertus-8B-Instruct-2509",
     }
     
     OPTIMAL_BATCH_SIZE = 4 # Use a smaller batch size for training (requires VRAM)
