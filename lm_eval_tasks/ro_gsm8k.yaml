@@ -1,0 +1,36 @@
+task: ro_gsm8k
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    test: /iopsstor/scratch/cscs/moprea/Romanian_Math_LLM/ro_gsm8k/test.json
+test_split: test
+
+output_type: generate_until
+
+doc_to_text: |
+  Rezolvă problema de mai jos.
+  Returnează DOAR răspunsul final ca NUMĂR (fără text).
+
+  Întrebare: {{ Question }}
+  Răspuns:
+
+doc_to_target: "{{ Answer.split('####')[-1].strip() }}"
+
+generation_kwargs:
+  until: ["\n"]
+  max_gen_toks: 32
+  do_sample: false
+
+filter_list:
+  - name: final_number
+    filter:
+      - function: regex
+        regex_pattern: "(-?[0-9][0-9,]*)\\D*$"
+      - function: take_first
+
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: true
+    ignore_punctuation: true
+    ignore_case: true

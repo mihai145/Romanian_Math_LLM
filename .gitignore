@@ -1,1 +1,3 @@
 output_prompting*
+lm_eval_*.err
+lm_eval_*.out

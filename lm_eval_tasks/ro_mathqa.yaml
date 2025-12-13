@@ -1,0 +1,26 @@
+task: ro_mathqa
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    test: /iopsstor/scratch/cscs/moprea/Romanian_Math_LLM/ro_mathqa/test.json
+test_split: test
+
+output_type: multiple_choice
+
+doc_to_text: |
+  Alege varianta corectă (a, b, c, d sau e). Răspunde DOAR cu litera.
+
+  Problemă: {{ Problem }}
+
+  Variante:
+  {{ Choices.replace(", ", "\n") }}
+
+  Răspuns:
+
+doc_to_choice: [" a", " b", " c", " d", " e"]
+doc_to_target: "{{ ['a','b','c','d','e'].index(Correct|lower) }}"
+
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
