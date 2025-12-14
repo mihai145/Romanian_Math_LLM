@@ -7,7 +7,7 @@ import re
 import torch
 from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments
-from peft import LoraConfig
+from peft import LoraConfig, PeftModel
 from trl import SFTTrainer, SFTConfig
 
 
@@ -88,8 +88,8 @@ def main():
     model_id = sys.argv[1]
     dataset = sys.argv[2]
 
-    out_root = os.environ.get("SFT_OUT_ROOT", "/capstor/scratch/cscs/moprea/finetuned/")
     max_steps = int(os.environ.get("MAX_STEPS"))
+    out_root = os.environ.get("SFT_OUT_ROOT", f"/capstor/scratch/cscs/moprea/finetuned/{max_steps}/")
     max_seq_len = int(os.environ.get("MAX_SEQ_LEN"))
     lr = float(os.environ.get("LR"))
     per_device_batch = int(os.environ.get("BATCH"))
@@ -168,6 +168,7 @@ def main():
         packing=False,
         padding_free=False,
         dataset_text_field="text",
+        ddp_find_unused_parameters=False,
     )
 
     trainer = SFTTrainer(
@@ -186,12 +187,22 @@ def main():
         tokenizer.save_pretrained(str(out_dir))
 
         try:
-            merged = trainer.model.merge_and_unload()
-            merged.save_pretrained(str(out_dir / "merged"), safe_serialization=True)
-            tokenizer.save_pretrained(str(out_dir / "merged"))
-            print(f"[DONE] Saved merged model to {out_dir/'merged'}")
+            base = AutoModelForCausalLM.from_pretrained(
+                model_id,
+                torch_dtype=torch.bfloat16,
+                device_map="cpu",
+                trust_remote_code=True,
+            )
+
+            peft = PeftModel.from_pretrained(base, str(out_dir))
+            merged = peft.merge_and_unload()
+
+            merged_dir = out_dir / "merged_bf16"
+            merged.save_pretrained(str(merged_dir), safe_serialization=True)
+            tokenizer.save_pretrained(str(merged_dir))
+            print(f"[DONE] Saved BF16 merged model to {merged_dir}")
         except Exception as e:
-            print(f"[WARN] Could not merge adapters (still saved adapter). Error: {e}")
+            print(f"[WARN] Could not merge adapters into BF16 base. Error: {e}")
 
         (out_dir / "run_info.txt").write_text(
             f"model={model_id}\ntrain_json={dataset}\n"

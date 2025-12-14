@@ -34,12 +34,18 @@ export HF_DATASETS_CACHE=$HF_HOME/datasets
 export MAX_SEQ_LEN=512
 export BATCH=1
 export GRAD_ACCUM=16
-export LR=2e-4
+export LR=1e-4
 
-# Do 5 epochs on the smaller dataset, 3 epochs on the bigger dataset
+# # Do 2 epochs on the smaller dataset, 1 epoch on the bigger dataset
+# case "$DATASET" in
+#   ro_gsm8k)  export MAX_STEPS=$((2 * 110))  ;;  # 7k / 64 ≈ 110 steps/epoch
+#   ro_mathqa) export MAX_STEPS=$((1 * 422))  ;;  # 27k / 64 ≈ 422 steps/epoch
+# esac
+
+# Do 3 epochs on the smaller dataset, 2 epoch on the bigger dataset
 case "$DATASET" in
-  ro_gsm8k)  export MAX_STEPS=$((5 * 110))  ;;  # 7k / 64 ≈ 110 steps/epoch
-  ro_mathqa) export MAX_STEPS=$((3 * 422))  ;;  # 27k / 64 ≈ 422 steps/epoch
+  ro_gsm8k)  export MAX_STEPS=$((3 * 110))  ;;  # 7k / 64 ≈ 110 steps/epoch
+  ro_mathqa) export MAX_STEPS=$((2 * 422))  ;;  # 27k / 64 ≈ 422 steps/epoch
 esac
 
 pip install -U \
