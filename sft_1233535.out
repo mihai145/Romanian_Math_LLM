@@ -1,0 +1,445 @@
+Collecting accelerate>=0.34.0
+  Downloading accelerate-1.12.0-py3-none-any.whl.metadata (19 kB)
+Requirement already satisfied: datasets>=2.20.0 in /usr/local/lib/python3.12/dist-packages (4.4.1)
+Collecting transformers>=4.45.0
+  Downloading transformers-4.57.3-py3-none-any.whl.metadata (43 kB)
+Collecting trl>=0.11.4
+  Downloading trl-0.26.1-py3-none-any.whl.metadata (11 kB)
+Collecting peft>=0.12.0
+  Downloading peft-0.18.0-py3-none-any.whl.metadata (14 kB)
+Collecting bitsandbytes>=0.43.0
+  Downloading bitsandbytes-0.49.0-py3-none-manylinux_2_24_aarch64.whl.metadata (10 kB)
+Requirement already satisfied: safetensors in /usr/local/lib/python3.12/dist-packages (0.6.2)
+Collecting safetensors
+  Downloading safetensors-0.7.0-cp38-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (4.1 kB)
+Collecting sentencepiece
+  Downloading sentencepiece-0.2.1-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (10 kB)
+Collecting evaluate
+  Downloading evaluate-0.4.6-py3-none-any.whl.metadata (9.5 kB)
+Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.12/dist-packages (from accelerate>=0.34.0) (2.1.0)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.12/dist-packages (from accelerate>=0.34.0) (25.0)
+Requirement already satisfied: psutil in /usr/local/lib/python3.12/dist-packages (from accelerate>=0.34.0) (7.1.3)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.12/dist-packages (from accelerate>=0.34.0) (6.0.3)
+Requirement already satisfied: torch>=2.0.0 in /usr/local/lib/python3.12/dist-packages (from accelerate>=0.34.0) (2.10.0a0+b558c986e8.nv25.11)
+Requirement already satisfied: huggingface_hub>=0.21.0 in /usr/local/lib/python3.12/dist-packages (from accelerate>=0.34.0) (1.1.2)
+Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (3.20.0)
+Requirement already satisfied: pyarrow>=21.0.0 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (22.0.0)
+Requirement already satisfied: dill<0.4.1,>=0.3.0 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (0.4.0)
+Requirement already satisfied: pandas in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (2.3.3)
+Requirement already satisfied: requests>=2.32.2 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (2.32.5)
+Requirement already satisfied: httpx<1.0.0 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (0.28.1)
+Requirement already satisfied: tqdm>=4.66.3 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (4.67.1)
+Requirement already satisfied: xxhash in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (3.6.0)
+Requirement already satisfied: multiprocess<0.70.19 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (0.70.18)
+Requirement already satisfied: fsspec<=2025.10.0,>=2023.1.0 in /usr/local/lib/python3.12/dist-packages (from fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (2025.10.0)
+Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /usr/local/lib/python3.12/dist-packages (from fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (3.13.2)
+Requirement already satisfied: anyio in /usr/local/lib/python3.12/dist-packages (from httpx<1.0.0->datasets>=2.20.0) (4.11.0)
+Requirement already satisfied: certifi in /usr/local/lib/python3.12/dist-packages (from httpx<1.0.0->datasets>=2.20.0) (2025.10.5)
+Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.12/dist-packages (from httpx<1.0.0->datasets>=2.20.0) (1.0.9)
+Requirement already satisfied: idna in /usr/local/lib/python3.12/dist-packages (from httpx<1.0.0->datasets>=2.20.0) (3.11)
+Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.12/dist-packages (from httpcore==1.*->httpx<1.0.0->datasets>=2.20.0) (0.16.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.2.0 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate>=0.34.0) (1.2.0)
+Requirement already satisfied: shellingham in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate>=0.34.0) (1.5.4)
+Requirement already satisfied: typer-slim in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate>=0.34.0) (0.20.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate>=0.34.0) (4.15.0)
+Collecting huggingface_hub>=0.21.0 (from accelerate>=0.34.0)
+  Downloading huggingface_hub-0.36.0-py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.12/dist-packages (from transformers>=4.45.0) (2025.11.3)
+Requirement already satisfied: tokenizers<=0.23.0,>=0.22.0 in /usr/local/lib/python3.12/dist-packages (from transformers>=4.45.0) (0.22.1)
+Requirement already satisfied: setuptools in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate>=0.34.0) (80.9.0)
+Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate>=0.34.0) (1.14.0)
+Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate>=0.34.0) (3.5)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate>=0.34.0) (3.1.6)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (2.6.1)
+Requirement already satisfied: aiosignal>=1.4.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (25.4.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (6.7.0)
+Requirement already satisfied: propcache>=0.2.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (0.4.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (1.22.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/dist-packages (from requests>=2.32.2->datasets>=2.20.0) (3.4.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests>=2.32.2->datasets>=2.20.0) (2.5.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from sympy>=1.13.3->torch>=2.0.0->accelerate>=0.34.0) (1.3.0)
+Requirement already satisfied: sniffio>=1.1 in /usr/local/lib/python3.12/dist-packages (from anyio->httpx<1.0.0->datasets>=2.20.0) (1.3.1)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/dist-packages (from jinja2->torch>=2.0.0->accelerate>=0.34.0) (3.0.3)
+Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.12/dist-packages (from pandas->datasets>=2.20.0) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.12/dist-packages (from pandas->datasets>=2.20.0) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.12/dist-packages (from pandas->datasets>=2.20.0) (2025.2)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.12/dist-packages (from python-dateutil>=2.8.2->pandas->datasets>=2.20.0) (1.16.0)
+Requirement already satisfied: click>=8.0.0 in /usr/local/lib/python3.12/dist-packages (from typer-slim->huggingface_hub>=0.21.0->accelerate>=0.34.0) (8.3.0)
+Downloading accelerate-1.12.0-py3-none-any.whl (380 kB)
+Downloading transformers-4.57.3-py3-none-any.whl (12.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 196.7 MB/s  0:00:00
+Downloading huggingface_hub-0.36.0-py3-none-any.whl (566 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.1/566.1 kB 172.4 MB/s  0:00:00
+Downloading trl-0.26.1-py3-none-any.whl (517 kB)
+Downloading peft-0.18.0-py3-none-any.whl (556 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 556.4/556.4 kB 170.7 MB/s  0:00:00
+Downloading bitsandbytes-0.49.0-py3-none-manylinux_2_24_aarch64.whl (31.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 31.1/31.1 MB 199.2 MB/s  0:00:00
+Downloading safetensors-0.7.0-cp38-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (491 kB)
+Downloading sentencepiece-0.2.1-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 290.8 MB/s  0:00:00
+Downloading evaluate-0.4.6-py3-none-any.whl (84 kB)
+Installing collected packages: sentencepiece, safetensors, huggingface_hub, bitsandbytes, accelerate, transformers, trl, peft, evaluate
+  Attempting uninstall: safetensors
+    Found existing installation: safetensors 0.6.2
+    Uninstalling safetensors-0.6.2:
+      Successfully uninstalled safetensors-0.6.2
+  Attempting uninstall: huggingface_hub
+    Found existing installation: huggingface_hub 1.1.2
+    Uninstalling huggingface_hub-1.1.2:
+      Successfully uninstalled huggingface_hub-1.1.2
+
+Successfully installed accelerate-1.12.0 bitsandbytes-0.49.0 evaluate-0.4.6 huggingface_hub-0.36.0 peft-0.18.0 safetensors-0.7.0 sentencepiece-0.2.1 transformers-4.57.3 trl-0.26.1
+Found existing installation: apex 0.1
+Uninstalling apex-0.1:
+  Successfully uninstalled apex-0.1
+MODEL=meta-llama/Llama-3.1-8B-Instruct
+DATASET=ro_mathqa
+MAX_STEPS=844 MAX_SEQ_LEN=512
+[INFO] model=meta-llama/Llama-3.1-8B-Instruct
+[INFO] dataset=ro_mathqa
+[INFO] out_dir=/capstor/scratch/cscs/moprea/finetuned/844/meta-llama__Llama-3.1-8B-Instruct/ro_mathqa
+[INFO] max_steps=844 max_seq_len=512 lr=0.0001 batch=1 grad_accum=16
+[INFO] model=meta-llama/Llama-3.1-8B-Instruct[INFO] model=meta-llama/Llama-3.1-8B-Instruct[INFO] model=meta-llama/Llama-3.1-8B-Instruct
+
+
+[INFO] dataset=ro_mathqa[INFO] dataset=ro_mathqa[INFO] dataset=ro_mathqa
+
+
+[INFO] out_dir=/capstor/scratch/cscs/moprea/finetuned/844/meta-llama__Llama-3.1-8B-Instruct/ro_mathqa[INFO] out_dir=/capstor/scratch/cscs/moprea/finetuned/844/meta-llama__Llama-3.1-8B-Instruct/ro_mathqa[INFO] out_dir=/capstor/scratch/cscs/moprea/finetuned/844/meta-llama__Llama-3.1-8B-Instruct/ro_mathqa
+
+
+[INFO] max_steps=844 max_seq_len=512 lr=0.0001 batch=1 grad_accum=16[INFO] max_steps=844 max_seq_len=512 lr=0.0001 batch=1 grad_accum=16[INFO] max_steps=844 max_seq_len=512 lr=0.0001 batch=1 grad_accum=16
+
+
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: câștigul bancherului pentru o anumită sumă datorată peste 3 ani la 10 % pe an este rs. 36. care este valoarea actuală?
+Opțiuni: a ) rs. 400, b ) rs. 300, c ) rs. 500, d ) rs. 350, e ) niciuna dintre acestea
+Răspuns:
+
+a) rs. 400
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: câștigul bancherului pentru o anumită sumă datorată peste 3 ani la 10 % pe an este rs. 36. care este valoarea actuală?
+Opțiuni: a ) rs. 400, b ) rs. 300, c ) rs. 500, d ) rs. 350, e ) niciuna dintre acestea
+Răspuns:
+
+a) rs. 400
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: vârsta medie a elevilor unei școli pentru adulți este de 40 de ani. 120 de noi elevi, a căror vârstă medie este de 32 de ani, s-au alăturat școlii. ca urmare, vârsta medie a scăzut cu 4 ani. găsiți numărul de elevi ai școlii după alăturarea noilor elevi.
+Opțiuni: a ) 1200, b ) 120, c ) 360, d ) 240, e ) none of these
+Răspuns:
+
+d) 240
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: sophia a terminat 2 / 3 dintr-o carte. ea a calculat că a terminat 90 de pagini mai mult decât mai are de citit. cât de lungă este cartea ei?
+Opțiuni: a ) 229, b ) 270, c ) 877, d ) 266, e ) 281
+Răspuns:
+
+b) 270
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: 120 este ce procent din 50?
+Opțiuni: a ) 5 %, b ) 240 %, c ) 50 %, d ) 2 %, e ) 500 %
+Răspuns:
+
+b) 240 %
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: Într-o clasă sunt 10 fete și 20 de băieți. Care este raportul dintre fete și băieți?
+Opțiuni: a ) 1 / 2, b ) 1 / 3, c ) 1 / 5, d ) 10 / 30, e ) 2 / 5
+Răspuns:
+
+a) 1 / 2
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: vârsta medie a elevilor unei școli pentru adulți este de 40 de ani. 120 de noi elevi, a căror vârstă medie este de 32 de ani, s-au alăturat școlii. ca urmare, vârsta medie a scăzut cu 4 ani. găsiți numărul de elevi ai școlii după alăturarea noilor elevi.
+Opțiuni: a ) 1200, b ) 120, c ) 360, d ) 240, e ) none of these
+Răspuns:
+
+d) 240
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: un rezervor de combustibil gol cu o capacitate de 218 galoane a fost umplut parțial cu combustibil a și apoi la capacitate cu combustibil b. combustibilul a conține 12 % etanol în volum și combustibilul b conține 16 % etanol în volum. dacă rezervorul de combustibil plin conține 30 galoane de etanol, câte galoane de combustibil a au fost adăugate?
+Opțiuni: a ) 122, b ) 150, c ) 100, d ) 80, e ) 50
+Răspuns:
+
+a) 122
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: sophia a terminat 2 / 3 dintr-o carte. ea a calculat că a terminat 90 de pagini mai mult decât mai are de citit. cât de lungă este cartea ei?
+Opțiuni: a ) 229, b ) 270, c ) 877, d ) 266, e ) 281
+Răspuns:
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: un articol este cumpărat cu rs. 823 și vândut cu rs. 1000, găsește procentul de profit.
+Opțiuni: a ) 21.4 %, b ) 21.5 %, c ) 21.6 %, d ) 21.7 %, e ) 21.8 %
+Răspuns:
+
+
+b) 270b) 21.5 %
+
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: 6 muncitori ar trebui să termine o treabă în 8 zile. după 3 zile au venit 4 muncitori să li se alăture. de câte zile m au nevoie pentru a termina aceeași treabă?
+Opțiuni: a ) 3, b ) 4, c ) 5, d ) 6, e ) 7
+Răspuns:
+
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: 120 este ce procent din 50?
+Opțiuni: a ) 5 %, b ) 240 %, c ) 50 %, d ) 2 %, e ) 500 %
+Răspuns:
+a) 3
+
+b) 240 %
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: j este cu 25 % mai mic decât p și cu 20 % mai mic decât t. t este cu q % mai mic decât p. care este valoarea lui q?
+Opțiuni: a ) 93.5, b ) 90, c ) 6.75, d ) 6.25, e ) 2
+Răspuns:
+
+d) 6.25
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: Într-o clasă sunt 10 fete și 20 de băieți. Care este raportul dintre fete și băieți?
+Opțiuni: a ) 1 / 2, b ) 1 / 3, c ) 1 / 5, d ) 10 / 30, e ) 2 / 5
+Răspuns:
+
+a) 1 / 2
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: unui elev i s-a cerut să găsească 4 / 5 dintr-un număr. dar elevul a împărțit numărul la 4 / 5, astfel încât elevul a obținut cu 36 mai mult decât răspunsul corect. găsește numărul.
+Opțiuni: a ) 60, b ) 70, c ) 80, d ) 90, e ) 100
+Răspuns:
+
+c) 80
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: un rezervor de combustibil gol cu o capacitate de 218 galoane a fost umplut parțial cu combustibil a și apoi la capacitate cu combustibil b. combustibilul a conține 12 % etanol în volum și combustibilul b conține 16 % etanol în volum. dacă rezervorul de combustibil plin conține 30 galoane de etanol, câte galoane de combustibil a au fost adăugate?
+Opțiuni: a ) 122, b ) 150, c ) 100, d ) 80, e ) 50
+Răspuns:
+
+a) 122
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: un articol este cumpărat cu rs. 823 și vândut cu rs. 1000, găsește procentul de profit.
+Opțiuni: a ) 21.4 %, b ) 21.5 %, c ) 21.6 %, d ) 21.7 %, e ) 21.8 %
+Răspuns:
+
+b) 21.5 %
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: 6 muncitori ar trebui să termine o treabă în 8 zile. după 3 zile au venit 4 muncitori să li se alăture. de câte zile m au nevoie pentru a termina aceeași treabă?
+Opțiuni: a ) 3, b ) 4, c ) 5, d ) 6, e ) 7
+Răspuns:
+
+a) 3
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: j este cu 25 % mai mic decât p și cu 20 % mai mic decât t. t este cu q % mai mic decât p. care este valoarea lui q?
+Opțiuni: a ) 93.5, b ) 90, c ) 6.75, d ) 6.25, e ) 2
+Răspuns:
+
+d) 6.25
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: unui elev i s-a cerut să găsească 4 / 5 dintr-un număr. dar elevul a împărțit numărul la 4 / 5, astfel încât elevul a obținut cu 36 mai mult decât răspunsul corect. găsește numărul.
+Opțiuni: a ) 60, b ) 70, c ) 80, d ) 90, e ) 100
+Răspuns:
+
+c) 80
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: câștigul bancherului pentru o anumită sumă datorată peste 3 ani la 10 % pe an este rs. 36. care este valoarea actuală?
+Opțiuni: a ) rs. 400, b ) rs. 300, c ) rs. 500, d ) rs. 350, e ) niciuna dintre acestea
+Răspuns:
+
+a) rs. 400
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: vârsta medie a elevilor unei școli pentru adulți este de 40 de ani. 120 de noi elevi, a căror vârstă medie este de 32 de ani, s-au alăturat școlii. ca urmare, vârsta medie a scăzut cu 4 ani. găsiți numărul de elevi ai școlii după alăturarea noilor elevi.
+Opțiuni: a ) 1200, b ) 120, c ) 360, d ) 240, e ) none of these
+Răspuns:
+
+d) 240
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: sophia a terminat 2 / 3 dintr-o carte. ea a calculat că a terminat 90 de pagini mai mult decât mai are de citit. cât de lungă este cartea ei?
+Opțiuni: a ) 229, b ) 270, c ) 877, d ) 266, e ) 281
+Răspuns:
+
+b) 270
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: 120 este ce procent din 50?
+Opțiuni: a ) 5 %, b ) 240 %, c ) 50 %, d ) 2 %, e ) 500 %
+Răspuns:
+
+b) 240 %
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: Într-o clasă sunt 10 fete și 20 de băieți. Care este raportul dintre fete și băieți?
+Opțiuni: a ) 1 / 2, b ) 1 / 3, c ) 1 / 5, d ) 10 / 30, e ) 2 / 5
+Răspuns:
+
+a) 1 / 2
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: un rezervor de combustibil gol cu o capacitate de 218 galoane a fost umplut parțial cu combustibil a și apoi la capacitate cu combustibil b. combustibilul a conține 12 % etanol în volum și combustibilul b conține 16 % etanol în volum. dacă rezervorul de combustibil plin conține 30 galoane de etanol, câte galoane de combustibil a au fost adăugate?
+Opțiuni: a ) 122, b ) 150, c ) 100, d ) 80, e ) 50
+Răspuns:
+
+a) 122
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: un articol este cumpărat cu rs. 823 și vândut cu rs. 1000, găsește procentul de profit.
+Opțiuni: a ) 21.4 %, b ) 21.5 %, c ) 21.6 %, d ) 21.7 %, e ) 21.8 %
+Răspuns:
+
+b) 21.5 %
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: 6 muncitori ar trebui să termine o treabă în 8 zile. după 3 zile au venit 4 muncitori să li se alăture. de câte zile m au nevoie pentru a termina aceeași treabă?
+Opțiuni: a ) 3, b ) 4, c ) 5, d ) 6, e ) 7
+Răspuns:
+
+a) 3
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: j este cu 25 % mai mic decât p și cu 20 % mai mic decât t. t este cu q % mai mic decât p. care este valoarea lui q?
+Opțiuni: a ) 93.5, b ) 90, c ) 6.75, d ) 6.25, e ) 2
+Răspuns:
+
+d) 6.25
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: unui elev i s-a cerut să găsească 4 / 5 dintr-un număr. dar elevul a împărțit numărul la 4 / 5, astfel încât elevul a obținut cu 36 mai mult decât răspunsul corect. găsește numărul.
+Opțiuni: a ) 60, b ) 70, c ) 80, d ) 90, e ) 100
+Răspuns:
+
+c) 80
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: câștigul bancherului pentru o anumită sumă datorată peste 3 ani la 10 % pe an este rs. 36. care este valoarea actuală?
+Opțiuni: a ) rs. 400, b ) rs. 300, c ) rs. 500, d ) rs. 350, e ) niciuna dintre acestea
+Răspuns:
+
+a) rs. 400
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: vârsta medie a elevilor unei școli pentru adulți este de 40 de ani. 120 de noi elevi, a căror vârstă medie este de 32 de ani, s-au alăturat școlii. ca urmare, vârsta medie a scăzut cu 4 ani. găsiți numărul de elevi ai școlii după alăturarea noilor elevi.
+Opțiuni: a ) 1200, b ) 120, c ) 360, d ) 240, e ) none of these
+Răspuns:
+
+d) 240
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: sophia a terminat 2 / 3 dintr-o carte. ea a calculat că a terminat 90 de pagini mai mult decât mai are de citit. cât de lungă este cartea ei?
+Opțiuni: a ) 229, b ) 270, c ) 877, d ) 266, e ) 281
+Răspuns:
+
+b) 270
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: 120 este ce procent din 50?
+Opțiuni: a ) 5 %, b ) 240 %, c ) 50 %, d ) 2 %, e ) 500 %
+Răspuns:
+
+b) 240 %
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: Într-o clasă sunt 10 fete și 20 de băieți. Care este raportul dintre fete și băieți?
+Opțiuni: a ) 1 / 2, b ) 1 / 3, c ) 1 / 5, d ) 10 / 30, e ) 2 / 5
+Răspuns:
+
+a) 1 / 2
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: un rezervor de combustibil gol cu o capacitate de 218 galoane a fost umplut parțial cu combustibil a și apoi la capacitate cu combustibil b. combustibilul a conține 12 % etanol în volum și combustibilul b conține 16 % etanol în volum. dacă rezervorul de combustibil plin conține 30 galoane de etanol, câte galoane de combustibil a au fost adăugate?
+Opțiuni: a ) 122, b ) 150, c ) 100, d ) 80, e ) 50
+Răspuns:
+
+a) 122
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: un articol este cumpărat cu rs. 823 și vândut cu rs. 1000, găsește procentul de profit.
+Opțiuni: a ) 21.4 %, b ) 21.5 %, c ) 21.6 %, d ) 21.7 %, e ) 21.8 %
+Răspuns:
+
+b) 21.5 %
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: 6 muncitori ar trebui să termine o treabă în 8 zile. după 3 zile au venit 4 muncitori să li se alăture. de câte zile m au nevoie pentru a termina aceeași treabă?
+Opțiuni: a ) 3, b ) 4, c ) 5, d ) 6, e ) 7
+Răspuns:
+
+a) 3
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: j este cu 25 % mai mic decât p și cu 20 % mai mic decât t. t este cu q % mai mic decât p. care este valoarea lui q?
+Opțiuni: a ) 93.5, b ) 90, c ) 6.75, d ) 6.25, e ) 2
+Răspuns:
+
+d) 6.25
+Alege varianta corectă.
+Returnează DOAR în formatul: <litera>) <textul opțiunii>
+Întrebare: unui elev i s-a cerut să găsească 4 / 5 dintr-un număr. dar elevul a împărțit numărul la 4 / 5, astfel încât elevul a obținut cu 36 mai mult decât răspunsul corect. găsește numărul.
+Opțiuni: a ) 60, b ) 70, c ) 80, d ) 90, e ) 100
+Răspuns:
+
+c) 80
+[INFO] local_rank=2
+[INFO] local_rank=3
+[INFO] local_rank=1
+[INFO] local_rank=0
+{'loss': 2.1359, 'grad_norm': 1.28125, 'learning_rate': 7.307692307692307e-05, 'entropy': 1.8167392330244183, 'num_tokens': 227128.0, 'mean_token_accuracy': 0.6130633908323944, 'epoch': 0.04}
+{'loss': 0.7745, 'grad_norm': 0.58984375, 'learning_rate': 9.993769403402482e-05, 'entropy': 0.7655323537066578, 'num_tokens': 455866.0, 'mean_token_accuracy': 0.8324801787734032, 'epoch': 0.09}
+{'loss': 0.6298, 'grad_norm': 0.50390625, 'learning_rate': 9.959896745640534e-05, 'entropy': 0.6297387700527907, 'num_tokens': 682540.0, 'mean_token_accuracy': 0.8491498783230782, 'epoch': 0.13}
+{'loss': 0.6079, 'grad_norm': 0.365234375, 'learning_rate': 9.896775006843387e-05, 'entropy': 0.596605586539954, 'num_tokens': 912543.0, 'mean_token_accuracy': 0.8517905414104462, 'epoch': 0.18}
+{'loss': 0.5817, 'grad_norm': 0.33984375, 'learning_rate': 9.804776423157847e-05, 'entropy': 0.5802337844856084, 'num_tokens': 1140723.0, 'mean_token_accuracy': 0.8561730157583952, 'epoch': 0.22}
+{'loss': 0.5715, 'grad_norm': 0.408203125, 'learning_rate': 9.684443520803175e-05, 'entropy': 0.5643397007137537, 'num_tokens': 1369289.0, 'mean_token_accuracy': 0.8584268998354674, 'epoch': 0.27}
+{'loss': 0.5523, 'grad_norm': 0.400390625, 'learning_rate': 9.536485916731634e-05, 'entropy': 0.5506732283160091, 'num_tokens': 1597844.0, 'mean_token_accuracy': 0.8619751695543527, 'epoch': 0.31}
+{'loss': 0.5318, 'grad_norm': 0.40234375, 'learning_rate': 9.361776133935778e-05, 'entropy': 0.5293990134261548, 'num_tokens': 1827298.0, 'mean_token_accuracy': 0.8652352167293429, 'epoch': 0.35}
+{'loss': 0.5274, 'grad_norm': 0.423828125, 'learning_rate': 9.161344456080105e-05, 'entropy': 0.5259059653617442, 'num_tokens': 2058064.0, 'mean_token_accuracy': 0.8675538476556539, 'epoch': 0.4}
+{'loss': 0.5059, 'grad_norm': 0.4375, 'learning_rate': 8.936372851799904e-05, 'entropy': 0.5073385510593653, 'num_tokens': 2286441.0, 'mean_token_accuracy': 0.8710406694561244, 'epoch': 0.44}
+{'loss': 0.5081, 'grad_norm': 0.455078125, 'learning_rate': 8.688188004496398e-05, 'entropy': 0.5040796779096126, 'num_tokens': 2514702.0, 'mean_token_accuracy': 0.8712896890938282, 'epoch': 0.49}
+{'loss': 0.4906, 'grad_norm': 0.44921875, 'learning_rate': 8.418253488732275e-05, 'entropy': 0.49483881322667, 'num_tokens': 2744198.0, 'mean_token_accuracy': 0.8751097766682505, 'epoch': 0.53}
+{'loss': 0.4838, 'grad_norm': 0.4453125, 'learning_rate': 8.128161139364326e-05, 'entropy': 0.48304210379719736, 'num_tokens': 2972772.0, 'mean_token_accuracy': 0.8765147650614381, 'epoch': 0.58}
+{'loss': 0.4691, 'grad_norm': 0.47265625, 'learning_rate': 7.819621664310372e-05, 'entropy': 0.47282171389088035, 'num_tokens': 3198797.0, 'mean_token_accuracy': 0.8803871713578701, 'epoch': 0.62}
+{'loss': 0.4722, 'grad_norm': 0.4765625, 'learning_rate': 7.49445455630811e-05, 'entropy': 0.47433035960420966, 'num_tokens': 3426937.0, 'mean_token_accuracy': 0.8792236430570484, 'epoch': 0.67}
+{'loss': 0.4643, 'grad_norm': 0.50390625, 'learning_rate': 7.15457736315736e-05, 'entropy': 0.4657789533957839, 'num_tokens': 3655319.0, 'mean_token_accuracy': 0.8811029875651002, 'epoch': 0.71}
+{'loss': 0.464, 'grad_norm': 0.484375, 'learning_rate': 6.801994379720354e-05, 'entropy': 0.46177698150277136, 'num_tokens': 3883862.0, 'mean_token_accuracy': 0.8810075776651501, 'epoch': 0.75}
+{'loss': 0.4545, 'grad_norm': 0.4921875, 'learning_rate': 6.438784828364621e-05, 'entropy': 0.46005655396729705, 'num_tokens': 4112843.0, 'mean_token_accuracy': 0.8841533120721579, 'epoch': 0.8}
+{'loss': 0.4387, 'grad_norm': 0.51953125, 'learning_rate': 6.0670905975497775e-05, 'entropy': 0.4425894657149911, 'num_tokens': 4342408.0, 'mean_token_accuracy': 0.8869752233847976, 'epoch': 0.84}
+{'loss': 0.4444, 'grad_norm': 0.494140625, 'learning_rate': 5.6891036108651504e-05, 'entropy': 0.4481680249795318, 'num_tokens': 4571407.0, 'mean_token_accuracy': 0.8873115124180913, 'epoch': 0.89}
+{'loss': 0.43, 'grad_norm': 0.515625, 'learning_rate': 5.307052901004522e-05, 'entropy': 0.439843803551048, 'num_tokens': 4800923.0, 'mean_token_accuracy': 0.888623241148889, 'epoch': 0.93}
+{'loss': 0.4279, 'grad_norm': 0.52734375, 'learning_rate': 4.923191464904185e-05, 'entropy': 0.4314020961523056, 'num_tokens': 5029856.0, 'mean_token_accuracy': 0.8899275900796055, 'epoch': 0.98}
+{'loss': 0.4097, 'grad_norm': 0.67578125, 'learning_rate': 4.539782977561135e-05, 'entropy': 0.41973960663698895, 'num_tokens': 5249622.0, 'mean_token_accuracy': 0.8942664390123343, 'epoch': 1.02}
+{'loss': 0.3837, 'grad_norm': 0.5703125, 'learning_rate': 4.159088442881501e-05, 'entropy': 0.400251997821033, 'num_tokens': 5478813.0, 'mean_token_accuracy': 0.8998236123472452, 'epoch': 1.06}
+{'loss': 0.3852, 'grad_norm': 0.6171875, 'learning_rate': 3.7833528602806995e-05, 'entropy': 0.3951549199409783, 'num_tokens': 5708640.0, 'mean_token_accuracy': 0.8996010413393378, 'epoch': 1.11}
+{'loss': 0.3809, 'grad_norm': 0.61328125, 'learning_rate': 3.4147919856639254e-05, 'entropy': 0.39377568308264016, 'num_tokens': 5936836.0, 'mean_token_accuracy': 0.9007718652486801, 'epoch': 1.15}
+{'loss': 0.3809, 'grad_norm': 0.5859375, 'learning_rate': 3.0555792648589656e-05, 'entropy': 0.39227020312100647, 'num_tokens': 6166082.0, 'mean_token_accuracy': 0.9020329996943474, 'epoch': 1.2}
+{'loss': 0.3633, 'grad_norm': 0.59375, 'learning_rate': 2.7078330165564113e-05, 'entropy': 0.3772118942812085, 'num_tokens': 6394218.0, 'mean_token_accuracy': 0.9042525699362158, 'epoch': 1.24}
+{'loss': 0.3644, 'grad_norm': 0.62890625, 'learning_rate': 2.373603940340935e-05, 'entropy': 0.3820204808376729, 'num_tokens': 6623082.0, 'mean_token_accuracy': 0.9049788618460297, 'epoch': 1.29}
+{'loss': 0.3672, 'grad_norm': 0.6328125, 'learning_rate': 2.0548630234801908e-05, 'entropy': 0.3800244043581188, 'num_tokens': 6850590.0, 'mean_token_accuracy': 0.9044742183759809, 'epoch': 1.33}
+{'loss': 0.3653, 'grad_norm': 0.59765625, 'learning_rate': 1.7534899177864228e-05, 'entropy': 0.3772625202313066, 'num_tokens': 7080195.0, 'mean_token_accuracy': 0.9056406568735837, 'epoch': 1.37}
+{'loss': 0.3538, 'grad_norm': 0.578125, 'learning_rate': 1.471261855093748e-05, 'entropy': 0.37089809998869894, 'num_tokens': 7307640.0, 'mean_token_accuracy': 0.9067231621593237, 'epoch': 1.42}
+{'loss': 0.3558, 'grad_norm': 0.57421875, 'learning_rate': 1.209843166717803e-05, 'entropy': 0.37114120270125567, 'num_tokens': 7536277.0, 'mean_token_accuracy': 0.9073657624423503, 'epoch': 1.46}
+{'loss': 0.3606, 'grad_norm': 0.5859375, 'learning_rate': 9.707754687027415e-06, 'entropy': 0.37386274826712906, 'num_tokens': 7762263.0, 'mean_token_accuracy': 0.9069152846932411, 'epoch': 1.51}
+{'loss': 0.3559, 'grad_norm': 0.578125, 'learning_rate': 7.554685707342757e-06, 'entropy': 0.3698524291627109, 'num_tokens': 7992876.0, 'mean_token_accuracy': 0.907520855218172, 'epoch': 1.55}
+{'loss': 0.348, 'grad_norm': 0.56640625, 'learning_rate': 5.651921623299672e-06, 'entropy': 0.36594194835051896, 'num_tokens': 8220857.0, 'mean_token_accuracy': 0.908825950883329, 'epoch': 1.6}
+{'loss': 0.3588, 'grad_norm': 0.625, 'learning_rate': 4.010683253342401e-06, 'entropy': 0.37017825143411753, 'num_tokens': 8448280.0, 'mean_token_accuracy': 0.9067442631348968, 'epoch': 1.64}
+{'loss': 0.3557, 'grad_norm': 0.6015625, 'learning_rate': 2.6406491687281098e-06, 'entropy': 0.3707600045949221, 'num_tokens': 8678110.0, 'mean_token_accuracy': 0.9069347010925413, 'epoch': 1.69}
+{'loss': 0.3533, 'grad_norm': 0.59375, 'learning_rate': 1.5498986178801133e-06, 'entropy': 0.36863606674596666, 'num_tokens': 8907833.0, 'mean_token_accuracy': 0.907713677547872, 'epoch': 1.73}
+{'loss': 0.3616, 'grad_norm': 0.5859375, 'learning_rate': 7.448638821314636e-07, 'entropy': 0.37392794964835047, 'num_tokens': 9137200.0, 'mean_token_accuracy': 0.9062666596844793, 'epoch': 1.77}
+{'loss': 0.3605, 'grad_norm': 0.578125, 'learning_rate': 2.3029234382288545e-07, 'entropy': 0.3736171618103981, 'num_tokens': 9364796.0, 'mean_token_accuracy': 0.9061501000076533, 'epoch': 1.82}
+{'loss': 0.3648, 'grad_norm': 0.62109375, 'learning_rate': 9.218490443585471e-09, 'entropy': 0.3761629837565124, 'num_tokens': 9594351.0, 'mean_token_accuracy': 0.9053016228601336, 'epoch': 1.86}
+{'train_runtime': 4397.9423, 'train_samples_per_second': 12.282, 'train_steps_per_second': 0.192, 'train_loss': 0.482591946825597, 'entropy': 0.3687278563156724, 'num_tokens': 9640051.0, 'mean_token_accuracy': 0.9082484375685453, 'epoch': 1.87}
+[DONE] Saved BF16 merged model to /capstor/scratch/cscs/moprea/finetuned/844/meta-llama__Llama-3.1-8B-Instruct/ro_mathqa/merged_bf16
+[DONE] Saved to /capstor/scratch/cscs/moprea/finetuned/844/meta-llama__Llama-3.1-8B-Instruct/ro_mathqa
