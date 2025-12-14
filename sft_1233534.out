@@ -1,0 +1,379 @@
+Collecting accelerate>=0.34.0
+  Downloading accelerate-1.12.0-py3-none-any.whl.metadata (19 kB)
+Requirement already satisfied: datasets>=2.20.0 in /usr/local/lib/python3.12/dist-packages (4.4.1)
+Collecting transformers>=4.45.0
+  Downloading transformers-4.57.3-py3-none-any.whl.metadata (43 kB)
+Collecting trl>=0.11.4
+  Downloading trl-0.26.1-py3-none-any.whl.metadata (11 kB)
+Collecting peft>=0.12.0
+  Downloading peft-0.18.0-py3-none-any.whl.metadata (14 kB)
+Collecting bitsandbytes>=0.43.0
+  Downloading bitsandbytes-0.49.0-py3-none-manylinux_2_24_aarch64.whl.metadata (10 kB)
+Requirement already satisfied: safetensors in /usr/local/lib/python3.12/dist-packages (0.6.2)
+Collecting safetensors
+  Downloading safetensors-0.7.0-cp38-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (4.1 kB)
+Collecting sentencepiece
+  Downloading sentencepiece-0.2.1-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (10 kB)
+Collecting evaluate
+  Downloading evaluate-0.4.6-py3-none-any.whl.metadata (9.5 kB)
+Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.12/dist-packages (from accelerate>=0.34.0) (2.1.0)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.12/dist-packages (from accelerate>=0.34.0) (25.0)
+Requirement already satisfied: psutil in /usr/local/lib/python3.12/dist-packages (from accelerate>=0.34.0) (7.1.3)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.12/dist-packages (from accelerate>=0.34.0) (6.0.3)
+Requirement already satisfied: torch>=2.0.0 in /usr/local/lib/python3.12/dist-packages (from accelerate>=0.34.0) (2.10.0a0+b558c986e8.nv25.11)
+Requirement already satisfied: huggingface_hub>=0.21.0 in /usr/local/lib/python3.12/dist-packages (from accelerate>=0.34.0) (1.1.2)
+Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (3.20.0)
+Requirement already satisfied: pyarrow>=21.0.0 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (22.0.0)
+Requirement already satisfied: dill<0.4.1,>=0.3.0 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (0.4.0)
+Requirement already satisfied: pandas in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (2.3.3)
+Requirement already satisfied: requests>=2.32.2 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (2.32.5)
+Requirement already satisfied: httpx<1.0.0 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (0.28.1)
+Requirement already satisfied: tqdm>=4.66.3 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (4.67.1)
+Requirement already satisfied: xxhash in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (3.6.0)
+Requirement already satisfied: multiprocess<0.70.19 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.20.0) (0.70.18)
+Requirement already satisfied: fsspec<=2025.10.0,>=2023.1.0 in /usr/local/lib/python3.12/dist-packages (from fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (2025.10.0)
+Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /usr/local/lib/python3.12/dist-packages (from fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (3.13.2)
+Requirement already satisfied: anyio in /usr/local/lib/python3.12/dist-packages (from httpx<1.0.0->datasets>=2.20.0) (4.11.0)
+Requirement already satisfied: certifi in /usr/local/lib/python3.12/dist-packages (from httpx<1.0.0->datasets>=2.20.0) (2025.10.5)
+Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.12/dist-packages (from httpx<1.0.0->datasets>=2.20.0) (1.0.9)
+Requirement already satisfied: idna in /usr/local/lib/python3.12/dist-packages (from httpx<1.0.0->datasets>=2.20.0) (3.11)
+Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.12/dist-packages (from httpcore==1.*->httpx<1.0.0->datasets>=2.20.0) (0.16.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.2.0 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate>=0.34.0) (1.2.0)
+Requirement already satisfied: shellingham in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate>=0.34.0) (1.5.4)
+Requirement already satisfied: typer-slim in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate>=0.34.0) (0.20.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub>=0.21.0->accelerate>=0.34.0) (4.15.0)
+Collecting huggingface_hub>=0.21.0 (from accelerate>=0.34.0)
+  Downloading huggingface_hub-0.36.0-py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.12/dist-packages (from transformers>=4.45.0) (2025.11.3)
+Requirement already satisfied: tokenizers<=0.23.0,>=0.22.0 in /usr/local/lib/python3.12/dist-packages (from transformers>=4.45.0) (0.22.1)
+Requirement already satisfied: setuptools in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate>=0.34.0) (80.9.0)
+Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate>=0.34.0) (1.14.0)
+Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate>=0.34.0) (3.5)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate>=0.34.0) (3.1.6)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (2.6.1)
+Requirement already satisfied: aiosignal>=1.4.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (25.4.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (6.7.0)
+Requirement already satisfied: propcache>=0.2.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (0.4.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets>=2.20.0) (1.22.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/dist-packages (from requests>=2.32.2->datasets>=2.20.0) (3.4.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests>=2.32.2->datasets>=2.20.0) (2.5.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from sympy>=1.13.3->torch>=2.0.0->accelerate>=0.34.0) (1.3.0)
+Requirement already satisfied: sniffio>=1.1 in /usr/local/lib/python3.12/dist-packages (from anyio->httpx<1.0.0->datasets>=2.20.0) (1.3.1)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/dist-packages (from jinja2->torch>=2.0.0->accelerate>=0.34.0) (3.0.3)
+Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.12/dist-packages (from pandas->datasets>=2.20.0) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.12/dist-packages (from pandas->datasets>=2.20.0) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.12/dist-packages (from pandas->datasets>=2.20.0) (2025.2)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.12/dist-packages (from python-dateutil>=2.8.2->pandas->datasets>=2.20.0) (1.16.0)
+Requirement already satisfied: click>=8.0.0 in /usr/local/lib/python3.12/dist-packages (from typer-slim->huggingface_hub>=0.21.0->accelerate>=0.34.0) (8.3.0)
+Downloading accelerate-1.12.0-py3-none-any.whl (380 kB)
+Downloading transformers-4.57.3-py3-none-any.whl (12.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 193.5 MB/s  0:00:00
+Downloading huggingface_hub-0.36.0-py3-none-any.whl (566 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.1/566.1 kB 173.9 MB/s  0:00:00
+Downloading trl-0.26.1-py3-none-any.whl (517 kB)
+Downloading peft-0.18.0-py3-none-any.whl (556 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 556.4/556.4 kB 181.8 MB/s  0:00:00
+Downloading bitsandbytes-0.49.0-py3-none-manylinux_2_24_aarch64.whl (31.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 31.1/31.1 MB 193.5 MB/s  0:00:00
+Downloading safetensors-0.7.0-cp38-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (491 kB)
+Downloading sentencepiece-0.2.1-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 207.0 MB/s  0:00:00
+Downloading evaluate-0.4.6-py3-none-any.whl (84 kB)
+Installing collected packages: sentencepiece, safetensors, huggingface_hub, bitsandbytes, accelerate, transformers, trl, peft, evaluate
+  Attempting uninstall: safetensors
+    Found existing installation: safetensors 0.6.2
+    Uninstalling safetensors-0.6.2:
+      Successfully uninstalled safetensors-0.6.2
+  Attempting uninstall: huggingface_hub
+    Found existing installation: huggingface_hub 1.1.2
+    Uninstalling huggingface_hub-1.1.2:
+      Successfully uninstalled huggingface_hub-1.1.2
+
+Successfully installed accelerate-1.12.0 bitsandbytes-0.49.0 evaluate-0.4.6 huggingface_hub-0.36.0 peft-0.18.0 safetensors-0.7.0 sentencepiece-0.2.1 transformers-4.57.3 trl-0.26.1
+Found existing installation: apex 0.1
+Uninstalling apex-0.1:
+  Successfully uninstalled apex-0.1
+MODEL=meta-llama/Llama-3.1-8B-Instruct
+DATASET=ro_gsm8k
+MAX_STEPS=330 MAX_SEQ_LEN=512
+[INFO] model=meta-llama/Llama-3.1-8B-Instruct
+[INFO] dataset=ro_gsm8k
+[INFO] out_dir=/capstor/scratch/cscs/moprea/finetuned/330/meta-llama__Llama-3.1-8B-Instruct/ro_gsm8k
+[INFO] max_steps=330 max_seq_len=512 lr=0.0001 batch=1 grad_accum=16
+[INFO] model=meta-llama/Llama-3.1-8B-Instruct[INFO] model=meta-llama/Llama-3.1-8B-Instruct[INFO] model=meta-llama/Llama-3.1-8B-Instruct
+
+
+[INFO] dataset=ro_gsm8k[INFO] dataset=ro_gsm8k[INFO] dataset=ro_gsm8k
+
+
+[INFO] out_dir=/capstor/scratch/cscs/moprea/finetuned/330/meta-llama__Llama-3.1-8B-Instruct/ro_gsm8k[INFO] out_dir=/capstor/scratch/cscs/moprea/finetuned/330/meta-llama__Llama-3.1-8B-Instruct/ro_gsm8k[INFO] out_dir=/capstor/scratch/cscs/moprea/finetuned/330/meta-llama__Llama-3.1-8B-Instruct/ro_gsm8k
+
+
+[INFO] max_steps=330 max_seq_len=512 lr=0.0001 batch=1 grad_accum=16[INFO] max_steps=330 max_seq_len=512 lr=0.0001 batch=1 grad_accum=16[INFO] max_steps=330 max_seq_len=512 lr=0.0001 batch=1 grad_accum=16
+
+
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Natalia a vândut agrafe la 48 dintre prietenii ei în aprilie, și apoi a vândut jumătate din numărul de agrafe în mai. Câte agrafe a vândut Natalia în total în aprilie și mai?
+Răspuns:
+
+72
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Weng câștigă $12 pe oră pentru babysitting. Ieri, ea a făcut doar 50 de minute de babysitting. Cât a câștigat?
+Răspuns:
+
+10
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Betty strânge bani pentru un portofel nou care costă $100. Betty are doar jumătate din banii de care are nevoie. Părinții ei au decis să îi dea $15 în acest scop, iar bunicii ei de două ori mai mult decât părinții ei. De câți bani mai are Betty nevoie pentru a cumpăra portofelul?
+Răspuns:
+
+5
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Julie citește o carte de 120 de pagini. Ieri, ea a putut citi 12 pagini și astăzi, ea a citit de două ori mai multe pagini decât ieri. Dacă ea vrea să citească jumătate din paginile rămase mâine, câte pagini ar trebui să citească?
+Răspuns:
+
+42
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: James scrie o scrisoare de 3 pagini către 2 prieteni diferiți de două ori pe săptămână.  Câte pagini scrie el într-un an?
+Răspuns:
+
+624
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Mark are o grădină cu flori. El a plantat plante de trei culori diferite în ea. Zece dintre ele sunt galbene, iar cele mov sunt cu 80% mai multe. Sunt doar 25% la fel de multe flori verzi ca flori galbene și mov. Câte flori are Mark în grădina sa?
+Răspuns:
+
+35
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Albert se întreabă câtă pizza poate mânca într-o zi. El cumpără 2 pizza mari și 2 pizza mici. O pizza mare are 16 felii și o pizza mică are 8 felii. Dacă le mănâncă pe toate, câte felii mănâncă el în acea zi?
+Răspuns:
+
+48
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Ken a creat un pachet de îngrijire pentru a-l trimite fratelui său, care era la școală cu internat. Ken a pus o cutie pe o balanță, apoi a turnat în cutie suficiente bomboane gumate pentru a aduce greutatea la 2 livre. Apoi, a adăugat suficiente brownies pentru a tripla greutatea. Apoi, a adăugat încă 2 livre de bomboane gumate. Și în final, a adăugat suficiente viermi gumate pentru a dubla greutatea încă o dată. Care a fost greutatea finală a cutiei de bunătăți, în livre?
+Răspuns:
+
+16
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Alexis aplică pentru un nou loc de muncă și și-a cumpărat un set de haine business pentru a le purta la interviu. Ea a mers la magazin cu un buget de $200 și a cheltuit $30 pe o cămașă, $46 pe pantaloni de costum, $38 pe un sacou, $11 pe șosete și $18 pe o curea. Ea a cumpărat și o pereche de pantofi, dar a pierdut bonul fiscal pentru aceștia. Ea mai are $16 rămași din bugetul ei. Cât a plătit Alexis pentru pantofi?
+Răspuns:
+
+41
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Un monstru din adâncul mării iese la suprafață o dată la o sută de ani pentru a se hrăni cu un vas și a-și potoli foamea. De-a lungul a trei sute de ani, a consumat 847 de oameni. Vasele au fost construite mai mari în timp, astfel încât fiecare vas nou are de două ori mai mulți oameni decât ultimul vas. Câți oameni erau pe vasul pe care monstrul l-a mâncat în primii o sută de ani?
+Răspuns:
+
+121
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Natalia a vândut agrafe la 48 dintre prietenii ei în aprilie, și apoi a vândut jumătate din numărul de agrafe în mai. Câte agrafe a vândut Natalia în total în aprilie și mai?
+Răspuns:
+
+72
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Natalia a vândut agrafe la 48 dintre prietenii ei în aprilie, și apoi a vândut jumătate din numărul de agrafe în mai. Câte agrafe a vândut Natalia în total în aprilie și mai?
+Răspuns:
+
+72
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Weng câștigă $12 pe oră pentru babysitting. Ieri, ea a făcut doar 50 de minute de babysitting. Cât a câștigat?
+Răspuns:
+
+10
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Betty strânge bani pentru un portofel nou care costă $100. Betty are doar jumătate din banii de care are nevoie. Părinții ei au decis să îi dea $15 în acest scop, iar bunicii ei de două ori mai mult decât părinții ei. De câți bani mai are Betty nevoie pentru a cumpăra portofelul?
+Răspuns:
+
+5
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Julie citește o carte de 120 de pagini. Ieri, ea a putut citi 12 pagini și astăzi, ea a citit de două ori mai multe pagini decât ieri. Dacă ea vrea să citească jumătate din paginile rămase mâine, câte pagini ar trebui să citească?
+Răspuns:
+
+42
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: James scrie o scrisoare de 3 pagini către 2 prieteni diferiți de două ori pe săptămână.  Câte pagini scrie el într-un an?
+Răspuns:
+
+624
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Mark are o grădină cu flori. El a plantat plante de trei culori diferite în ea. Zece dintre ele sunt galbene, iar cele mov sunt cu 80% mai multe. Sunt doar 25% la fel de multe flori verzi ca flori galbene și mov. Câte flori are Mark în grădina sa?
+Răspuns:
+
+35
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Albert se întreabă câtă pizza poate mânca într-o zi. El cumpără 2 pizza mari și 2 pizza mici. O pizza mare are 16 felii și o pizza mică are 8 felii. Dacă le mănâncă pe toate, câte felii mănâncă el în acea zi?
+Răspuns:
+
+48
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Ken a creat un pachet de îngrijire pentru a-l trimite fratelui său, care era la școală cu internat. Ken a pus o cutie pe o balanță, apoi a turnat în cutie suficiente bomboane gumate pentru a aduce greutatea la 2 livre. Apoi, a adăugat suficiente brownies pentru a tripla greutatea. Apoi, a adăugat încă 2 livre de bomboane gumate. Și în final, a adăugat suficiente viermi gumate pentru a dubla greutatea încă o dată. Care a fost greutatea finală a cutiei de bunătăți, în livre?
+Răspuns:
+
+16
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Alexis aplică pentru un nou loc de muncă și și-a cumpărat un set de haine business pentru a le purta la interviu. Ea a mers la magazin cu un buget de $200 și a cheltuit $30 pe o cămașă, $46 pe pantaloni de costum, $38 pe un sacou, $11 pe șosete și $18 pe o curea. Ea a cumpărat și o pereche de pantofi, dar a pierdut bonul fiscal pentru aceștia. Ea mai are $16 rămași din bugetul ei. Cât a plătit Alexis pentru pantofi?
+Răspuns:
+
+41
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Un monstru din adâncul mării iese la suprafață o dată la o sută de ani pentru a se hrăni cu un vas și a-și potoli foamea. De-a lungul a trei sute de ani, a consumat 847 de oameni. Vasele au fost construite mai mari în timp, astfel încât fiecare vas nou are de două ori mai mulți oameni decât ultimul vas. Câți oameni erau pe vasul pe care monstrul l-a mâncat în primii o sută de ani?
+Răspuns:
+
+121
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Natalia a vândut agrafe la 48 dintre prietenii ei în aprilie, și apoi a vândut jumătate din numărul de agrafe în mai. Câte agrafe a vândut Natalia în total în aprilie și mai?
+Răspuns:
+
+72
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Weng câștigă $12 pe oră pentru babysitting. Ieri, ea a făcut doar 50 de minute de babysitting. Cât a câștigat?
+Răspuns:
+
+10
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Betty strânge bani pentru un portofel nou care costă $100. Betty are doar jumătate din banii de care are nevoie. Părinții ei au decis să îi dea $15 în acest scop, iar bunicii ei de două ori mai mult decât părinții ei. De câți bani mai are Betty nevoie pentru a cumpăra portofelul?
+Răspuns:
+
+5
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Julie citește o carte de 120 de pagini. Ieri, ea a putut citi 12 pagini și astăzi, ea a citit de două ori mai multe pagini decât ieri. Dacă ea vrea să citească jumătate din paginile rămase mâine, câte pagini ar trebui să citească?
+Răspuns:
+
+42
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: James scrie o scrisoare de 3 pagini către 2 prieteni diferiți de două ori pe săptămână.  Câte pagini scrie el într-un an?
+Răspuns:
+
+624
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Mark are o grădină cu flori. El a plantat plante de trei culori diferite în ea. Zece dintre ele sunt galbene, iar cele mov sunt cu 80% mai multe. Sunt doar 25% la fel de multe flori verzi ca flori galbene și mov. Câte flori are Mark în grădina sa?
+Răspuns:
+
+35
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Albert se întreabă câtă pizza poate mânca într-o zi. El cumpără 2 pizza mari și 2 pizza mici. O pizza mare are 16 felii și o pizza mică are 8 felii. Dacă le mănâncă pe toate, câte felii mănâncă el în acea zi?
+Răspuns:
+
+48
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Ken a creat un pachet de îngrijire pentru a-l trimite fratelui său, care era la școală cu internat. Ken a pus o cutie pe o balanță, apoi a turnat în cutie suficiente bomboane gumate pentru a aduce greutatea la 2 livre. Apoi, a adăugat suficiente brownies pentru a tripla greutatea. Apoi, a adăugat încă 2 livre de bomboane gumate. Și în final, a adăugat suficiente viermi gumate pentru a dubla greutatea încă o dată. Care a fost greutatea finală a cutiei de bunătăți, în livre?
+Răspuns:
+
+16
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Alexis aplică pentru un nou loc de muncă și și-a cumpărat un set de haine business pentru a le purta la interviu. Ea a mers la magazin cu un buget de $200 și a cheltuit $30 pe o cămașă, $46 pe pantaloni de costum, $38 pe un sacou, $11 pe șosete și $18 pe o curea. Ea a cumpărat și o pereche de pantofi, dar a pierdut bonul fiscal pentru aceștia. Ea mai are $16 rămași din bugetul ei. Cât a plătit Alexis pentru pantofi?
+Răspuns:
+
+41
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Un monstru din adâncul mării iese la suprafață o dată la o sută de ani pentru a se hrăni cu un vas și a-și potoli foamea. De-a lungul a trei sute de ani, a consumat 847 de oameni. Vasele au fost construite mai mari în timp, astfel încât fiecare vas nou are de două ori mai mulți oameni decât ultimul vas. Câți oameni erau pe vasul pe care monstrul l-a mâncat în primii o sută de ani?
+Răspuns:
+
+121
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Weng câștigă $12 pe oră pentru babysitting. Ieri, ea a făcut doar 50 de minute de babysitting. Cât a câștigat?
+Răspuns:
+
+10
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Betty strânge bani pentru un portofel nou care costă $100. Betty are doar jumătate din banii de care are nevoie. Părinții ei au decis să îi dea $15 în acest scop, iar bunicii ei de două ori mai mult decât părinții ei. De câți bani mai are Betty nevoie pentru a cumpăra portofelul?
+Răspuns:
+
+5
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Julie citește o carte de 120 de pagini. Ieri, ea a putut citi 12 pagini și astăzi, ea a citit de două ori mai multe pagini decât ieri. Dacă ea vrea să citească jumătate din paginile rămase mâine, câte pagini ar trebui să citească?
+Răspuns:
+
+42
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: James scrie o scrisoare de 3 pagini către 2 prieteni diferiți de două ori pe săptămână.  Câte pagini scrie el într-un an?
+Răspuns:
+
+624
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Mark are o grădină cu flori. El a plantat plante de trei culori diferite în ea. Zece dintre ele sunt galbene, iar cele mov sunt cu 80% mai multe. Sunt doar 25% la fel de multe flori verzi ca flori galbene și mov. Câte flori are Mark în grădina sa?
+Răspuns:
+
+35
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Albert se întreabă câtă pizza poate mânca într-o zi. El cumpără 2 pizza mari și 2 pizza mici. O pizza mare are 16 felii și o pizza mică are 8 felii. Dacă le mănâncă pe toate, câte felii mănâncă el în acea zi?
+Răspuns:
+
+48
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Ken a creat un pachet de îngrijire pentru a-l trimite fratelui său, care era la școală cu internat. Ken a pus o cutie pe o balanță, apoi a turnat în cutie suficiente bomboane gumate pentru a aduce greutatea la 2 livre. Apoi, a adăugat suficiente brownies pentru a tripla greutatea. Apoi, a adăugat încă 2 livre de bomboane gumate. Și în final, a adăugat suficiente viermi gumate pentru a dubla greutatea încă o dată. Care a fost greutatea finală a cutiei de bunătăți, în livre?
+Răspuns:
+
+16
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Alexis aplică pentru un nou loc de muncă și și-a cumpărat un set de haine business pentru a le purta la interviu. Ea a mers la magazin cu un buget de $200 și a cheltuit $30 pe o cămașă, $46 pe pantaloni de costum, $38 pe un sacou, $11 pe șosete și $18 pe o curea. Ea a cumpărat și o pereche de pantofi, dar a pierdut bonul fiscal pentru aceștia. Ea mai are $16 rămași din bugetul ei. Cât a plătit Alexis pentru pantofi?
+Răspuns:
+
+41
+Rezolvă problema de mai jos.
+Returnează DOAR răspunsul final ca NUMĂR (fără text).
+Întrebare: Un monstru din adâncul mării iese la suprafață o dată la o sută de ani pentru a se hrăni cu un vas și a-și potoli foamea. De-a lungul a trei sute de ani, a consumat 847 de oameni. Vasele au fost construite mai mari în timp, astfel încât fiecare vas nou are de două ori mai mulți oameni decât ultimul vas. Câți oameni erau pe vasul pe care monstrul l-a mâncat în primii o sută de ani?
+Răspuns:
+
+121
+[INFO] local_rank=2
+[INFO] local_rank=1
+[INFO] local_rank=3
+[INFO] local_rank=0
+{'loss': 1.7115, 'grad_norm': 0.78125, 'learning_rate': 9.980495166258437e-05, 'entropy': 1.4816443590447306, 'num_tokens': 215041.0, 'mean_token_accuracy': 0.6869139423593879, 'epoch': 0.18}
+{'loss': 0.8318, 'grad_norm': 1.0390625, 'learning_rate': 9.798720185784287e-05, 'entropy': 0.8390612022951245, 'num_tokens': 428697.0, 'mean_token_accuracy': 0.8134054645895958, 'epoch': 0.36}
+{'loss': 0.7666, 'grad_norm': 0.490234375, 'learning_rate': 9.432533079723733e-05, 'entropy': 0.7636577785015106, 'num_tokens': 644414.0, 'mean_token_accuracy': 0.8188353907316923, 'epoch': 0.53}
+{'loss': 0.7423, 'grad_norm': 0.392578125, 'learning_rate': 8.896006213202583e-05, 'entropy': 0.7398185135796667, 'num_tokens': 860386.0, 'mean_token_accuracy': 0.8224371869117022, 'epoch': 0.71}
+{'loss': 0.7361, 'grad_norm': 0.380859375, 'learning_rate': 8.209758012813516e-05, 'entropy': 0.7335120514035225, 'num_tokens': 1075474.0, 'mean_token_accuracy': 0.8245315019041299, 'epoch': 0.89}
+{'loss': 0.7226, 'grad_norm': 0.34375, 'learning_rate': 7.400160612045057e-05, 'entropy': 0.7204254187714939, 'num_tokens': 1285019.0, 'mean_token_accuracy': 0.8268895482483763, 'epoch': 1.06}
+{'loss': 0.6872, 'grad_norm': 0.380859375, 'learning_rate': 6.498326384981283e-05, 'entropy': 0.6842233231291175, 'num_tokens': 1499343.0, 'mean_token_accuracy': 0.8329294513911009, 'epoch': 1.24}
+{'loss': 0.6883, 'grad_norm': 0.404296875, 'learning_rate': 5.538912315213797e-05, 'entropy': 0.6903783114627003, 'num_tokens': 1716217.0, 'mean_token_accuracy': 0.8326015666127204, 'epoch': 1.42}
+{'loss': 0.6754, 'grad_norm': 0.40234375, 'learning_rate': 4.558788147398154e-05, 'entropy': 0.6769031744450331, 'num_tokens': 1928246.0, 'mean_token_accuracy': 0.835819393210113, 'epoch': 1.6}
+{'loss': 0.6753, 'grad_norm': 0.3984375, 'learning_rate': 3.5956195036435406e-05, 'entropy': 0.6762242311611771, 'num_tokens': 2144245.0, 'mean_token_accuracy': 0.8350010642781853, 'epoch': 1.77}
+{'loss': 0.6772, 'grad_norm': 0.41015625, 'learning_rate': 2.6864204147782503e-05, 'entropy': 0.6753143526613712, 'num_tokens': 2360503.0, 'mean_token_accuracy': 0.8336709283292294, 'epoch': 1.95}
+{'loss': 0.6478, 'grad_norm': 0.431640625, 'learning_rate': 1.8661308919026532e-05, 'entropy': 0.6556528098286151, 'num_tokens': 2567767.0, 'mean_token_accuracy': 0.8395645426104243, 'epoch': 2.12}
+{'loss': 0.6323, 'grad_norm': 0.44140625, 'learning_rate': 1.1662742013571925e-05, 'entropy': 0.6371452812105417, 'num_tokens': 2782217.0, 'mean_token_accuracy': 0.8427571162581444, 'epoch': 2.3}
+{'loss': 0.6395, 'grad_norm': 0.4453125, 'learning_rate': 6.1374544327537975e-06, 'entropy': 0.6464275596663356, 'num_tokens': 2999646.0, 'mean_token_accuracy': 0.8413037840276957, 'epoch': 2.48}
+{'loss': 0.6417, 'grad_norm': 0.44140625, 'learning_rate': 2.2977798796859796e-06, 'entropy': 0.6501378193497658, 'num_tokens': 3216485.0, 'mean_token_accuracy': 0.8414568234235048, 'epoch': 2.66}
+{'loss': 0.6333, 'grad_norm': 0.423828125, 'learning_rate': 2.912748941285903e-07, 'entropy': 0.6405180539004505, 'num_tokens': 3430196.0, 'mean_token_accuracy': 0.8434994220733643, 'epoch': 2.84}
+{'train_runtime': 1822.017, 'train_samples_per_second': 11.592, 'train_steps_per_second': 0.181, 'train_loss': 0.7530718687808875, 'entropy': 0.6494139704853297, 'num_tokens': 3538003.0, 'mean_token_accuracy': 0.8419392313808203, 'epoch': 2.92}
+[DONE] Saved BF16 merged model to /capstor/scratch/cscs/moprea/finetuned/330/meta-llama__Llama-3.1-8B-Instruct/ro_gsm8k/merged_bf16
+[DONE] Saved to /capstor/scratch/cscs/moprea/finetuned/330/meta-llama__Llama-3.1-8B-Instruct/ro_gsm8k
